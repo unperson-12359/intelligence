@@ -6,7 +6,6 @@ import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
 import { ScoreBadge } from "@/components/accountability/score-badge";
 import { Pagination } from "@/components/ui/pagination";
 import { ScrollReveal } from "@/components/motion/scroll-reveal";
-import { AnimatedTableRow } from "@/components/motion/animated-table-row";
 import { NextSteps } from "@/components/navigation/next-steps";
 import { Callout } from "@/components/ui/callout";
 import Link from "next/link";
@@ -60,7 +59,6 @@ export default async function ScorecardPage({
         </p>
       </ScrollReveal>
 
-      <ScrollReveal delay={0.2}>
         <div className="border rounded-lg overflow-hidden">
           <table className="w-full">
             <thead>
@@ -77,9 +75,8 @@ export default async function ScorecardPage({
               {paginatedRanked.map((figure, index) => {
                 const globalRank = (currentPage - 1) * PAGE_SIZE + index;
                 return (
-                  <AnimatedTableRow
+                  <tr
                     key={figure.id}
-                    index={index}
                     className={`border-b last:border-b-0 hover:bg-muted/20 transition-colors ${rankAccent[globalRank] || ""}`}
                   >
                     <td className="px-4 py-3 text-sm text-muted-foreground font-medium">
@@ -127,13 +124,12 @@ export default async function ScorecardPage({
                         {figure.stats.brokenCount}
                       </span>
                     </td>
-                  </AnimatedTableRow>
+                  </tr>
                 );
               })}
             </tbody>
           </table>
         </div>
-      </ScrollReveal>
 
       <Pagination
         currentPage={currentPage}

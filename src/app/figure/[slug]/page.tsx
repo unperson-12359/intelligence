@@ -94,8 +94,7 @@ export default async function FigureOverviewPage({
 
       <RelatedFigures
         currentFigureId={figure.id}
-        figureType={figure.type}
-        party={figure.party}
+        topicIds={figure.topicIds}
       />
 
       <RelatedBlogPosts figureSlug={slug} />

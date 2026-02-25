@@ -6,8 +6,10 @@ import { Badge } from "@/components/ui/badge";
 import { FigureCard } from "@/components/figures/figure-card";
 import { BlogPostCard } from "@/components/blog/blog-post-card";
 import { NextSteps } from "@/components/navigation/next-steps";
+import { ShareButtons } from "@/components/blog/share-buttons";
 import { formatDate } from "@/lib/format";
 import { getFigureBySlug, getAllFigureStats } from "@/lib/mock-data";
+import { SITE_CONFIG } from "@/lib/constants";
 
 export async function generateStaticParams() {
   return getAllBlogPosts().map((post) => ({ slug: post.slug }));
@@ -69,12 +71,27 @@ export default async function BlogPostPage({
             <span>&middot;</span>
             <span>{post.readingTime}</span>
           </div>
+          <div className="mt-4 pt-4 border-t">
+            <ShareButtons
+              url={`${SITE_CONFIG.url}/blog/${slug}`}
+              title={post.title}
+              description={post.description}
+            />
+          </div>
         </header>
 
         <div
           className="prose prose-sm dark:prose-invert max-w-none [&>h2]:text-xl [&>h2]:font-bold [&>h2]:mt-8 [&>h2]:mb-3 [&>h3]:text-lg [&>h3]:font-semibold [&>h3]:mt-6 [&>h3]:mb-2 [&>p]:text-muted-foreground [&>p]:mb-4 [&>p]:leading-relaxed [&>ul]:text-muted-foreground [&>ul]:mb-4 [&>ul]:list-disc [&>ul]:pl-6 [&>ul>li]:mb-1 [&_a]:text-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-blue-600"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        <div className="mt-8 pt-6 border-t">
+          <ShareButtons
+            url={`${SITE_CONFIG.url}/blog/${slug}`}
+            title={post.title}
+            description={post.description}
+          />
+        </div>
       </article>
 
       {/* Related Figures */}

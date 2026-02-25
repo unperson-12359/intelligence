@@ -3,7 +3,6 @@ import Link from "next/link";
 import { FigureCard } from "@/components/figures/figure-card";
 import { Pagination } from "@/components/ui/pagination";
 import { ScrollReveal } from "@/components/motion/scroll-reveal";
-import { StaggerChildren } from "@/components/motion/stagger-children";
 import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
 import { SortSelect } from "@/components/navigation/sort-select";
 import { EmptyState } from "@/components/ui/empty-state";
@@ -133,9 +132,8 @@ export default async function DirectoryPage({
           action={{ label: "Clear filters", href: "/directory" }}
         />
       ) : (
-        <StaggerChildren
+        <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
-          staggerDelay={0.08}
         >
           {paginatedFigures.map((figure) => {
             const stats = allStats.get(figure.id)!;
@@ -157,7 +155,7 @@ export default async function DirectoryPage({
               />
             );
           })}
-        </StaggerChildren>
+        </div>
       )}
 
       <Pagination
