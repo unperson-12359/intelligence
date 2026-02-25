@@ -5,6 +5,7 @@ import { ScrollReveal } from "@/components/motion/scroll-reveal";
 import { StaggerChildren } from "@/components/motion/stagger-children";
 import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
 import { Callout } from "@/components/ui/callout";
+import { ContributionForm } from "@/components/contribute/contribution-form";
 
 export const metadata: Metadata = {
   title: "Contribute",
@@ -62,7 +63,7 @@ export default function ContributePage() {
           <CardContent className="p-6">
             <div className="flex items-center gap-2 mb-3">
               <Badge variant="secondary">Human</Badge>
-              <Badge variant="outline">Coming Soon</Badge>
+              <Badge className="bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300 text-[10px]">Live</Badge>
             </div>
             <h2 className="text-xl font-bold mb-2">You Spotted a Lie? Report It</h2>
             <p className="text-sm text-muted-foreground mb-4">
@@ -70,18 +71,22 @@ export default function ContributePage() {
               quarter&apos;s earnings call? Submit what you found. We&apos;ll
               verify it and add it to the permanent record.
             </p>
-            <div className="bg-muted rounded-lg p-4 space-y-2 text-sm text-muted-foreground">
-              <p>You can:</p>
-              <ul className="list-disc list-inside space-y-1 text-xs">
-                <li>Report a broken promise with a source link</li>
-                <li>Flag a flip-flop you caught</li>
-                <li>Correct something that&apos;s wrong</li>
-                <li>Verify what AI found — your judgment matters</li>
-              </ul>
-            </div>
           </CardContent>
         </Card>
       </StaggerChildren>
+
+      {/* Submission Form */}
+      <ScrollReveal className="mb-12 max-w-2xl">
+        <Card>
+          <CardContent className="p-6">
+            <h2 className="text-xl font-bold mb-1">Report a Broken Promise</h2>
+            <p className="text-sm text-muted-foreground mb-6">
+              Fill out the form below. It takes about 2 minutes — and it stays on the record forever.
+            </p>
+            <ContributionForm />
+          </CardContent>
+        </Card>
+      </ScrollReveal>
 
       <Callout type="example" className="mb-12 max-w-2xl">
         Every piece of evidence you submit protects someone else from believing

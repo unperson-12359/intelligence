@@ -10,6 +10,7 @@ import { ShareButtons } from "@/components/blog/share-buttons";
 import { formatDate } from "@/lib/format";
 import { getFigureBySlug, getAllFigureStats } from "@/lib/mock-data";
 import { SITE_CONFIG } from "@/lib/constants";
+import { sanitizeHtml } from "@/lib/sanitize";
 
 export async function generateStaticParams() {
   return getAllBlogPosts().map((post) => ({ slug: post.slug }));
@@ -82,7 +83,7 @@ export default async function BlogPostPage({
 
         <div
           className="prose prose-sm dark:prose-invert max-w-none [&>h2]:text-xl [&>h2]:font-bold [&>h2]:mt-8 [&>h2]:mb-3 [&>h3]:text-lg [&>h3]:font-semibold [&>h3]:mt-6 [&>h3]:mb-2 [&>p]:text-muted-foreground [&>p]:mb-4 [&>p]:leading-relaxed [&>ul]:text-muted-foreground [&>ul]:mb-4 [&>ul]:list-disc [&>ul]:pl-6 [&>ul>li]:mb-1 [&_a]:text-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-blue-600"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.content) }}
         />
 
         <div className="mt-8 pt-6 border-t">
