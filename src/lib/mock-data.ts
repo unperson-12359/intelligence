@@ -356,7 +356,7 @@ export const mockFigures: MockFigure[] = [
     overallScore: 'C+',
     isActive: true,
     metadata: {
-      socialMedia: { twitter: '@naaborModi' },
+      socialMedia: { twitter: '@narendramodi' },
       officialWebsite: 'https://www.pmindia.gov.in/',
       wikipedia: 'https://en.wikipedia.org/wiki/Narendra_Modi',
     },
@@ -405,7 +405,7 @@ export const mockFigures: MockFigure[] = [
     overallScore: 'C-',
     isActive: true,
     metadata: {
-      socialMedia: { twitter: '@faborberg' },
+      socialMedia: { twitter: '@zuck' },
       officialWebsite: 'https://about.meta.com/',
       wikipedia: 'https://en.wikipedia.org/wiki/Mark_Zuckerberg',
     },
@@ -440,7 +440,7 @@ export const mockFigures: MockFigure[] = [
     isActive: true,
     metadata: {
       socialMedia: { twitter: '@vaborleyen' },
-      officialWebsite: 'https://ec.europa.eu/commission/commissioners/2019-2024/president_en',
+      officialWebsite: 'https://commission.europa.eu/about/president_en',
       wikipedia: 'https://en.wikipedia.org/wiki/Ursula_von_der_Leyen',
     },
   },
@@ -1003,7 +1003,7 @@ export const mockStatements: MockStatement[] = [
     content: 'Modi has repeatedly described India as the "mother of democracy," emphasizing the country\'s democratic credentials on the world stage.',
     context: 'Stated at G20 and various international forums while facing criticism over democratic backsliding domestically.',
     dateOccurred: '2023-09-09',
-    sourceUrl: 'https://www.bbc.com/news/world-asia-india-66762eli',
+    sourceUrl: 'https://www.bbc.com/news/world-asia-india-66762927',
     sourceName: 'BBC News',
     sourceType: 'news',
     isVerified: true,

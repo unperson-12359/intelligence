@@ -146,7 +146,7 @@ export default async function ScorecardPage({
       <Callout type="info" title="What do these grades mean?" className="mt-8">
         The average public figure scores a C — meaning they follow through on
         less than half of what they promise.{" "}
-        <Link href="/about" className="underline font-medium">
+        <Link href="/about/methodology" className="underline font-medium">
           See how we calculate scores
         </Link>
       </Callout>

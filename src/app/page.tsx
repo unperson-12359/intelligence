@@ -63,7 +63,7 @@ export default function HomePage() {
               </div>
               <div className="text-center">
                 <AnimatedCounter
-                  value={25}
+                  value={mockStatements.length}
                   suffix="+"
                   className="block text-3xl font-bold text-foreground"
                 />

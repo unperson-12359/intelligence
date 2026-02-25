@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Github } from "lucide-react";
 
 export function Footer() {
   return (
@@ -90,8 +91,19 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t pt-6 text-center text-xs text-muted-foreground">
-          <p>
+        <div className="mt-8 border-t pt-6 flex flex-col items-center gap-4">
+          <div className="flex items-center gap-4">
+            <a
+              href="https://github.com/unperson-12359/intelligence"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="GitHub"
+            >
+              <Github className="h-5 w-5" />
+            </a>
+          </div>
+          <p className="text-xs text-muted-foreground text-center">
             Intelligence Platform — Built by the people, for the people.
             Data sourced from public records.
           </p>

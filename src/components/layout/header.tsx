@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { Search } from "lucide-react";
 
 const navigation = [
   { name: "Directory", href: "/directory" },
@@ -68,7 +69,7 @@ export function Header() {
 
         {/* Search + Theme + Mobile Menu */}
         <div className="flex items-center gap-2">
-          <form onSubmit={handleSearch} className="hidden sm:block">
+          <form onSubmit={handleSearch} className="hidden sm:flex items-center gap-1">
             <Input
               type="search"
               placeholder="Search figures..."
@@ -76,6 +77,10 @@ export function Header() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
+            <Button type="submit" variant="ghost" size="icon" className="h-9 w-9 shrink-0">
+              <Search className="size-4" />
+              <span className="sr-only">Search</span>
+            </Button>
           </form>
 
           <ThemeToggle />

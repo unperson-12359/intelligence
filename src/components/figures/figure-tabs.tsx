@@ -40,7 +40,7 @@ export function FigureTabs({ slug }: { slug: string }) {
                     : "text-muted-foreground hover:text-foreground"
                 )}
               >
-                <tab.icon className="size-3.5 mr-1.5 inline-block" />
+                <tab.icon className="size-4 mr-1.5 inline-block" />
                 {tab.label}
                 {isActive && (
                   <motion.div
