@@ -1,4 +1,4 @@
-import { pgTable, text, timestamp, varchar, uuid } from 'drizzle-orm/pg-core';
+import { pgTable, text, timestamp, varchar, uuid, index } from 'drizzle-orm/pg-core';
 
 export const topics = pgTable('topics', {
   id: uuid('id').defaultRandom().primaryKey(),
@@ -8,4 +8,6 @@ export const topics = pgTable('topics', {
   parentId: uuid('parent_id'),
   iconName: varchar('icon_name', { length: 100 }),
   createdAt: timestamp('created_at').defaultNow().notNull(),
-});
+}, (table) => [
+  index('topics_parent_id_idx').on(table.parentId),
+]);

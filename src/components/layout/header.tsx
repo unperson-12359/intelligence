@@ -1,29 +1,32 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 const navigation = [
   { name: "Directory", href: "/directory" },
   { name: "Scorecard", href: "/scorecard" },
   { name: "Topics", href: "/topics" },
+  { name: "Blog", href: "/blog" },
   { name: "Contribute", href: "/contribute" },
   { name: "About", href: "/about" },
 ];
 
 export function Header() {
   const pathname = usePathname();
+  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      window.location.href = `/search?q=${encodeURIComponent(searchQuery.trim())}`;
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
     }
   };
 
@@ -46,6 +49,11 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
+              aria-current={
+                pathname === item.href || pathname?.startsWith(item.href + "/")
+                  ? "page"
+                  : undefined
+              }
               className={cn(
                 "px-3 py-2 text-sm font-medium rounded-md transition-colors",
                 pathname === item.href || pathname?.startsWith(item.href + "/")
@@ -58,7 +66,7 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Search + Mobile Menu */}
+        {/* Search + Theme + Mobile Menu */}
         <div className="flex items-center gap-2">
           <form onSubmit={handleSearch} className="hidden sm:block">
             <Input
@@ -69,6 +77,8 @@ export function Header() {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </form>
+
+          <ThemeToggle />
 
           {/* Mobile Menu */}
           <Sheet>
@@ -105,6 +115,7 @@ export function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
+                    aria-current={pathname === item.href ? "page" : undefined}
                     className={cn(
                       "px-3 py-2 text-base font-medium rounded-md transition-colors",
                       pathname === item.href

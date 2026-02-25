@@ -1,3 +1,5 @@
+import 'server-only';
+
 // =============================================================================
 // Mock Data for Intelligence Accountability Platform
 // =============================================================================
@@ -48,7 +50,7 @@ export type MockStatement = {
 export type MockAction = {
   id: string;
   figureId: string;
-  type: 'vote' | 'executive_order' | 'legislation_signed' | 'policy_enacted' | 'business_decision' | 'appointment' | 'other';
+  type: 'vote' | 'executive_order' | 'legislation_signed' | 'legislation_vetoed' | 'policy_enacted' | 'business_decision' | 'appointment' | 'donation' | 'other';
   title: string;
   description: string;
   outcome: string;
@@ -291,6 +293,174 @@ export const mockFigures: MockFigure[] = [
       wikipedia: 'https://en.wikipedia.org/wiki/Greta_Thunberg',
     },
   },
+
+  // --- New World-Power Figures (fig-009 through fig-018) ---
+  {
+    id: 'fig-009',
+    slug: 'donald-trump',
+    name: 'Donald Trump',
+    title: '47th President of the United States',
+    type: 'politician',
+    party: 'Republican',
+    country: 'US',
+    imageUrl: '/images/figures/donald-trump.jpg',
+    bio: '45th and 47th President of the United States. Real estate mogul turned politician. Known for controversial statements and policy reversals.',
+    overallScore: 'D-',
+    isActive: true,
+    metadata: {
+      socialMedia: { twitter: '@realDonaldTrump' },
+      officialWebsite: 'https://www.whitehouse.gov/',
+      wikipedia: 'https://en.wikipedia.org/wiki/Donald_Trump',
+    },
+  },
+  {
+    id: 'fig-010',
+    slug: 'xi-jinping',
+    name: 'Xi Jinping',
+    title: 'President of China, General Secretary of CCP',
+    type: 'politician',
+    country: 'China',
+    imageUrl: '/images/figures/xi-jinping.jpg',
+    bio: 'Leader of China since 2012. Consolidated power and removed presidential term limits. Oversaw significant economic growth, military modernization, and tightening of domestic controls.',
+    overallScore: 'D',
+    isActive: true,
+    metadata: {
+      wikipedia: 'https://en.wikipedia.org/wiki/Xi_Jinping',
+    },
+  },
+  {
+    id: 'fig-011',
+    slug: 'vladimir-putin',
+    name: 'Vladimir Putin',
+    title: 'President of Russia',
+    type: 'politician',
+    country: 'Russia',
+    imageUrl: '/images/figures/vladimir-putin.jpg',
+    bio: 'President of Russia since 2000 (with brief PM stint 2008-2012). Ordered the full-scale invasion of Ukraine in February 2022, triggering the largest conflict in Europe since World War II.',
+    overallScore: 'F',
+    isActive: true,
+    metadata: {
+      wikipedia: 'https://en.wikipedia.org/wiki/Vladimir_Putin',
+    },
+  },
+  {
+    id: 'fig-012',
+    slug: 'narendra-modi',
+    name: 'Narendra Modi',
+    title: 'Prime Minister of India',
+    type: 'politician',
+    party: 'BJP',
+    country: 'India',
+    imageUrl: '/images/figures/narendra-modi.jpg',
+    bio: 'Prime Minister of India since 2014, serving a third consecutive term. Major economic reformer who launched initiatives like Make in India and Digital India.',
+    overallScore: 'C+',
+    isActive: true,
+    metadata: {
+      socialMedia: { twitter: '@naaborModi' },
+      officialWebsite: 'https://www.pmindia.gov.in/',
+      wikipedia: 'https://en.wikipedia.org/wiki/Narendra_Modi',
+    },
+  },
+  {
+    id: 'fig-013',
+    slug: 'benjamin-netanyahu',
+    name: 'Benjamin Netanyahu',
+    title: 'Prime Minister of Israel',
+    type: 'politician',
+    party: 'Likud',
+    country: 'Israel',
+    imageUrl: '/images/figures/benjamin-netanyahu.jpg',
+    bio: 'Longest-serving Prime Minister in Israel\'s history. Currently overseeing military operations in Gaza following the October 7, 2023 Hamas attack.',
+    overallScore: 'D+',
+    isActive: true,
+    metadata: {
+      socialMedia: { twitter: '@netanyahu' },
+      wikipedia: 'https://en.wikipedia.org/wiki/Benjamin_Netanyahu',
+    },
+  },
+  {
+    id: 'fig-014',
+    slug: 'mohammed-bin-salman',
+    name: 'Mohammed bin Salman',
+    title: 'Crown Prince and PM of Saudi Arabia',
+    type: 'politician',
+    country: 'Saudi Arabia',
+    imageUrl: '/images/figures/mohammed-bin-salman.jpg',
+    bio: 'De facto ruler of Saudi Arabia since 2017. Known for Vision 2030 economic modernization plan and controversy surrounding the Khashoggi killing.',
+    overallScore: 'D',
+    isActive: true,
+    metadata: {
+      wikipedia: 'https://en.wikipedia.org/wiki/Mohammed_bin_Salman',
+    },
+  },
+  {
+    id: 'fig-015',
+    slug: 'mark-zuckerberg',
+    name: 'Mark Zuckerberg',
+    title: 'CEO of Meta',
+    type: 'executive',
+    country: 'US',
+    imageUrl: '/images/figures/mark-zuckerberg.jpg',
+    bio: 'Co-founder and CEO of Meta (formerly Facebook). Pivoted company toward the metaverse in 2021, then shifted focus to artificial intelligence.',
+    overallScore: 'C-',
+    isActive: true,
+    metadata: {
+      socialMedia: { twitter: '@faborberg' },
+      officialWebsite: 'https://about.meta.com/',
+      wikipedia: 'https://en.wikipedia.org/wiki/Mark_Zuckerberg',
+    },
+  },
+  {
+    id: 'fig-016',
+    slug: 'jeff-bezos',
+    name: 'Jeff Bezos',
+    title: 'Founder of Amazon & Blue Origin',
+    type: 'executive',
+    country: 'US',
+    imageUrl: '/images/figures/jeff-bezos.jpg',
+    bio: 'Founded Amazon in 1994, built it into the world\'s largest online retailer. Owns The Washington Post and pursues space ventures through Blue Origin.',
+    overallScore: 'C',
+    isActive: true,
+    metadata: {
+      socialMedia: { twitter: '@JeffBezos' },
+      officialWebsite: 'https://www.blueorigin.com/',
+      wikipedia: 'https://en.wikipedia.org/wiki/Jeff_Bezos',
+    },
+  },
+  {
+    id: 'fig-017',
+    slug: 'ursula-von-der-leyen',
+    name: 'Ursula von der Leyen',
+    title: 'President of the European Commission',
+    type: 'politician',
+    country: 'Germany',
+    imageUrl: '/images/figures/ursula-von-der-leyen.jpg',
+    bio: 'Leading the European Union since 2019. Oversaw the EU response to COVID-19, the Ukraine war, and the European Green Deal.',
+    overallScore: 'B-',
+    isActive: true,
+    metadata: {
+      socialMedia: { twitter: '@vaborleyen' },
+      officialWebsite: 'https://ec.europa.eu/commission/commissioners/2019-2024/president_en',
+      wikipedia: 'https://en.wikipedia.org/wiki/Ursula_von_der_Leyen',
+    },
+  },
+  {
+    id: 'fig-018',
+    slug: 'recep-tayyip-erdogan',
+    name: 'Recep Tayyip Erdogan',
+    title: 'President of Turkey',
+    type: 'politician',
+    party: 'AKP',
+    country: 'Turkey',
+    imageUrl: '/images/figures/recep-tayyip-erdogan.jpg',
+    bio: 'In power since 2003, first as Prime Minister then as President. Increasingly authoritarian governance amid recurring economic crises and currency devaluation.',
+    overallScore: 'D+',
+    isActive: true,
+    metadata: {
+      socialMedia: { twitter: '@RTErdogan' },
+      wikipedia: 'https://en.wikipedia.org/wiki/Recep_Tayyip_Erdo%C4%9Fan',
+    },
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -335,7 +505,7 @@ export const mockStatements: MockStatement[] = [
     content: 'Sanders has consistently argued that the pharmaceutical industry engages in price gouging and that the U.S. should allow Medicare to negotiate drug prices.',
     context: 'Long-standing position reiterated during Senate Budget Committee hearings.',
     dateOccurred: '2023-01-15',
-    sourceUrl: 'https://www.budget.senate.gov/',
+    sourceUrl: 'https://www.sanders.senate.gov/press-releases/news-sanders-leads-hearing-on-outrageous-price-of-prescription-drugs-in-america/',
     sourceName: 'Senate Budget Committee',
     sourceType: 'government_record',
     isVerified: true,
@@ -423,7 +593,7 @@ export const mockStatements: MockStatement[] = [
     content: 'Rogan has repeatedly stated his podcast is open to guests from across the political spectrum and he is not aligned with any party.',
     context: 'Reiterated across multiple episodes and interviews about his show format.',
     dateOccurred: '2022-02-01',
-    sourceUrl: 'https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk',
+    sourceUrl: 'https://www.bbc.com/news/entertainment-arts-60294785',
     sourceName: 'The Joe Rogan Experience',
     sourceType: 'podcast',
     isVerified: true,
@@ -453,7 +623,7 @@ export const mockStatements: MockStatement[] = [
     content: 'Cruz campaigned repeatedly on repealing the Affordable Care Act, calling it a disaster and pledging full repeal.',
     context: 'Central promise of his 2016 presidential campaign and ongoing Senate position.',
     dateOccurred: '2015-03-23',
-    sourceUrl: 'https://www.cruz.senate.gov/',
+    sourceUrl: 'https://www.congress.gov/bill/114th-congress/senate-bill/339',
     sourceName: 'Cruz Senate Office',
     sourceType: 'government_record',
     isVerified: true,
@@ -555,7 +725,7 @@ export const mockStatements: MockStatement[] = [
     content: 'Zelenskyy has repeatedly stated that Ukraine will not cede any territory to Russia, including Crimea and the Donbas regions.',
     context: 'Stated consistently since Russia\'s full-scale invasion in February 2022.',
     dateOccurred: '2022-03-01',
-    sourceUrl: 'https://www.reuters.com/world/europe/',
+    sourceUrl: 'https://www.reuters.com/world/europe/zelenskiy-says-ukraine-will-not-give-up-any-territory-2022-03-08/',
     sourceName: 'Reuters',
     sourceType: 'news',
     isVerified: true,
@@ -1287,11 +1457,20 @@ export function getTrendingContradictions() {
     }));
 }
 
+export type FigureStatsResult = {
+  totalStatements: number;
+  totalActions: number;
+  keptCount: number;
+  brokenCount: number;
+  partialCount: number;
+  flipFlopCount: number;
+};
+
 /**
  * Returns aggregate statistics for a figure: total statements, total actions,
  * and counts by verdict type.
  */
-export function getFigureStats(figureId: string) {
+export function getFigureStats(figureId: string): FigureStatsResult {
   const records = mockAccountabilityRecords.filter(
     (r) => r.figureId === figureId,
   );
@@ -1305,4 +1484,266 @@ export function getFigureStats(figureId: string) {
     partialCount: records.filter((r) => r.verdict === 'partial').length,
     flipFlopCount: records.filter((r) => r.verdict === 'flip_flop').length,
   };
+}
+
+const emptyStats: FigureStatsResult = {
+  totalStatements: 0,
+  totalActions: 0,
+  keptCount: 0,
+  brokenCount: 0,
+  partialCount: 0,
+  flipFlopCount: 0,
+};
+
+/**
+ * Batch version of getFigureStats — computes stats for ALL figures in 3
+ * single-pass iterations instead of 6N iterations.  Use this on list pages
+ * (home, directory, search, scorecard) to avoid the N+1 query pattern.
+ */
+export function getAllFigureStats(): Map<string, FigureStatsResult> {
+  const map = new Map<string, FigureStatsResult>();
+
+  // Initialise every figure so callers always get a result
+  for (const f of mockFigures) {
+    map.set(f.id, { ...emptyStats });
+  }
+
+  // Single pass over statements
+  for (const s of mockStatements) {
+    const entry = map.get(s.figureId);
+    if (entry) entry.totalStatements++;
+  }
+
+  // Single pass over actions
+  for (const a of mockActions) {
+    const entry = map.get(a.figureId);
+    if (entry) entry.totalActions++;
+  }
+
+  // Single pass over accountability records
+  for (const r of mockAccountabilityRecords) {
+    const entry = map.get(r.figureId);
+    if (entry) {
+      switch (r.verdict) {
+        case 'kept':
+          entry.keptCount++;
+          break;
+        case 'broken':
+          entry.brokenCount++;
+          break;
+        case 'partial':
+          entry.partialCount++;
+          break;
+        case 'flip_flop':
+          entry.flipFlopCount++;
+          break;
+      }
+    }
+  }
+
+  return map;
+}
+
+// ---------------------------------------------------------------------------
+// Evidence Media
+// ---------------------------------------------------------------------------
+
+export type MockEvidenceMedia = {
+  id: string;
+  accountabilityRecordId: string;
+  type: 'screenshot' | 'document' | 'audio' | 'video';
+  url: string;
+  thumbnailUrl: string;
+  caption: string;
+  sourceUrl: string;
+  capturedAt: string;
+};
+
+export const mockEvidenceMedia: MockEvidenceMedia[] = [
+  // --- Original figures evidence ---
+  {
+    id: 'em-1',
+    accountabilityRecordId: 'acc-001',
+    type: 'screenshot',
+    url: '/images/evidence/medicare-for-all-congress.svg',
+    thumbnailUrl: '/images/evidence/medicare-for-all-congress.svg',
+    caption: 'Screenshot of Medicare for All Act announcement on Congress.gov',
+    sourceUrl: 'https://www.congress.gov/bill/118th-congress/senate-bill/1655',
+    capturedAt: '2024-01-15',
+  },
+  {
+    id: 'em-2',
+    accountabilityRecordId: 'acc-002',
+    type: 'document',
+    url: '/images/evidence/college-for-all-act.svg',
+    thumbnailUrl: '/images/evidence/college-for-all-act.svg',
+    caption: 'College for All Act bill text showing student debt cancellation provisions',
+    sourceUrl: 'https://www.congress.gov/bill/117th-congress/senate-bill/1288',
+    capturedAt: '2023-08-22',
+  },
+  {
+    id: 'em-3',
+    accountabilityRecordId: 'acc-004',
+    type: 'video',
+    url: '/images/evidence/musk-robotaxi-promise.svg',
+    thumbnailUrl: '/images/evidence/musk-robotaxi-promise.svg',
+    caption: 'Elon Musk promising one million robotaxis by 2020 at Tesla Autonomy Day',
+    sourceUrl: 'https://www.youtube.com/watch?v=Ucp0TTmvqOE',
+    capturedAt: '2023-11-10',
+  },
+  {
+    id: 'em-4',
+    accountabilityRecordId: 'acc-005',
+    type: 'screenshot',
+    url: '/images/evidence/suspended-journalist-accounts.svg',
+    thumbnailUrl: '/images/evidence/suspended-journalist-accounts.svg',
+    caption: 'Screenshot of suspended journalist accounts on X (formerly Twitter)',
+    sourceUrl: 'https://x.com',
+    capturedAt: '2022-12-16',
+  },
+  {
+    id: 'em-5',
+    accountabilityRecordId: 'acc-007',
+    type: 'screenshot',
+    url: '/images/evidence/cybertruck-pricing.svg',
+    thumbnailUrl: '/images/evidence/cybertruck-pricing.svg',
+    caption: 'Cybertruck pricing page showing $61,000 base price vs original $39,900 announcement',
+    sourceUrl: 'https://www.tesla.com/cybertruck',
+    capturedAt: '2024-03-01',
+  },
+  {
+    id: 'em-6',
+    accountabilityRecordId: 'acc-008',
+    type: 'audio',
+    url: '/images/evidence/rogan-covid-vaccines.svg',
+    thumbnailUrl: '/images/evidence/rogan-covid-vaccines.svg',
+    caption: 'Joe Rogan podcast clip discussing COVID vaccines for young people',
+    sourceUrl: 'https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk',
+    capturedAt: '2021-04-27',
+  },
+  {
+    id: 'em-7',
+    accountabilityRecordId: 'acc-012',
+    type: 'screenshot',
+    url: '/images/evidence/cruz-gun-vote.svg',
+    thumbnailUrl: '/images/evidence/cruz-gun-vote.svg',
+    caption: 'Senate roll call vote showing Cruz voting Nay on Bipartisan Safer Communities Act',
+    sourceUrl: 'https://www.senate.gov/legislative/LIS/roll_call_votes/vote1172/vote_117_2_00234.htm',
+    capturedAt: '2022-06-24',
+  },
+  {
+    id: 'em-8',
+    accountabilityRecordId: 'acc-018',
+    type: 'video',
+    url: '/images/evidence/capitol-security-footage.svg',
+    thumbnailUrl: '/images/evidence/capitol-security-footage.svg',
+    caption: 'Capitol security footage contradicting claims of peaceful January 6 protest',
+    sourceUrl: 'https://www.c-span.org',
+    capturedAt: '2023-03-08',
+  },
+  // --- New world-power figures evidence ---
+  {
+    id: 'em-9',
+    accountabilityRecordId: 'acc-014',
+    type: 'document',
+    url: '/images/evidence/trump-border-wall-executive-order.svg',
+    thumbnailUrl: '/images/evidence/trump-border-wall-executive-order.svg',
+    caption: 'Executive order on border wall construction vs infrastructure spending records',
+    sourceUrl: 'https://www.whitehouse.gov/presidential-actions/',
+    capturedAt: '2025-01-20',
+  },
+  {
+    id: 'em-10',
+    accountabilityRecordId: 'acc-015',
+    type: 'screenshot',
+    url: '/images/evidence/xi-jinping-hong-kong-autonomy.svg',
+    thumbnailUrl: '/images/evidence/xi-jinping-hong-kong-autonomy.svg',
+    caption: "Xi Jinping's One Country Two Systems pledge vs National Security Law",
+    sourceUrl: 'https://www.bbc.com/news/world-asia-china-52765838',
+    capturedAt: '2023-06-30',
+  },
+  {
+    id: 'em-11',
+    accountabilityRecordId: 'acc-016',
+    type: 'video',
+    url: '/images/evidence/putin-ukraine-no-invasion.svg',
+    thumbnailUrl: '/images/evidence/putin-ukraine-no-invasion.svg',
+    caption: 'Putin denying plans to invade Ukraine weeks before February 2022 invasion',
+    sourceUrl: 'https://www.youtube.com/watch?v=o9A-vfmjMiA',
+    capturedAt: '2022-02-24',
+  },
+  {
+    id: 'em-12',
+    accountabilityRecordId: 'acc-017',
+    type: 'screenshot',
+    url: '/images/evidence/modi-farmer-protest-response.svg',
+    thumbnailUrl: '/images/evidence/modi-farmer-protest-response.svg',
+    caption: 'Farm laws repeal announcement after pledging agricultural reform',
+    sourceUrl: 'https://www.reuters.com/world/india/indias-modi-says-farm-laws-will-be-repealed-2021-11-19/',
+    capturedAt: '2021-11-19',
+  },
+  {
+    id: 'em-13',
+    accountabilityRecordId: 'acc-019',
+    type: 'document',
+    url: '/images/evidence/netanyahu-judicial-reform.svg',
+    thumbnailUrl: '/images/evidence/netanyahu-judicial-reform.svg',
+    caption: "Netanyahu's judicial overhaul legislation vs democratic governance pledges",
+    sourceUrl: 'https://www.bbc.com/news/world-middle-east-66256461',
+    capturedAt: '2023-07-24',
+  },
+  {
+    id: 'em-14',
+    accountabilityRecordId: 'acc-020',
+    type: 'screenshot',
+    url: '/images/evidence/mbs-khashoggi-accountability.svg',
+    thumbnailUrl: '/images/evidence/mbs-khashoggi-accountability.svg',
+    caption: 'UN investigation findings on Khashoggi killing vs MBS denial',
+    sourceUrl: 'https://www.ohchr.org/en/press-releases/2021/02/khashoggi-killing-un-expert-says-saudi-crown-prince-should-be-investigated',
+    capturedAt: '2021-02-26',
+  },
+  {
+    id: 'em-15',
+    accountabilityRecordId: 'acc-009',
+    type: 'video',
+    url: '/images/evidence/zuckerberg-privacy-hearing.svg',
+    thumbnailUrl: '/images/evidence/zuckerberg-privacy-hearing.svg',
+    caption: 'Zuckerberg congressional testimony on user privacy vs data practices',
+    sourceUrl: 'https://www.youtube.com/watch?v=6ValJMOpt7s',
+    capturedAt: '2024-01-31',
+  },
+  {
+    id: 'em-16',
+    accountabilityRecordId: 'acc-010',
+    type: 'document',
+    url: '/images/evidence/bezos-worker-conditions.svg',
+    thumbnailUrl: '/images/evidence/bezos-worker-conditions.svg',
+    caption: 'Amazon warehouse injury rate reports vs worker safety commitments',
+    sourceUrl: 'https://www.reuters.com/business/retail-consumer/amazon-warehouse-injury-rates-higher-than-rivals-data-shows-2023-04-12/',
+    capturedAt: '2023-04-12',
+  },
+  {
+    id: 'em-17',
+    accountabilityRecordId: 'acc-011',
+    type: 'screenshot',
+    url: '/images/evidence/von-der-leyen-climate-pledge.svg',
+    thumbnailUrl: '/images/evidence/von-der-leyen-climate-pledge.svg',
+    caption: 'EU Green Deal progress report vs original emission reduction targets',
+    sourceUrl: 'https://ec.europa.eu/commission/presscorner/detail/en/ip_24_822',
+    capturedAt: '2024-02-06',
+  },
+  {
+    id: 'em-18',
+    accountabilityRecordId: 'acc-013',
+    type: 'screenshot',
+    url: '/images/evidence/erdogan-press-freedom.svg',
+    thumbnailUrl: '/images/evidence/erdogan-press-freedom.svg',
+    caption: 'RSF press freedom index for Turkey vs Erdogan democracy pledges',
+    sourceUrl: 'https://rsf.org/en/country/turkey',
+    capturedAt: '2024-04-20',
+  },
+];
+
+export function getEvidenceForRecord(recordId: string): MockEvidenceMedia[] {
+  return mockEvidenceMedia.filter((e) => e.accountabilityRecordId === recordId);
 }

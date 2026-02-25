@@ -24,15 +24,22 @@ export const SCORE_GRADES: Record<string, { min: number; max: number; color: str
   F: { min: -100, max: -21, color: 'text-red-700', bgColor: 'bg-red-100' },
 };
 
+const GRADE_THRESHOLDS: { grade: string; min: number }[] = [
+  { grade: 'A', min: 70 },
+  { grade: 'B', min: 40 },
+  { grade: 'C', min: 10 },
+  { grade: 'D', min: -20 },
+];
+
 export function getGradeFromScore(score: number): string {
-  for (const [grade, config] of Object.entries(SCORE_GRADES)) {
-    if (score >= config.min && score <= config.max) return grade;
+  for (const { grade, min } of GRADE_THRESHOLDS) {
+    if (score >= min) return grade;
   }
   return 'F';
 }
 
 export const SITE_CONFIG = {
   name: 'Intelligence',
-  description: 'Public Accountability Platform — Track what public figures SAY vs what they DO',
+  description: "Check any leader's track record. See what they promised vs what they did.",
   url: 'https://intelligence.app',
 } as const;

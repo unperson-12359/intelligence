@@ -14,8 +14,7 @@ export function Footer() {
               <span className="font-bold">Intelligence</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Tracking what public figures SAY vs what they DO.
-              AI-powered accountability for everyone.
+              They count on you forgetting. We make sure you don&apos;t.
             </p>
           </div>
 
@@ -36,6 +35,11 @@ export function Footer() {
               <li>
                 <Link href="/topics" className="text-muted-foreground hover:text-foreground transition-colors">
                   Topics
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Blog
                 </Link>
               </li>
             </ul>
@@ -63,13 +67,26 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Info */}
+          {/* Legal */}
           <div>
-            <h3 className="font-semibold text-sm mb-3">Info</h3>
-            <p className="text-sm text-muted-foreground">
-              An open, AI-powered platform for public accountability.
-              Contributions welcome from humans and AI agents alike.
-            </p>
+            <h3 className="font-semibold text-sm mb-3">Legal</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 

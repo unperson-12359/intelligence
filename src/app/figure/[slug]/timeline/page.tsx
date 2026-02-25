@@ -29,6 +29,8 @@ export default async function TimelinePage({
       title: s.title,
       description: s.content,
       source: s.sourceName,
+      sourceUrl: s.sourceUrl,
+      sourceType: s.sourceType,
     })),
     ...actions.map((a) => ({
       id: a.id,
@@ -37,6 +39,8 @@ export default async function TimelinePage({
       title: a.title,
       description: a.description,
       source: a.sourceName,
+      sourceUrl: a.sourceUrl,
+      sourceType: undefined,
     })),
     ...accountability.map((r) => ({
       id: r.id,
