@@ -29,6 +29,12 @@ const cards = [
   { file: 'bezos-worker-conditions', type: 'document', caption: 'Amazon warehouse injury rate reports vs worker safety commitments', source: 'reuters.com', date: '2023-04-12' },
   { file: 'von-der-leyen-climate-pledge', type: 'screenshot', caption: 'EU Green Deal progress report vs original emission reduction targets', source: 'ec.europa.eu', date: '2024-02-06' },
   { file: 'erdogan-press-freedom', type: 'screenshot', caption: 'RSF press freedom index for Turkey vs Erdogan democracy pledges', source: 'rsf.org', date: '2024-04-20' },
+  { file: 'biden-student-loans', type: 'document', caption: 'Biden student loan forgiveness promise vs Supreme Court ruling in Biden v. Nebraska', source: 'wikipedia.org', date: '2023-06-30' },
+  { file: 'obama-guantanamo', type: 'document', caption: 'Obama Guantanamo closure executive order vs facility still open after 8 years', source: 'wikipedia.org', date: '2017-01-20' },
+  { file: 'johnson-partygate', type: 'screenshot', caption: 'Boris Johnson lockdown rules vs Partygate gatherings and police fine', source: 'wikipedia.org', date: '2022-04-12' },
+  { file: 'pope-francis-lgbtq', type: 'document', caption: 'Pope Francis LGBTQ outreach from Who am I to judge to Fiducia Supplicans', source: 'wikipedia.org', date: '2023-12-18' },
+  { file: 'macron-pension-reform', type: 'screenshot', caption: 'Macron pension reform promise vs Article 49.3 parliamentary bypass', source: 'wikipedia.org', date: '2023-03-16' },
+  { file: 'merkel-nord-stream', type: 'screenshot', caption: 'Merkel climate pledges vs Nord Stream 2 pipeline support for Russian gas', source: 'wikipedia.org', date: '2022-02-22' },
 ];
 
 function escapeXml(str) {
