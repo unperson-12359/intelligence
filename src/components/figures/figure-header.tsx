@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { ScoreBadge } from "@/components/accountability/score-badge";
+import { Globe, BookOpen, ExternalLink } from "lucide-react";
 
 interface FigureHeaderProps {
   name: string;
@@ -12,6 +13,11 @@ interface FigureHeaderProps {
   bio: string;
   overallScore: string;
   imageUrl?: string;
+  metadata?: {
+    socialMedia?: { twitter?: string };
+    officialWebsite?: string;
+    wikipedia?: string;
+  };
   stats: {
     totalStatements: number;
     totalActions: number;
@@ -41,6 +47,7 @@ export function FigureHeader({
   bio,
   overallScore,
   imageUrl,
+  metadata,
   stats,
 }: FigureHeaderProps) {
   const total = stats.keptCount + stats.brokenCount + stats.partialCount + stats.flipFlopCount;
@@ -93,6 +100,48 @@ export function FigureHeader({
             <p className="text-sm text-muted-foreground mt-2 max-w-2xl line-clamp-2">
               {bio}
             </p>
+
+            {/* External links */}
+            {metadata && (metadata.officialWebsite || metadata.socialMedia?.twitter || metadata.wikipedia) && (
+              <div className="flex flex-wrap gap-3 mt-2">
+                {metadata.officialWebsite && (
+                  <a
+                    href={metadata.officialWebsite}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <Globe className="size-3.5" />
+                    Website
+                    <ExternalLink className="size-2.5" />
+                  </a>
+                )}
+                {metadata.socialMedia?.twitter && (
+                  <a
+                    href={`https://x.com/${metadata.socialMedia.twitter.replace('@', '')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <svg className="size-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    {metadata.socialMedia.twitter}
+                    <ExternalLink className="size-2.5" />
+                  </a>
+                )}
+                {metadata.wikipedia && (
+                  <a
+                    href={metadata.wikipedia}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <BookOpen className="size-3.5" />
+                    Wikipedia
+                    <ExternalLink className="size-2.5" />
+                  </a>
+                )}
+              </div>
+            )}
 
             {/* Compact stats row */}
             <div className="flex flex-wrap gap-2 mt-3">

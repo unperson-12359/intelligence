@@ -76,6 +76,7 @@ export default async function FigureLayout({
         bio={figure.bio}
         overallScore={figure.overallScore}
         imageUrl={figure.imageUrl}
+        metadata={figure.metadata}
         stats={stats}
       />
 
