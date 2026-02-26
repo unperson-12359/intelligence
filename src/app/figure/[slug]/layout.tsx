@@ -3,7 +3,7 @@ import { FigureHeader } from "@/components/figures/figure-header";
 import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
 import { getFigureBySlug, getFigureStats, mockFigures } from "@/lib/mock-data";
 import { generatePersonJsonLd } from "@/lib/structured-data";
-import { FigureTabs } from "@/components/figures/figure-tabs";
+import { SectionNav } from "@/components/figures/section-nav";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -80,8 +80,8 @@ export default async function FigureLayout({
         stats={stats}
       />
 
-      {/* Tab navigation */}
-      <FigureTabs slug={slug} />
+      {/* Section navigation */}
+      <SectionNav />
 
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         {children}

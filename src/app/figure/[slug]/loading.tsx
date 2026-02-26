@@ -29,23 +29,49 @@ export default function FigureLoading() {
         </div>
       </div>
 
-      {/* Tab skeleton */}
+      {/* Section nav skeleton */}
       <div className="border-b">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex gap-4 py-3">
             {Array.from({ length: 4 }).map((_, i) => (
-              <Skeleton key={i} className="h-5 w-20" />
+              <Skeleton key={i} className="h-5 w-24" />
             ))}
           </div>
         </div>
       </div>
 
-      {/* Content skeleton */}
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <Skeleton className="h-7 w-56 mb-6" />
-        <div className="space-y-4">
-          <SayVsDoSkeleton />
-          <SayVsDoSkeleton />
+      {/* Content skeleton — multiple sections */}
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 space-y-16">
+        {/* Accountability section */}
+        <div>
+          <Skeleton className="h-7 w-40 mb-2" />
+          <Skeleton className="h-4 w-72 mb-6" />
+          <div className="space-y-4">
+            <SayVsDoSkeleton />
+            <SayVsDoSkeleton />
+          </div>
+        </div>
+
+        {/* Statements section */}
+        <div>
+          <Skeleton className="h-7 w-36 mb-2" />
+          <Skeleton className="h-4 w-80 mb-6" />
+          <div className="space-y-3">
+            {Array.from({ length: 3 }).map((_, i) => (
+              <Skeleton key={i} className="h-32 rounded-lg" />
+            ))}
+          </div>
+        </div>
+
+        {/* Actions section */}
+        <div>
+          <Skeleton className="h-7 w-28 mb-2" />
+          <Skeleton className="h-4 w-72 mb-6" />
+          <div className="space-y-3">
+            {Array.from({ length: 2 }).map((_, i) => (
+              <Skeleton key={i} className="h-32 rounded-lg" />
+            ))}
+          </div>
         </div>
       </div>
     </div>
