@@ -114,7 +114,7 @@ export default async function FigureProfilePage({
             action={{ label: "Contribute", href: "/contribute" }}
           />
         ) : (
-          <RecordTimeline events={recordEvents} />
+          <RecordTimeline events={recordEvents} slug={slug} />
         )}
       </section>
 

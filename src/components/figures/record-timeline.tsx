@@ -6,11 +6,10 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { VerdictBadge } from '@/components/accountability/verdict-badge';
 import { SourceLink } from '@/components/evidence/source-link';
-import { EvidenceGallery } from '@/components/evidence/evidence-gallery';
-import { EvidenceIndicator } from '@/components/evidence/evidence-indicator';
 import { formatDate } from '@/lib/format';
 import { STATEMENT_TYPE_LABELS, ACTION_TYPE_LABELS } from '@/lib/constants';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
+import { ChevronRight } from 'lucide-react';
 import {
   Select,
   SelectContent,
@@ -18,6 +17,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { EventSheet } from './event-sheet';
 
 type Verdict = 'kept' | 'broken' | 'partial' | 'in_progress' | 'flip_flop' | 'context_needed';
 
@@ -61,6 +61,7 @@ export interface RecordEvent {
 
 interface RecordTimelineProps {
   events: RecordEvent[];
+  slug: string;
 }
 
 type FilterType = 'all' | 'statements' | 'actions' | 'verdicts';
@@ -71,10 +72,17 @@ const typeColors = {
   action: 'bg-amber-500',
 };
 
-function RecordCard({ event, index }: { event: RecordEvent; index: number }) {
+function RecordCard({
+  event,
+  index,
+  onClick,
+}: {
+  event: RecordEvent;
+  index: number;
+  onClick: () => void;
+}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-40px' });
-  const [expanded, setExpanded] = useState(false);
   const acc = event.accountability;
 
   const typeLabel = event.type === 'statement'
@@ -101,10 +109,13 @@ function RecordCard({ event, index }: { event: RecordEvent; index: number }) {
         )}
       />
 
-      <Card className={cn(
-        'transition-all hover:shadow-md',
-        acc && 'ring-1 ring-muted-foreground/10',
-      )}>
+      <Card
+        className={cn(
+          'transition-all hover:shadow-md cursor-pointer group',
+          acc && 'ring-1 ring-muted-foreground/10',
+        )}
+        onClick={onClick}
+      >
         <CardContent className="p-4">
           {/* Top row: badges */}
           <div className="flex items-center gap-2 mb-2 flex-wrap">
@@ -135,124 +146,36 @@ function RecordCard({ event, index }: { event: RecordEvent; index: number }) {
                 </span>
               </>
             )}
+            {/* Open indicator */}
+            <ChevronRight className="size-4 text-muted-foreground/40 group-hover:text-foreground/60 transition-colors ml-auto shrink-0" />
           </div>
 
-          {/* Title + content */}
-          <h4 className="font-semibold text-sm">{event.title}</h4>
-          <p className="text-sm text-muted-foreground mt-1">
+          {/* Title + truncated content */}
+          <h4 className="font-semibold text-sm group-hover:text-foreground transition-colors">
+            {event.title}
+          </h4>
+          <p className="text-sm text-muted-foreground mt-1 line-clamp-2">
             {event.content}
           </p>
 
-          {/* Context (statements) or Outcome (actions) */}
-          {event.context && (
-            <p className="text-xs text-muted-foreground mt-2">
-              {event.context}
-            </p>
-          )}
-          {event.outcome && (
-            <p className="text-xs text-muted-foreground mt-2">
-              <span className="font-medium">Outcome:</span> {event.outcome}
-            </p>
-          )}
-
           {/* Source */}
-          <div className="mt-2">
+          <div className="mt-2" onClick={(e) => e.stopPropagation()}>
             <SourceLink
               url={event.sourceUrl}
               name={event.sourceName}
               type={event.sourceType}
             />
           </div>
-
-          {/* Expandable verdict detail */}
-          {acc && (
-            <div className="mt-3 border-t pt-3">
-              <button
-                onClick={() => setExpanded(!expanded)}
-                className="text-xs font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
-              >
-                <span className={cn(
-                  'inline-block transition-transform',
-                  expanded && 'rotate-90',
-                )}>
-                  ▸
-                </span>
-                {expanded ? 'Hide' : 'View'} SAY vs DO detail
-              </button>
-
-              {expanded && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  className="mt-3 space-y-3"
-                >
-                  {/* What they DID (the linked action) */}
-                  {acc.actionTitle && (
-                    <div className="rounded-lg bg-muted/30 p-3">
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className="text-xs font-bold uppercase tracking-wider text-red-700 dark:text-red-400 bg-red-100 dark:bg-red-900/30 px-2 py-0.5 rounded">
-                          Did
-                        </span>
-                        {acc.actionDate && (
-                          <span className="text-xs text-muted-foreground">{formatDate(acc.actionDate)}</span>
-                        )}
-                      </div>
-                      <h5 className="font-semibold text-sm">{acc.actionTitle}</h5>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        {acc.actionDescription}
-                      </p>
-                      {acc.actionSourceUrl && acc.actionSourceName && (
-                        <div className="mt-1">
-                          <SourceLink url={acc.actionSourceUrl} name={acc.actionSourceName} />
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {/* Verdict summary */}
-                  <p className="text-sm text-muted-foreground">{acc.summary}</p>
-
-                  {/* Evidence */}
-                  {acc.evidence && (
-                    <details className="text-xs text-muted-foreground">
-                      <summary className="cursor-pointer hover:text-foreground transition-colors font-medium">
-                        View detailed evidence
-                      </summary>
-                      <p className="mt-1 pl-3 border-l-2 border-muted leading-relaxed">
-                        {acc.evidence}
-                      </p>
-                    </details>
-                  )}
-
-                  {acc.evidenceMedia && acc.evidenceMedia.length > 0 && (
-                    <>
-                      <EvidenceIndicator
-                        screenshotCount={acc.evidenceMedia.filter(e => e.type === 'screenshot').length}
-                        videoCount={acc.evidenceMedia.filter(e => e.type === 'video').length}
-                        audioCount={acc.evidenceMedia.filter(e => e.type === 'audio').length}
-                        documentCount={acc.evidenceMedia.filter(e => e.type === 'document').length}
-                      />
-                      <details className="text-xs">
-                        <summary className="cursor-pointer hover:text-foreground transition-colors font-medium text-muted-foreground">
-                          View preserved evidence
-                        </summary>
-                        <EvidenceGallery items={acc.evidenceMedia} className="mt-2" />
-                      </details>
-                    </>
-                  )}
-                </motion.div>
-              )}
-            </div>
-          )}
         </CardContent>
       </Card>
     </motion.div>
   );
 }
 
-export function RecordTimeline({ events }: RecordTimelineProps) {
+export function RecordTimeline({ events, slug }: RecordTimelineProps) {
   const [filter, setFilter] = useState<FilterType>('all');
   const [sortOrder, setSortOrder] = useState<SortOrder>('newest');
+  const [selectedEvent, setSelectedEvent] = useState<RecordEvent | null>(null);
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -342,11 +265,24 @@ export function RecordTimeline({ events }: RecordTimelineProps) {
 
           <div className="space-y-4">
             {filtered.map((event, i) => (
-              <RecordCard key={event.id} event={event} index={i} />
+              <RecordCard
+                key={event.id}
+                event={event}
+                index={i}
+                onClick={() => setSelectedEvent(event)}
+              />
             ))}
           </div>
         </div>
       )}
+
+      {/* Sheet preview */}
+      <EventSheet
+        event={selectedEvent}
+        slug={slug}
+        open={!!selectedEvent}
+        onClose={() => setSelectedEvent(null)}
+      />
     </div>
   );
 }
