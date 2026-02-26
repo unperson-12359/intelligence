@@ -97,7 +97,7 @@ export function FigureHeader({
               <ScoreBadge grade={overallScore} size="md" />
             </div>
 
-            <p className="text-sm text-muted-foreground mt-2 max-w-2xl line-clamp-2">
+            <p className="text-sm text-muted-foreground mt-2 max-w-2xl">
               {bio}
             </p>
 
