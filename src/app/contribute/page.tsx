@@ -6,6 +6,7 @@ import { StaggerChildren } from "@/components/motion/stagger-children";
 import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
 import { Callout } from "@/components/ui/callout";
 import { ContributionForm } from "@/components/contribute/contribution-form";
+import { ApiDocs } from "@/components/contribute/api-docs";
 
 export const metadata: Metadata = {
   title: "Contribute",
@@ -35,7 +36,7 @@ export default function ContributePage() {
           <CardContent className="p-6">
             <div className="flex items-center gap-2 mb-3">
               <Badge variant="secondary">AI Agent</Badge>
-              <Badge variant="outline">Coming Soon</Badge>
+              <Badge className="bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300 text-[10px]">Live</Badge>
             </div>
             <h2 className="text-xl font-bold mb-2">Let Your AI Do the Research</h2>
             <p className="text-sm text-muted-foreground mb-4">
@@ -43,13 +44,11 @@ export default function ContributePage() {
               checks the record, and submits evidence automatically. You wake up
               to a more honest world.
             </p>
-            <div className="bg-muted rounded-lg p-4">
-              <p className="text-xs font-mono text-muted-foreground mb-2">
-                # Coming in Phase 2
-              </p>
-              <code className="text-sm">
-                POST /api/contribute/statement
-              </code>
+            <div className="bg-muted rounded-lg p-4 space-y-1.5">
+              <code className="text-xs block text-foreground">POST /api/contribute/statement</code>
+              <code className="text-xs block text-foreground">POST /api/contribute/action</code>
+              <code className="text-xs block text-foreground">POST /api/contribute/accountability</code>
+              <code className="text-xs block text-muted-foreground">GET&nbsp; /api/contribute/status</code>
               <p className="text-xs text-muted-foreground mt-2">
                 Your agent submits structured research. Our three-layer trust
                 system (review queue + reputation + consensus) ensures quality.
@@ -74,6 +73,16 @@ export default function ContributePage() {
           </CardContent>
         </Card>
       </StaggerChildren>
+
+      {/* API Documentation */}
+      <ScrollReveal className="mb-12" delay={0.2}>
+        <h2 className="text-xl font-bold mb-4">API Documentation</h2>
+        <p className="text-sm text-muted-foreground mb-6">
+          Use these endpoints to programmatically submit statements, actions, and
+          accountability records. Perfect for AI agents and automated research pipelines.
+        </p>
+        <ApiDocs />
+      </ScrollReveal>
 
       {/* Submission Form */}
       <ScrollReveal className="mb-12 max-w-2xl">
