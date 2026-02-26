@@ -29,48 +29,46 @@ export default function FigureLoading() {
         </div>
       </div>
 
-      {/* Section nav skeleton */}
+      {/* Section nav skeleton — 2 items */}
       <div className="border-b">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex gap-4 py-3">
-            {Array.from({ length: 4 }).map((_, i) => (
-              <Skeleton key={i} className="h-5 w-24" />
-            ))}
+            <Skeleton className="h-5 w-24" />
+            <Skeleton className="h-5 w-24" />
           </div>
         </div>
       </div>
 
-      {/* Content skeleton — multiple sections */}
+      {/* Content skeleton — Record + Evidence */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 space-y-16">
-        {/* Accountability section */}
+        {/* Record section */}
         <div>
-          <Skeleton className="h-7 w-40 mb-2" />
-          <Skeleton className="h-4 w-72 mb-6" />
+          <Skeleton className="h-7 w-28 mb-2" />
+          <Skeleton className="h-4 w-80 mb-6" />
+          {/* Filter bar */}
+          <div className="flex gap-3 mb-6">
+            <Skeleton className="h-8 w-28 rounded-md" />
+            <Skeleton className="h-7 w-16 rounded-full" />
+            <Skeleton className="h-7 w-24 rounded-full" />
+            <Skeleton className="h-7 w-20 rounded-full" />
+            <Skeleton className="h-7 w-24 rounded-full" />
+          </div>
+          {/* Timeline cards */}
+          <div className="space-y-4 pl-10 relative">
+            <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-border/30" />
+            {Array.from({ length: 4 }).map((_, i) => (
+              <Skeleton key={i} className="h-36 rounded-lg" />
+            ))}
+          </div>
+        </div>
+
+        {/* Evidence section */}
+        <div>
+          <Skeleton className="h-7 w-32 mb-2" />
+          <Skeleton className="h-4 w-96 mb-6" />
           <div className="space-y-4">
             <SayVsDoSkeleton />
             <SayVsDoSkeleton />
-          </div>
-        </div>
-
-        {/* Statements section */}
-        <div>
-          <Skeleton className="h-7 w-36 mb-2" />
-          <Skeleton className="h-4 w-80 mb-6" />
-          <div className="space-y-3">
-            {Array.from({ length: 3 }).map((_, i) => (
-              <Skeleton key={i} className="h-32 rounded-lg" />
-            ))}
-          </div>
-        </div>
-
-        {/* Actions section */}
-        <div>
-          <Skeleton className="h-7 w-28 mb-2" />
-          <Skeleton className="h-4 w-72 mb-6" />
-          <div className="space-y-3">
-            {Array.from({ length: 2 }).map((_, i) => (
-              <Skeleton key={i} className="h-32 rounded-lg" />
-            ))}
           </div>
         </div>
       </div>

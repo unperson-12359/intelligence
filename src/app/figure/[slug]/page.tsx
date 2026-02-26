@@ -10,13 +10,12 @@ import {
   mockActions,
   mockStatements,
 } from "@/lib/mock-data";
-import { StatementFilters } from "@/components/figures/statement-filters";
-import { ActionFilters } from "@/components/figures/action-filters";
-import { Timeline } from "@/components/timeline/timeline";
+import { RecordTimeline } from "@/components/figures/record-timeline";
+import type { RecordEvent } from "@/components/figures/record-timeline";
 import { NextSteps } from "@/components/navigation/next-steps";
 import { RelatedFigures } from "@/components/figures/related-figures";
 import { RelatedBlogPosts } from "@/components/figures/related-blog-posts";
-import { FileSearch, MessageSquare, Activity } from "lucide-react";
+import { FileSearch } from "lucide-react";
 
 export default async function FigureProfilePage({
   params,
@@ -31,53 +30,106 @@ export default async function FigureProfilePage({
   const statements = getStatementsForFigure(figure.id);
   const actions = getActionsForFigure(figure.id);
 
-  // Build timeline events
-  const events = [
-    ...statements.map((s) => ({
-      id: s.id,
-      type: "statement" as const,
-      date: s.dateOccurred,
-      title: s.title,
-      description: s.content,
-      source: s.sourceName,
-      sourceUrl: s.sourceUrl,
-      sourceType: s.sourceType,
-    })),
-    ...actions.map((a) => ({
-      id: a.id,
-      type: "action" as const,
-      date: a.dateOccurred,
-      title: a.title,
-      description: a.description,
-      source: a.sourceName,
-      sourceUrl: a.sourceUrl,
-      sourceType: undefined,
-    })),
-    ...accountability.map((r) => ({
-      id: r.id,
-      type: "accountability" as const,
-      date: r.statement?.dateOccurred || "",
-      title: `${r.statement?.title || "Record"} — ${r.verdict.replace("_", " ")}`,
-      description: r.summary,
-      verdict: r.verdict,
-      score: r.score,
-    })),
-  ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  // Build lookup: which actions are already shown via an accountability record?
+  const actionsUsedInAccountability = new Set(
+    accountability.filter((r) => r.actionId).map((r) => r.actionId as string)
+  );
+
+  // Build lookup: statementId → accountability record
+  const accountabilityByStatement = new Map(
+    accountability.map((r) => [r.statementId, r])
+  );
+
+  // Build unified events list — each item appears exactly once
+  const recordEvents: RecordEvent[] = [
+    // All statements, with accountability info attached if it exists
+    ...statements.map((s) => {
+      const acc = accountabilityByStatement.get(s.id);
+      const linkedAction = acc?.actionId
+        ? mockActions.find((a) => a.id === acc.actionId)
+        : null;
+      const evidenceMedia = acc ? getEvidenceForRecord(acc.id) : undefined;
+
+      return {
+        id: s.id,
+        type: "statement" as const,
+        subType: s.type,
+        date: s.dateOccurred,
+        title: s.title,
+        content: s.content,
+        context: s.context,
+        sourceUrl: s.sourceUrl,
+        sourceName: s.sourceName,
+        sourceType: s.sourceType,
+        isVerified: s.isVerified,
+        ...(acc && {
+          accountability: {
+            id: acc.id,
+            verdict: acc.verdict,
+            score: acc.score,
+            summary: acc.summary,
+            evidence: acc.evidence,
+            actionTitle: linkedAction?.title,
+            actionDescription: linkedAction?.description,
+            actionDate: linkedAction?.dateOccurred,
+            actionSourceUrl: linkedAction?.sourceUrl,
+            actionSourceName: linkedAction?.sourceName,
+            evidenceMedia,
+          },
+        }),
+      };
+    }),
+
+    // Only standalone actions (those NOT already shown in a SAY vs DO pair)
+    ...actions
+      .filter((a) => !actionsUsedInAccountability.has(a.id))
+      .map((a) => ({
+        id: a.id,
+        type: "action" as const,
+        subType: a.type,
+        date: a.dateOccurred,
+        title: a.title,
+        content: a.description,
+        outcome: a.outcome,
+        sourceUrl: a.sourceUrl,
+        sourceName: a.sourceName,
+        isVerified: a.isVerified,
+      })),
+  ];
 
   return (
     <div className="space-y-16">
-      {/* Section 1: Accountability Records */}
-      <section id="accountability" className="scroll-mt-28">
-        <h2 className="text-xl font-bold mb-1">SAY vs DO</h2>
+      {/* Section 1: Unified Record */}
+      <section id="record" className="scroll-mt-28">
+        <h2 className="text-xl font-bold mb-1">Record</h2>
         <p className="text-sm text-muted-foreground mb-6">
-          Side-by-side comparison of what {figure.name} said vs what they did.
+          Everything {figure.name} has said and done, in chronological order.
+        </p>
+
+        {recordEvents.length === 0 ? (
+          <EmptyState
+            icon={FileSearch}
+            title="Nothing on the record yet"
+            description={`Be the first to document what ${figure.name} has said or done.`}
+            action={{ label: "Contribute", href: "/contribute" }}
+          />
+        ) : (
+          <RecordTimeline events={recordEvents} />
+        )}
+      </section>
+
+      {/* Section 2: Evidence (SAY vs DO deep-dives) */}
+      <section id="evidence" className="scroll-mt-28">
+        <h2 className="text-xl font-bold mb-1">Evidence</h2>
+        <p className="text-sm text-muted-foreground mb-6">
+          Side-by-side analysis comparing what {figure.name} promised vs what actually happened.
         </p>
 
         {accountability.length === 0 ? (
           <EmptyState
             icon={FileSearch}
-            title="No one's checked this leader yet"
-            description={`Be the first to compare ${figure.name}'s words to their actions. It takes 2 minutes.`}
+            title="No accountability records yet"
+            description={`Be the first to compare ${figure.name}'s words to their actions.`}
             action={{ label: "Submit Evidence", href: "/contribute" }}
           />
         ) : (
@@ -113,63 +165,6 @@ export default async function FigureProfilePage({
               );
             })}
           </div>
-        )}
-      </section>
-
-      {/* Section 2: Statements */}
-      <section id="statements" className="scroll-mt-28">
-        <h2 className="text-xl font-bold mb-1">Statements</h2>
-        <p className="text-sm text-muted-foreground mb-6">
-          What {figure.name} has said publicly — promises, claims, positions,
-          and predictions.
-        </p>
-
-        {statements.length === 0 ? (
-          <EmptyState
-            icon={MessageSquare}
-            title="No promises on record yet"
-            description="Know something they said publicly? Put it on the record so it can't be forgotten."
-            action={{ label: "Add a Statement", href: "/contribute" }}
-          />
-        ) : (
-          <StatementFilters statements={statements} />
-        )}
-      </section>
-
-      {/* Section 3: Actions */}
-      <section id="actions" className="scroll-mt-28">
-        <h2 className="text-xl font-bold mb-1">Actions</h2>
-        <p className="text-sm text-muted-foreground mb-6">
-          What {figure.name} has actually done — votes, executive orders,
-          business decisions, and more.
-        </p>
-
-        {actions.length === 0 ? (
-          <EmptyState
-            icon={Activity}
-            title="No actions documented yet"
-            description="Know something they actually did? Add it so their words can be measured against reality."
-            action={{ label: "Report an Action", href: "/contribute" }}
-          />
-        ) : (
-          <ActionFilters actions={actions} />
-        )}
-      </section>
-
-      {/* Section 4: Timeline */}
-      <section id="timeline" className="scroll-mt-28">
-        <h2 className="text-xl font-bold mb-1">Timeline</h2>
-        <p className="text-sm text-muted-foreground mb-6">
-          A chronological view of {figure.name}&apos;s statements, actions, and
-          accountability records.
-        </p>
-
-        {events.length === 0 ? (
-          <div className="text-center py-12 border rounded-lg bg-muted/20">
-            <p className="text-muted-foreground">No events recorded yet.</p>
-          </div>
-        ) : (
-          <Timeline events={events} />
         )}
       </section>
 

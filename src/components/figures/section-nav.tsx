@@ -3,17 +3,15 @@
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import { Scale, MessageSquare, Activity, Clock } from 'lucide-react';
+import { Clock, Scale } from 'lucide-react';
 
 const sections = [
-  { id: 'accountability', label: 'SAY vs DO', icon: Scale },
-  { id: 'statements', label: 'Statements', icon: MessageSquare },
-  { id: 'actions', label: 'Actions', icon: Activity },
-  { id: 'timeline', label: 'Timeline', icon: Clock },
+  { id: 'record', label: 'Record', icon: Clock },
+  { id: 'evidence', label: 'Evidence', icon: Scale },
 ];
 
 export function SectionNav() {
-  const [activeId, setActiveId] = useState('accountability');
+  const [activeId, setActiveId] = useState('record');
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
