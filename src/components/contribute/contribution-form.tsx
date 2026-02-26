@@ -5,16 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Badge } from "@/components/ui/badge";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { STATEMENT_TYPE_LABELS } from "@/lib/constants";
-import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Send, CheckCircle, AlertCircle, Loader2, Sparkles } from "lucide-react";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -23,12 +14,8 @@ export function ContributionForm() {
   const [errorMessage, setErrorMessage] = useState("");
 
   const [figureName, setFigureName] = useState("");
-  const [statementType, setStatementType] = useState("");
-  const [statementContent, setStatementContent] = useState("");
+  const [whatHappened, setWhatHappened] = useState("");
   const [sourceUrl, setSourceUrl] = useState("");
-  const [dateOccurred, setDateOccurred] = useState("");
-  const [context, setContext] = useState("");
-  const [submitterEmail, setSubmitterEmail] = useState("");
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -41,12 +28,8 @@ export function ContributionForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           figureName,
-          statementType,
-          statementContent,
-          sourceUrl,
-          dateOccurred,
-          context,
-          submitterEmail: submitterEmail || undefined,
+          whatHappened,
+          sourceUrl: sourceUrl || undefined,
         }),
       });
 
@@ -56,14 +39,9 @@ export function ContributionForm() {
       }
 
       setStatus("success");
-      // Reset form
       setFigureName("");
-      setStatementType("");
-      setStatementContent("");
+      setWhatHappened("");
       setSourceUrl("");
-      setDateOccurred("");
-      setContext("");
-      setSubmitterEmail("");
     } catch (err) {
       setStatus("error");
       setErrorMessage(
@@ -76,10 +54,10 @@ export function ContributionForm() {
     return (
       <div className="rounded-lg border bg-green-50 dark:bg-green-950/20 p-8 text-center">
         <CheckCircle className="size-12 text-green-600 mx-auto mb-4" />
-        <h3 className="text-lg font-bold mb-2">Submitted Successfully</h3>
+        <h3 className="text-lg font-bold mb-2">Submitted</h3>
         <p className="text-sm text-muted-foreground mb-4">
-          Your contribution has been added to the review queue. Once verified by
-          our team, it will appear on the public record.
+          Your tip has been added to the review queue. Our AI will research the
+          details and verify the claim.
         </p>
         <Button variant="outline" onClick={() => setStatus("idle")}>
           Submit Another
@@ -89,7 +67,7 @@ export function ContributionForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-5">
       {status === "error" && (
         <div className="rounded-lg border border-red-200 bg-red-50 dark:bg-red-950/20 p-4 flex items-start gap-3">
           <AlertCircle className="size-5 text-red-600 shrink-0 mt-0.5" />
@@ -104,64 +82,39 @@ export function ContributionForm() {
         </div>
       )}
 
-      {/* Figure Name */}
-      <div className="space-y-2">
+      {/* Who */}
+      <div className="space-y-1.5">
         <Label htmlFor="figureName">
-          Public Figure <span className="text-red-500">*</span>
+          Who? <span className="text-red-500">*</span>
         </Label>
         <Input
           id="figureName"
-          placeholder="e.g. Donald Trump, Elon Musk, etc."
+          placeholder="e.g. Donald Trump, Elon Musk, any public figure..."
           value={figureName}
           onChange={(e) => setFigureName(e.target.value)}
           required
         />
-        <p className="text-xs text-muted-foreground">
-          The name of the public figure who made this statement
-        </p>
       </div>
 
-      {/* Statement Type */}
-      <div className="space-y-2">
-        <Label htmlFor="statementType">
-          Type <span className="text-red-500">*</span>
-        </Label>
-        <Select value={statementType} onValueChange={setStatementType} required>
-          <SelectTrigger>
-            <SelectValue placeholder="What kind of statement?" />
-          </SelectTrigger>
-          <SelectContent>
-            {Object.entries(STATEMENT_TYPE_LABELS).map(([value, label]) => (
-              <SelectItem key={value} value={value}>
-                {label}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-      </div>
-
-      {/* Statement Content */}
-      <div className="space-y-2">
-        <Label htmlFor="statementContent">
-          What did they say? <span className="text-red-500">*</span>
+      {/* What */}
+      <div className="space-y-1.5">
+        <Label htmlFor="whatHappened">
+          What did they say or do? <span className="text-red-500">*</span>
         </Label>
         <Textarea
-          id="statementContent"
-          placeholder='e.g. "I will build a wall and Mexico will pay for it"'
-          rows={3}
-          value={statementContent}
-          onChange={(e) => setStatementContent(e.target.value)}
+          id="whatHappened"
+          placeholder='e.g. "Promised to cancel student debt but only forgave a fraction" or "Said they&#39;d never raise taxes, then voted for a tax increase"'
+          rows={4}
+          value={whatHappened}
+          onChange={(e) => setWhatHappened(e.target.value)}
           required
         />
-        <p className="text-xs text-muted-foreground">
-          Quote or paraphrase the statement as accurately as possible
-        </p>
       </div>
 
-      {/* Source URL */}
-      <div className="space-y-2">
-        <Label htmlFor="sourceUrl">
-          Source URL <span className="text-red-500">*</span>
+      {/* Source (optional) */}
+      <div className="space-y-1.5">
+        <Label htmlFor="sourceUrl" className="text-muted-foreground">
+          Got a link? <span className="text-xs">(optional)</span>
         </Label>
         <Input
           id="sourceUrl"
@@ -169,59 +122,7 @@ export function ContributionForm() {
           placeholder="https://..."
           value={sourceUrl}
           onChange={(e) => setSourceUrl(e.target.value)}
-          required
         />
-        <p className="text-xs text-muted-foreground">
-          Link to where this statement was made (news article, video, tweet,
-          etc.)
-        </p>
-      </div>
-
-      {/* Date */}
-      <div className="space-y-2">
-        <Label htmlFor="dateOccurred">
-          When did they say it? <span className="text-red-500">*</span>
-        </Label>
-        <Input
-          id="dateOccurred"
-          type="date"
-          value={dateOccurred}
-          onChange={(e) => setDateOccurred(e.target.value)}
-          required
-        />
-      </div>
-
-      {/* Context */}
-      <div className="space-y-2">
-        <Label htmlFor="context">Additional Context</Label>
-        <Textarea
-          id="context"
-          placeholder="Any relevant background information, what they actually did vs. what they promised, etc."
-          rows={3}
-          value={context}
-          onChange={(e) => setContext(e.target.value)}
-        />
-      </div>
-
-      {/* Email (optional) */}
-      <div className="space-y-2">
-        <Label htmlFor="submitterEmail">
-          Your Email{" "}
-          <Badge variant="secondary" className="text-[10px] ml-1">
-            Optional
-          </Badge>
-        </Label>
-        <Input
-          id="submitterEmail"
-          type="email"
-          placeholder="you@example.com"
-          value={submitterEmail}
-          onChange={(e) => setSubmitterEmail(e.target.value)}
-        />
-        <p className="text-xs text-muted-foreground">
-          Only used to notify you when your contribution goes live. Never shared
-          or sold.
-        </p>
       </div>
 
       <Button
@@ -238,15 +139,19 @@ export function ContributionForm() {
         ) : (
           <>
             <Send className="size-4 mr-2" />
-            Submit to Review Queue
+            Submit Tip
           </>
         )}
       </Button>
 
-      <p className="text-xs text-center text-muted-foreground">
-        All submissions go through our three-layer verification process before
-        appearing on the public record.
-      </p>
+      <div className="flex items-start gap-2 rounded-lg bg-muted/50 p-3">
+        <Sparkles className="size-4 text-amber-500 shrink-0 mt-0.5" />
+        <p className="text-xs text-muted-foreground">
+          Just describe what happened in plain language. Our AI will research the
+          details, find sources, classify the statement type, and build the full
+          accountability record automatically.
+        </p>
+      </div>
     </form>
   );
 }

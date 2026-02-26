@@ -1,15 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 
-// In-memory store for contributions until database is connected
-const pendingContributions: Array<{
+// In-memory store for human tips until database is connected
+const pendingTips: Array<{
   id: string;
   figureName: string;
-  statementType: string;
-  statementContent: string;
-  sourceUrl: string;
-  dateOccurred: string;
-  context?: string;
-  submitterEmail?: string;
+  whatHappened: string;
+  sourceUrl?: string;
   submittedAt: string;
   status: "pending";
 }> = [];
@@ -18,35 +14,20 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
 
-    // Validate required fields
-    const { figureName, statementType, statementContent, sourceUrl, dateOccurred, context, submitterEmail } = body;
+    const { figureName, whatHappened, sourceUrl } = body;
 
     const errors: string[] = [];
     if (!figureName || typeof figureName !== "string" || figureName.trim().length < 2) {
       errors.push("Figure name is required (at least 2 characters)");
     }
-    if (!statementType || typeof statementType !== "string") {
-      errors.push("Statement type is required");
+    if (!whatHappened || typeof whatHappened !== "string" || whatHappened.trim().length < 10) {
+      errors.push("Please describe what happened (at least 10 characters)");
     }
-    if (!statementContent || typeof statementContent !== "string" || statementContent.trim().length < 10) {
-      errors.push("Statement content is required (at least 10 characters)");
-    }
-    if (!sourceUrl || typeof sourceUrl !== "string") {
-      errors.push("Source URL is required");
-    } else {
+    if (sourceUrl && typeof sourceUrl === "string" && sourceUrl.trim()) {
       try {
         new URL(sourceUrl);
       } catch {
         errors.push("Source URL must be a valid URL");
-      }
-    }
-    if (!dateOccurred || typeof dateOccurred !== "string") {
-      errors.push("Date is required");
-    }
-    if (submitterEmail && typeof submitterEmail === "string") {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(submitterEmail)) {
-        errors.push("Email must be valid if provided");
       }
     }
 
@@ -57,27 +38,22 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create contribution record
-    const contribution = {
-      id: `contrib-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    const tip = {
+      id: `tip-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
       figureName: figureName.trim(),
-      statementType,
-      statementContent: statementContent.trim(),
-      sourceUrl: sourceUrl.trim(),
-      dateOccurred,
-      context: context?.trim() || undefined,
-      submitterEmail: submitterEmail?.trim() || undefined,
+      whatHappened: whatHappened.trim(),
+      sourceUrl: sourceUrl?.trim() || undefined,
       submittedAt: new Date().toISOString(),
       status: "pending" as const,
     };
 
-    pendingContributions.push(contribution);
+    pendingTips.push(tip);
 
     return NextResponse.json(
       {
         success: true,
-        message: "Your contribution has been submitted and is pending review.",
-        contributionId: contribution.id,
+        message: "Your tip has been submitted. AI will research and verify it.",
+        contributionId: tip.id,
       },
       { status: 201 }
     );
@@ -91,7 +67,7 @@ export async function POST(request: NextRequest) {
 
 export async function GET() {
   return NextResponse.json({
-    totalPending: pendingContributions.length,
-    message: "Contribution review queue. Full management API coming soon.",
+    totalPending: pendingTips.length,
+    message: "Contribution review queue.",
   });
 }
