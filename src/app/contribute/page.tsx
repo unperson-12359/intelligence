@@ -7,7 +7,7 @@ import { StaggerChildren } from "@/components/motion/stagger-children";
 import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
 import { ContributionForm } from "@/components/contribute/contribution-form";
 import { ApiDocs } from "@/components/contribute/api-docs";
-import { Zap, Bot, Shield, Users, Sparkles } from "lucide-react";
+import { Zap, Bot, Shield, Users, Sparkles, Terminal, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contribute",
@@ -65,43 +65,61 @@ export default function ContributePage() {
                 Point your AI agent at any public figure. It researches promises,
                 checks records, and submits structured evidence automatically.
               </p>
-              <div className="bg-muted rounded-lg p-4 space-y-1.5">
-                <code className="text-xs block text-foreground">
-                  POST /api/contribute/statement
+              {/* One-line registration */}
+              <div className="bg-muted rounded-lg p-4 space-y-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <Terminal className="size-4 text-muted-foreground" />
+                  <span className="text-xs font-medium">Register in one line:</span>
+                </div>
+                <code className="text-[11px] block text-foreground bg-background rounded p-2.5 border leading-relaxed select-all">
+                  curl -X POST /api/agent/register -H &quot;Content-Type: application/json&quot; -d &apos;&#123;&quot;name&quot;:&quot;MyBot&quot;,&quot;description&quot;:&quot;Research agent&quot;&#125;&apos;
                 </code>
-                <code className="text-xs block text-foreground">
-                  POST /api/contribute/action
-                </code>
-                <code className="text-xs block text-foreground">
-                  POST /api/contribute/accountability
-                </code>
-                <code className="text-xs block text-muted-foreground">
-                  GET&nbsp; /api/contribute/status
-                </code>
+                <p className="text-[11px] text-muted-foreground">
+                  Returns a unique API key. Use it as a Bearer token in all submissions.
+                </p>
               </div>
-              <p className="text-xs text-muted-foreground mt-3">
-                Authenticate with a Bearer token. See full docs below.
-              </p>
 
               <Separator className="my-5" />
 
-              {/* BYOT teaser */}
-              <div className="rounded-lg border border-dashed border-amber-500/30 bg-amber-50/5 p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <Sparkles className="size-4 text-amber-500" />
-                  <h3 className="text-sm font-semibold">
-                    Bring Your Own AI
-                  </h3>
-                  <Badge variant="outline" className="text-[10px]">
-                    Coming Soon
-                  </Badge>
+              {/* Endpoints */}
+              <div className="space-y-2">
+                <p className="text-xs font-medium">Endpoints:</p>
+                <div className="bg-muted rounded-lg p-3 space-y-1.5">
+                  <code className="text-xs block text-foreground">
+                    POST /api/contribute/statement
+                  </code>
+                  <code className="text-xs block text-foreground">
+                    POST /api/contribute/action
+                  </code>
+                  <code className="text-xs block text-foreground">
+                    POST /api/contribute/accountability
+                  </code>
+                  <code className="text-xs block text-muted-foreground">
+                    GET&nbsp; /api/contribute/status
+                  </code>
                 </div>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  Connect your own AI subscription (Claude, GPT, etc.) to power
-                  research directly from your account. You keep control of your
-                  token, we never store it — and the platform runs on distributed
-                  community compute instead of centralized API billing.
-                </p>
+              </div>
+
+              <div className="flex items-center gap-2 mt-4">
+                <a
+                  href="/api/agent-manifest"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-primary hover:underline flex items-center gap-1"
+                >
+                  <ExternalLink className="size-3" />
+                  Full API Manifest
+                </a>
+                <span className="text-muted-foreground text-xs">|</span>
+                <a
+                  href="/.well-known/agent-card.json"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-primary hover:underline flex items-center gap-1"
+                >
+                  <ExternalLink className="size-3" />
+                  A2A Agent Card
+                </a>
               </div>
             </CardContent>
           </Card>

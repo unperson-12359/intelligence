@@ -5,7 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Send, CheckCircle, AlertCircle, Loader2, Sparkles } from "lucide-react";
+import {
+  Send,
+  CheckCircle,
+  AlertCircle,
+  Loader2,
+  Sparkles,
+} from "lucide-react";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -17,7 +23,7 @@ export function ContributionForm() {
   const [whatHappened, setWhatHappened] = useState("");
   const [sourceUrl, setSourceUrl] = useState("");
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function handleSubmitTip(e: React.FormEvent) {
     e.preventDefault();
     setStatus("submitting");
     setErrorMessage("");
@@ -66,8 +72,10 @@ export function ContributionForm() {
     );
   }
 
+  const isWorking = status === "submitting";
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmitTip} className="space-y-5">
       {status === "error" && (
         <div className="rounded-lg border border-red-200 bg-red-50 dark:bg-red-950/20 p-4 flex items-start gap-3">
           <AlertCircle className="size-5 text-red-600 shrink-0 mt-0.5" />
@@ -93,6 +101,7 @@ export function ContributionForm() {
           value={figureName}
           onChange={(e) => setFigureName(e.target.value)}
           required
+          disabled={isWorking}
         />
       </div>
 
@@ -108,6 +117,7 @@ export function ContributionForm() {
           value={whatHappened}
           onChange={(e) => setWhatHappened(e.target.value)}
           required
+          disabled={isWorking}
         />
       </div>
 
@@ -122,14 +132,16 @@ export function ContributionForm() {
           placeholder="https://..."
           value={sourceUrl}
           onChange={(e) => setSourceUrl(e.target.value)}
+          disabled={isWorking}
         />
       </div>
 
+      {/* Submit */}
       <Button
         type="submit"
         size="lg"
         className="w-full"
-        disabled={status === "submitting"}
+        disabled={isWorking}
       >
         {status === "submitting" ? (
           <>
@@ -147,9 +159,9 @@ export function ContributionForm() {
       <div className="flex items-start gap-2 rounded-lg bg-muted/50 p-3">
         <Sparkles className="size-4 text-amber-500 shrink-0 mt-0.5" />
         <p className="text-xs text-muted-foreground">
-          Just describe what happened in plain language. Our AI will research the
-          details, find sources, classify the statement type, and build the full
-          accountability record automatically.
+          Just describe what happened in plain language. Our AI will research
+          the details, find sources, classify the statement type, and build the
+          full accountability record automatically.
         </p>
       </div>
     </form>
