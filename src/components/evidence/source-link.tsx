@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, FileText, Video, Mic, Building2, Newspaper, Camera } from "lucide-react";
+import { ExternalLink, FileText, Video, Mic, Building2, Newspaper, Camera, BookOpen } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const sourceTypeConfig: Record<string, { label: string; icon: typeof FileText; className: string }> = {
@@ -27,6 +27,11 @@ const sourceTypeConfig: Record<string, { label: string; icon: typeof FileText; c
     label: "Video",
     icon: Video,
     className: "bg-red-100 text-red-800 border-red-200 dark:bg-red-900/30 dark:text-red-400 dark:border-red-800",
+  },
+  reference: {
+    label: "Reference",
+    icon: BookOpen,
+    className: "bg-slate-100 text-slate-800 border-slate-200 dark:bg-slate-900/30 dark:text-slate-400 dark:border-slate-800",
   },
 };
 

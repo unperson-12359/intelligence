@@ -89,7 +89,7 @@ export function EventSheet({ event, slug, open, onClose }: EventSheetProps) {
           </SheetDescription>
         </SheetHeader>
 
-        <ScrollArea className="flex-1 px-6 pb-6">
+        <ScrollArea className="flex-1 min-h-0 overflow-hidden px-6 pb-6">
           <div className="space-y-5 pt-4">
             {/* Content */}
             <div>
