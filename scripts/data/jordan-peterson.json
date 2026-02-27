@@ -1,0 +1,80 @@
+{
+  "actions": [
+    {
+      "id": "act-090",
+      "figureId": "fig-043",
+      "type": "business_decision",
+      "title": "Signed exclusive content deal with The Daily Wire",
+      "description": "In January 2022, Peterson joined The Daily Wire as an exclusive podcast host and content creator. He launched the Jordan Peterson Podcast under the DailyWire+ subscription platform, transitioning from an independent academic and YouTube creator to a role within an explicitly conservative media company.",
+      "outcome": "Peterson became one of The Daily Wire's highest-profile hosts, with much of his new content placed behind the DailyWire+ paywall. The move marked a shift from his earlier positioning as a nonpartisan academic concerned with free expression.",
+      "dateOccurred": "2022-01-01",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jordan_Peterson",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.92
+    },
+    {
+      "id": "act-091",
+      "figureId": "fig-043",
+      "type": "other",
+      "title": "Fought Ontario College of Psychologists disciplinary order in court",
+      "description": "In 2023, the College of Psychologists of Ontario ordered Peterson to undergo a mandatory social media coaching program following complaints about his public statements on social media. Peterson refused to comply and challenged the order in Ontario Divisional Court. In August 2023, the court upheld the College's authority to impose the remedial program.",
+      "outcome": "The Ontario Divisional Court ruled against Peterson in August 2023, upholding the College's order. Peterson publicly vowed to continue fighting the ruling and appealed. He has stated he would rather surrender his license than comply.",
+      "dateOccurred": "2023-08-23",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jordan_Peterson",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.93
+    }
+  ],
+  "accountability": [
+    {
+      "id": "acc-090",
+      "figureId": "fig-043",
+      "statementId": "stmt-128",
+      "actionId": "act-090",
+      "verdict": "context_needed",
+      "score": 0,
+      "summary": "Peterson rose to prominence opposing Bill C-16 on free speech grounds, presenting himself as a principled academic. His subsequent move to The Daily Wire, an explicitly conservative media company, raises questions about whether his advocacy was driven by principle or commercial opportunity. The transition from independent university professor to partisan media host complicates the framing of his original C-16 stance.",
+      "evidence": "Peterson opposed Bill C-16 in 2016 as a University of Toronto professor, framing it as a free speech issue. By 2022, he had left academia and signed an exclusive deal with The Daily Wire. Critics argue this trajectory suggests his free speech advocacy served as a brand-building exercise rather than a principled academic stand.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.88
+    },
+    {
+      "id": "acc-091",
+      "figureId": "fig-043",
+      "statementId": "stmt-130",
+      "actionId": "act-091",
+      "verdict": "kept",
+      "score": 65,
+      "summary": "Peterson stated he would not delete his tweet about Elliot Page and would accept whatever consequences followed. When the College of Psychologists of Ontario ordered him to undergo remedial social media training as a result, he refused to comply, challenged the order in court, and publicly stated he would surrender his psychology license rather than submit. His actions matched his stated position.",
+      "evidence": "After tweeting about Elliot Page in June 2022 and having his Twitter account suspended, Peterson said he would not delete the tweet. The College of Psychologists of Ontario subsequently ordered a coaching program. Peterson challenged the order through the Ontario Divisional Court. When the court upheld the College's decision in August 2023, Peterson indicated he would rather lose his license than comply.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.91
+    }
+  ],
+  "evidenceMedia": [
+    {
+      "id": "em-61",
+      "accountabilityRecordId": "acc-090",
+      "type": "screenshot",
+      "url": "/images/evidence/peterson-dailywire-exclusive-deal.svg",
+      "thumbnailUrl": "/images/evidence/peterson-dailywire-exclusive-deal.svg",
+      "caption": "Peterson's transition from independent academic to exclusive Daily Wire host in January 2022",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jordan_Peterson",
+      "capturedAt": "2022-01-01"
+    },
+    {
+      "id": "em-62",
+      "accountabilityRecordId": "acc-091",
+      "type": "screenshot",
+      "url": "/images/evidence/peterson-ontario-college-disciplinary.svg",
+      "thumbnailUrl": "/images/evidence/peterson-ontario-college-disciplinary.svg",
+      "caption": "Ontario College of Psychologists disciplinary order upheld by court in August 2023",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jordan_Peterson",
+      "capturedAt": "2023-08-23"
+    }
+  ]
+}

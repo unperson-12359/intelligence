@@ -1,0 +1,80 @@
+{
+  "actions": [
+    {
+      "id": "act-086",
+      "figureId": "fig-044",
+      "type": "other",
+      "title": "Walked Out of BBC Interview with Andrew Neil",
+      "description": "During a May 2019 BBC Politics Live interview, host Andrew Neil pressed Shapiro on past controversial statements including tweets about Arabs and his rhetoric around abortion. Shapiro grew visibly agitated, accused Neil of being a leftist (Neil is a well-known British conservative), and abruptly removed his microphone and ended the interview. The clip went viral with millions of views.",
+      "outcome": "Shapiro later acknowledged on Twitter that he had been 'destroyed' by Neil and that he had reacted emotionally rather than engaging with the substance of the questions. The incident became one of the most-cited examples of Shapiro failing to live up to his own 'facts don't care about your feelings' brand.",
+      "dateOccurred": "2019-05-10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ben_Shapiro",
+      "sourceName": "BBC Politics Live / Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.97
+    },
+    {
+      "id": "act-087",
+      "figureId": "fig-044",
+      "type": "business_decision",
+      "title": "Fired Candace Owens from Daily Wire amid Speech Dispute",
+      "description": "In March 2024, The Daily Wire (co-founded by Shapiro) parted ways with host Candace Owens following months of public disagreements over Israel-Palestine commentary. Owens alleged that the company attempted to impose non-disparagement clauses that would restrict her speech after departure. The firing came after Owens made comments Shapiro publicly disagreed with, and reports indicated Daily Wire pursued legal measures to limit what Owens could say about the split.",
+      "outcome": "Owens left and publicly accused Daily Wire of attempting to silence her through legal threats. The incident drew widespread criticism from figures across the political spectrum who noted the apparent contradiction between Shapiro's anti-censorship advocacy and his company's use of corporate and legal power to restrict a departing employee's speech.",
+      "dateOccurred": "2024-03-22",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Candace_Owens",
+      "sourceName": "Multiple news outlets / Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.92
+    }
+  ],
+  "accountability": [
+    {
+      "id": "acc-086",
+      "figureId": "fig-044",
+      "statementId": "stmt-131",
+      "actionId": "act-086",
+      "verdict": "broken",
+      "score": 25,
+      "summary": "Shapiro's defining brand is 'facts don't care about your feelings,' yet in the BBC interview with Andrew Neil he reacted with visible emotion, made an ad hominem attack by calling the conservative host a leftist, and walked out rather than engaging with factual challenges to his past statements.",
+      "evidence": "The full BBC interview is publicly available. Shapiro accused Andrew Neil — a veteran conservative broadcaster — of being a leftist, demonstrating a failure to engage with facts. He later admitted on Twitter he was 'destroyed' and had not performed well, effectively conceding the emotional reaction contradicted his brand.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.95
+    },
+    {
+      "id": "acc-087",
+      "figureId": "fig-044",
+      "statementId": "stmt-132",
+      "actionId": "act-087",
+      "verdict": "flip_flop",
+      "score": 20,
+      "summary": "Shapiro testified before Congress that government and companies should not be pressured to censor speech, yet his own company The Daily Wire fired Candace Owens over her speech and reportedly pursued legal gag orders to restrict what she could say after leaving.",
+      "evidence": "Shapiro's July 2024 Congressional testimony argued against corporate speech suppression. Yet months earlier, his company fired Owens following public disagreements over her Israel-Palestine commentary and pursued non-disparagement agreements. Multiple outlets reported Daily Wire's legal attempts to restrict Owens' post-departure speech, directly contradicting Shapiro's stated anti-censorship position.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.90
+    }
+  ],
+  "evidenceMedia": [
+    {
+      "id": "em-57",
+      "accountabilityRecordId": "acc-086",
+      "type": "screenshot",
+      "url": "/images/evidence/shapiro-bbc-interview-walkout.svg",
+      "thumbnailUrl": "/images/evidence/shapiro-bbc-interview-walkout.svg",
+      "caption": "Timeline of Ben Shapiro's May 2019 BBC interview walkout with Andrew Neil, showing his emotional reaction and subsequent Twitter admission",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ben_Shapiro",
+      "capturedAt": "2019-05-10"
+    },
+    {
+      "id": "em-58",
+      "accountabilityRecordId": "acc-087",
+      "type": "screenshot",
+      "url": "/images/evidence/shapiro-candace-owens-firing-gag-order.svg",
+      "thumbnailUrl": "/images/evidence/shapiro-candace-owens-firing-gag-order.svg",
+      "caption": "Summary of Candace Owens firing from Daily Wire and reported gag order attempts, contradicting Shapiro's anti-censorship advocacy",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Candace_Owens",
+      "capturedAt": "2024-03-22"
+    }
+  ]
+}

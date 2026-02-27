@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a044e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#831843;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)" rx="12" />
+  <rect x="24" y="16" width="752" height="52" rx="8" fill="#be185d" opacity="0.6" />
+  <text x="400" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#fce7f3" letter-spacing="3">EVIDENCE</text>
+  <text x="400" y="120" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#ffffff">Taylor Swift Re-Records Albums to Reclaim Masters</text>
+  <line x1="200" y1="140" x2="600" y2="140" stroke="#ec4899" stroke-width="2" />
+  <text x="400" y="175" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#fce7f3">Jun 2019: Scooter Braun acquires Big Machine, owns Swift's masters</text>
+  <text x="400" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#fce7f3">Nov 2020: Braun sells masters to Shamrock Holdings for $300M+</text>
+  <text x="400" y="235" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#86efac">Apr 2021: Fearless (Taylor's Version) released — first re-recording</text>
+  <text x="400" y="265" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#86efac">Nov 2021 – Oct 2024: Red, Speak Now, 1989 (TV) all re-recorded</text>
+  <text x="400" y="295" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#86efac">4 of 6 re-recordings complete; originals devalued on streaming</text>
+  <text x="400" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#f9a8d4">Source: Wikipedia — Taylor Swift masters controversy</text>
+  <text x="400" y="360" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#ec4899">Date: April 2021 – Present</text>
+  <rect x="24" y="400" width="752" height="36" rx="8" fill="#be185d" opacity="0.4" />
+  <text x="400" y="424" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#fce7f3" letter-spacing="2">INDELIBLE</text>
+</svg>

@@ -1,0 +1,80 @@
+{
+  "actions": [
+    {
+      "id": "act-094",
+      "figureId": "fig-045",
+      "type": "business_decision",
+      "title": "Invested $43M in Weight Watchers Then Departed After Embracing GLP-1 Drugs",
+      "description": "In October 2015, Winfrey purchased a 10% stake in Weight Watchers International for approximately $43 million and joined the board of directors. She became the company's most prominent spokesperson, appearing in commercials and linking her personal weight loss journey to the brand. The stock initially surged over 100% on news of her involvement. However, in December 2023 Winfrey disclosed she had been using GLP-1 weight loss medications (such as Ozempic/Wegovy class drugs), fundamentally shifting her public stance from behavioral dieting to pharmaceutical intervention. In September 2024, she departed the WeightWatchers board entirely and donated her remaining shares to the National Museum of African American History and Culture.",
+      "outcome": "Winfrey profited significantly from the WW investment during her tenure as stock prices fluctuated with her involvement. Her pivot to endorsing weight loss medications over traditional dieting programs — the core product she had promoted for nearly a decade — represented a substantial reversal. WW's stock had declined dramatically by the time of her departure, trading at a fraction of its 2018 peak. Her May 2024 public acknowledgment that she had been a 'steadfast participant in diet culture' for 25 years further distanced her from the brand she had championed.",
+      "dateOccurred": "2015-10-19",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Oprah_Winfrey",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.94
+    },
+    {
+      "id": "act-095",
+      "figureId": "fig-045",
+      "type": "donation",
+      "title": "Invested Over $140M in Leadership Academy for Girls in South Africa",
+      "description": "Winfrey founded the Oprah Winfrey Leadership Academy for Girls (OWLAG) in Henley on Klip, Gauteng, South Africa, which opened in January 2007. She personally invested over $140 million in the boarding school for academically gifted girls from disadvantaged backgrounds. The school enrolled approximately 300 girls in grades 8-12, providing world-class education, housing, and resources. Winfrey described the school as her greatest achievement and most meaningful legacy, directly fulfilling her longstanding public commitment that education is the most powerful tool for changing lives.",
+      "outcome": "The Academy has produced multiple graduating classes, with alumni attending universities around the world including Stanford, Yale, Spelman, and other leading institutions. Despite an abuse scandal in 2007 involving a dormitory matron (who was later acquitted of most charges in 2012), Winfrey maintained her commitment and increased oversight. By 2024, the school had operated for 17 years and graduated hundreds of young women who have gone on to careers in medicine, law, engineering, and public service. Independent assessments have noted the school's high graduation and university placement rates.",
+      "dateOccurred": "2007-01-02",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Oprah_Winfrey_Leadership_Academy_for_Girls",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.95
+    }
+  ],
+  "accountability": [
+    {
+      "id": "acc-094",
+      "figureId": "fig-045",
+      "statementId": "stmt-135",
+      "actionId": "act-094",
+      "verdict": "flip_flop",
+      "score": -40,
+      "summary": "Winfrey acknowledged being a major contributor to diet culture for 25 years, yet for nearly a decade she was the face of Weight Watchers, personally investing $43 million and profiting from the very diet programs she later disavowed. Her 2023-2024 pivot to endorsing GLP-1 weight loss medications directly undercut the behavioral dieting philosophy she had promoted through WW, representing a significant reversal of her public position on weight management.",
+      "evidence": "In October 2015, Winfrey bought a 10% stake in WW for ~$43M and joined the board. She starred in WW commercials from 2015-2023 and repeatedly credited the program for her weight management. In December 2023, she told People Magazine she had been using GLP-1 weight loss medication. In March 2024, she produced an ABC primetime special 'Shame, Blame and the Weight Loss Revolution' promoting pharmaceutical approaches to weight loss. In May 2024, at the WW 'Making the Shift' virtual event, she called her 1988 TV wagon stunt — hauling 67 pounds of fat onstage — one of her biggest regrets and acknowledged her 25-year role in diet culture. In September 2024, she left the WW board and donated her remaining shares. WW stock, which had peaked near $100 in 2018 partly due to Oprah's involvement, had fallen to under $2 by early 2024.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.93
+    },
+    {
+      "id": "acc-095",
+      "figureId": "fig-045",
+      "statementId": "stmt-134",
+      "actionId": "act-095",
+      "verdict": "kept",
+      "score": 85,
+      "summary": "Winfrey's claim that education is the key to unlocking the world has been strongly backed by her actions. Her $140+ million personal investment in the Oprah Winfrey Leadership Academy for Girls in South Africa represents one of the largest individual philanthropic commitments to education in Africa. The school has operated for over 17 years and produced graduates who have gone on to attend top universities worldwide.",
+      "evidence": "The Oprah Winfrey Leadership Academy for Girls opened January 2, 2007 in Henley on Klip, South Africa, after being announced in 2002. Winfrey personally invested over $140 million in the school's construction, operations, and endowment. The school enrolls approximately 300 girls from disadvantaged backgrounds across South Africa, providing free boarding education in grades 8-12. Graduates have attended Stanford, Yale, Spelman College, University of Cape Town, and numerous other institutions. In addition to OWLAG, Winfrey has donated tens of millions to other educational institutions including Morehouse College ($13M in 1989, additional $12M in 2019), the Smithsonian National Museum of African American History ($21M), and various scholarship programs. Her total philanthropic giving exceeded $400 million by 2020 according to Forbes.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.95
+    }
+  ],
+  "evidenceMedia": [
+    {
+      "id": "em-65",
+      "accountabilityRecordId": "acc-094",
+      "type": "screenshot",
+      "url": "/images/evidence/oprah-weightwatchers-investment-exit.svg",
+      "thumbnailUrl": "/images/evidence/oprah-weightwatchers-investment-exit.svg",
+      "caption": "Oprah invested $43M in WeightWatchers in 2015, then departed the board in 2024 after pivoting to endorse GLP-1 medications",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Oprah_Winfrey",
+      "capturedAt": "2024-09-09"
+    },
+    {
+      "id": "em-66",
+      "accountabilityRecordId": "acc-095",
+      "type": "screenshot",
+      "url": "/images/evidence/oprah-leadership-academy-investment.svg",
+      "thumbnailUrl": "/images/evidence/oprah-leadership-academy-investment.svg",
+      "caption": "Oprah invested over $140M in the Leadership Academy for Girls in South Africa, operating since 2007",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Oprah_Winfrey_Leadership_Academy_for_Girls",
+      "capturedAt": "2007-01-02"
+    }
+  ]
+}

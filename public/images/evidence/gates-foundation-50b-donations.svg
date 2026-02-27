@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#312e81;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)" rx="12" />
+  <rect x="24" y="16" width="752" height="52" rx="8" fill="#4338ca" opacity="0.6" />
+  <text x="400" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#e0e7ff" letter-spacing="3">EVIDENCE</text>
+  <text x="400" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#ffffff">Gates Foundation: $50B+ Donated to Global Health</text>
+  <line x1="200" y1="135" x2="600" y2="135" stroke="#6366f1" stroke-width="2" />
+  <text x="400" y="170" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#c7d2fe">2000: Bill &amp; Melinda Gates Foundation launched</text>
+  <text x="400" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#c7d2fe">2010: Giving Pledge created with Warren Buffett</text>
+  <text x="400" y="230" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#86efac">$59.1B donated through 2023 per Foundation reports</text>
+  <text x="400" y="260" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#86efac">Focus: polio eradication, malaria, vaccines (GAVI)</text>
+  <text x="400" y="290" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#fca5a5">Net worth still ~$130B despite pledge to give it all away</text>
+  <text x="400" y="320" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#fca5a5">Wealth has grown faster than donations since 2010</text>
+  <text x="400" y="358" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#a5b4fc">Source: Wikipedia -- Bill &amp; Melinda Gates Foundation</text>
+  <text x="400" y="378" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#818cf8">Data through: 2024</text>
+  <rect x="24" y="400" width="752" height="36" rx="8" fill="#4338ca" opacity="0.4" />
+  <text x="400" y="424" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#c7d2fe" letter-spacing="2">INDELIBLE</text>
+</svg>

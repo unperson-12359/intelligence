@@ -1,0 +1,106 @@
+{
+  "actions": [
+    {
+      "id": "act-102",
+      "figureId": "fig-049",
+      "type": "policy_enacted",
+      "title": "ECB Raised Interest Rates 10 Consecutive Times from July 2022 to September 2023",
+      "description": "Despite Lagarde's December 2021 statement that a rate hike in 2022 was very unlikely, the ECB under her leadership raised the deposit facility rate 10 times in 14 months. The first hike in July 2022 was 50 basis points — the ECB's first rate increase in 11 years and larger than the 25 bps initially signaled. Subsequent hikes in September and October 2022 were 75 bps each, the largest in ECB history. The tightening cycle continued through September 2023, bringing the deposit rate from -0.5% to 4.0%, the highest level since the euro's creation.",
+      "outcome": "The ECB's deposit rate reached a record 4.0% by September 2023. Eurozone inflation fell from a peak of 10.6% in October 2022 to below 3% by late 2023. However, the delayed response drew criticism that the ECB was behind the curve compared to the Federal Reserve. The rapid tightening contributed to a significant economic slowdown across the eurozone, with Germany entering recession in 2023.",
+      "dateOccurred": "2022-07-21",
+      "sourceUrl": "https://en.wikipedia.org/wiki/European_Central_Bank",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.96
+    },
+    {
+      "id": "act-103",
+      "figureId": "fig-049",
+      "type": "policy_enacted",
+      "title": "ECB Green Bond Tilting Program Was Limited in Scope and Duration",
+      "description": "The ECB announced a climate action plan in July 2021 and began tilting its corporate bond reinvestments toward issuers with better climate performance in October 2022. However, the program applied only to reinvestments of maturing bonds in the Corporate Sector Purchase Programme (CSPP), not to the entire existing portfolio. When the ECB ended net asset purchases and began quantitative tightening in March 2023, the scope of the green tilting shrank significantly. The ECB continued to hold substantial amounts of bonds from fossil fuel companies, and environmental groups criticized the tilting as insufficient to meet the ECB's own climate goals.",
+      "outcome": "The green tilting operated at full capacity for roughly five months before quantitative tightening reduced its scope. Analysis by think tanks such as the New Economics Foundation found that the ECB's bond portfolio remained heavily tilted toward carbon-intensive industries. The ECB did publish climate-related financial disclosures and introduced climate stress tests for banks, but the direct portfolio greening fell short of what Lagarde's rhetoric had suggested.",
+      "dateOccurred": "2022-10-01",
+      "sourceUrl": "https://en.wikipedia.org/wiki/European_Central_Bank",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.90
+    },
+    {
+      "id": "act-109",
+      "figureId": "fig-049",
+      "type": "other",
+      "title": "ECB Executive Board Remained Majority Male Under Lagarde's Tenure",
+      "description": "Despite Lagarde's longstanding advocacy for gender equality in finance and central banking, the ECB's six-member Executive Board had only two women (Lagarde herself and Isabel Schnabel) through most of her tenure. The 25-member Governing Council, which includes national central bank governors, remained overwhelmingly male. Lagarde acknowledged the imbalance publicly but the appointment of Executive Board members is controlled by EU member state governments, not the ECB president. She did however push for more diversity in ECB staff hiring and management roles.",
+      "outcome": "While the ECB made progress in internal staff diversity targets — women held about 32% of management positions by 2024, up from 27% when Lagarde took over — the Governing Council remained one of the least gender-diverse top central bank bodies among major economies. Lagarde's advocacy helped keep the issue prominent but structural change at the board level remained limited by member state politics.",
+      "dateOccurred": "2024-03-08",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Christine_Lagarde",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.88
+    }
+  ],
+  "accountability": [
+    {
+      "id": "acc-102",
+      "figureId": "fig-049",
+      "statementId": "stmt-146",
+      "actionId": "act-102",
+      "verdict": "broken",
+      "score": -70,
+      "summary": "Lagarde stated in December 2021 that eurozone inflation was transitory and that the ECB was very unlikely to raise interest rates in 2022. Seven months later, the ECB began the most aggressive rate-hiking cycle in its history, raising rates 10 consecutive times and taking the deposit rate from -0.5% to 4.0%. The reversal was one of the most dramatic forecast failures by a major central bank head in recent decades.",
+      "evidence": "December 16, 2021: At the ECB press conference, Lagarde states it is 'very unlikely' that the ECB will raise interest rates in 2022. February 2022: Eurozone inflation hits 5.9%, well above the 2% target. June 2022: Inflation surges to 8.6%. July 21, 2022: ECB raises rates by 50 bps, the first hike in 11 years — larger than the 25 bps initially signaled. September 2022: +75 bps. October 2022: +75 bps. December 2022: +50 bps. February 2023: +50 bps. March 2023: +50 bps. May 2023: +25 bps. June 2023: +25 bps. July 2023: +25 bps. September 2023: +25 bps (final hike). Total: 450 bps of tightening in 14 months. Lagarde later acknowledged that the ECB had underestimated inflation persistence.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.95
+    },
+    {
+      "id": "acc-103",
+      "figureId": "fig-049",
+      "statementId": "stmt-147",
+      "actionId": "act-103",
+      "verdict": "partial",
+      "score": -25,
+      "summary": "Lagarde positioned the ECB as a leader in green monetary policy, but the actual implementation was limited. The corporate bond tilting program operated at full capacity for only about five months before quantitative tightening reduced its scope. The ECB portfolio continued to hold significant fossil fuel bonds, and environmental groups criticized the measures as insufficient.",
+      "evidence": "July 8, 2021: ECB announces climate action plan as part of strategy review. October 2022: ECB begins tilting corporate bond reinvestments toward greener issuers. March 2023: ECB ends net asset purchases, dramatically reducing the scope for green tilting. The ECB's corporate bond portfolio (approximately EUR 345 billion at peak) remained concentrated in carbon-intensive sectors. Greenpeace and other organizations filed complaints arguing the ECB's bond holdings violated climate obligations. The ECB did introduce mandatory climate stress tests for banks in 2022 and enhanced climate disclosure requirements, showing some follow-through on the broader green agenda even if the direct portfolio greening fell short.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.89
+    },
+    {
+      "id": "acc-109",
+      "figureId": "fig-049",
+      "statementId": "stmt-148",
+      "actionId": "act-109",
+      "verdict": "partial",
+      "score": -15,
+      "summary": "Lagarde has consistently advocated for gender equality in finance, but the ECB's own governance remained heavily male-dominated during her tenure. The Executive Board had only two women out of six members, and the Governing Council was overwhelmingly male. Internal staff diversity improved modestly, but the structural barriers she identified in her advocacy were not overcome at the institution she leads.",
+      "evidence": "Lagarde has given numerous speeches on gender equality in economics and finance throughout her career at the IMF and ECB. Under her leadership, the ECB set internal diversity targets: women in management positions rose from 27% to approximately 32% between 2019 and 2024. However, the six-member Executive Board had only two women (Lagarde and Schnabel) for most of her tenure. The 25-member Governing Council, which includes euro area national central bank governors, remained approximately 80% male. Lagarde publicly acknowledged these limitations, noting that board appointments are made by EU member states, not the ECB. She has pushed member states to consider female candidates for governor positions.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.87
+    }
+  ],
+  "evidenceMedia": [
+    {
+      "id": "em-73",
+      "accountabilityRecordId": "acc-102",
+      "type": "screenshot",
+      "url": "/images/evidence/lagarde-ecb-rate-hikes-2022-2023.svg",
+      "thumbnailUrl": "/images/evidence/lagarde-ecb-rate-hikes-2022-2023.svg",
+      "caption": "Timeline of ECB's 10 consecutive rate hikes from July 2022 to September 2023, contradicting Lagarde's December 2021 prediction that rate rises were very unlikely in 2022.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/European_Central_Bank",
+      "capturedAt": "2025-01-15"
+    },
+    {
+      "id": "em-74",
+      "accountabilityRecordId": "acc-103",
+      "type": "screenshot",
+      "url": "/images/evidence/lagarde-green-bond-tilting-limited.svg",
+      "thumbnailUrl": "/images/evidence/lagarde-green-bond-tilting-limited.svg",
+      "caption": "ECB green bond tilting program operated for only ~5 months at full capacity before quantitative tightening reduced its scope, despite Lagarde's positioning of the ECB as a climate leader.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/European_Central_Bank",
+      "capturedAt": "2025-01-15"
+    }
+  ]
+}

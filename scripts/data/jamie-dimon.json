@@ -1,0 +1,80 @@
+{
+  "actions": [
+    {
+      "id": "act-086",
+      "figureId": "fig-041",
+      "type": "business_decision",
+      "title": "JPMorgan Launched Crypto and Blockchain Products Despite Dimon's Bitcoin Denouncement",
+      "description": "Despite Jamie Dimon calling Bitcoin a fraud in 2017, JPMorgan Chase developed and launched JPM Coin in 2019 for institutional blockchain-based payments. The bank subsequently gave wealth management clients access to cryptocurrency funds in 2021 and expanded its blockchain division, rebranding it as Kinexys in 2024. JPMorgan became one of the largest Wall Street banks actively engaged in digital asset infrastructure.",
+      "outcome": "JPMorgan became a major institutional player in crypto and blockchain, directly contradicting Dimon's earlier dismissal of Bitcoin as worthless. The bank processes billions in daily transactions through its blockchain platform.",
+      "dateOccurred": "2019-02-14",
+      "sourceUrl": "https://en.wikipedia.org/wiki/JPMorgan_Chase",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.95
+    },
+    {
+      "id": "act-087",
+      "figureId": "fig-041",
+      "type": "other",
+      "title": "JPMorgan Lobbied to Weaken Dodd-Frank and Basel III Capital Rules",
+      "description": "While Dimon publicly supported the principle of strong banking regulation, JPMorgan Chase spent tens of millions of dollars lobbying Congress and regulators to weaken specific provisions of Dodd-Frank and later to oppose the Basel III endgame capital requirements. JPMorgan benefited from the 2018 Economic Growth, Regulatory Relief, and Consumer Protection Act which rolled back parts of Dodd-Frank. Dimon personally led Wall Street's campaign against the proposed Basel III endgame rules in 2023-2024, calling the new capital requirements deeply flawed.",
+      "outcome": "Multiple Dodd-Frank provisions were relaxed in 2018. The Federal Reserve significantly scaled back Basel III endgame capital proposals in September 2024 after intense lobbying from JPMorgan and other major banks.",
+      "dateOccurred": "2023-07-27",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dodd%E2%80%93Frank_Wall_Street_Reform_and_Consumer_Protection_Act",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.92
+    }
+  ],
+  "accountability": [
+    {
+      "id": "acc-086",
+      "figureId": "fig-041",
+      "statementId": "stmt-122",
+      "actionId": "act-086",
+      "verdict": "flip_flop",
+      "score": 25,
+      "summary": "Dimon called Bitcoin a fraud in 2017 and threatened to fire any JPMorgan trader caught trading it. Within two years, JPMorgan launched JPM Coin, and by 2021 the bank was offering clients access to crypto funds. The bank now operates a major blockchain platform rebranded as Kinexys, making JPMorgan one of the biggest institutional players in the digital asset space Dimon once dismissed entirely.",
+      "evidence": "September 2017: Dimon publicly calls Bitcoin a fraud at Barclays conference. February 2019: JPMorgan announces JPM Coin for institutional transfers. August 2021: JPMorgan gives wealth management clients access to six cryptocurrency funds. 2024: JPMorgan rebrands Onyx blockchain division as Kinexys, processing billions daily. While Dimon has maintained personal skepticism, his bank's actions have moved decisively into the crypto ecosystem.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.93
+    },
+    {
+      "id": "acc-087",
+      "figureId": "fig-041",
+      "statementId": "stmt-124",
+      "actionId": "act-087",
+      "verdict": "broken",
+      "score": 20,
+      "summary": "Despite publicly supporting stronger banking regulation and telling Congress that capital requirements made the system safer, Dimon led JPMorgan's aggressive lobbying campaign against the Basel III endgame capital rules in 2023-2024. JPMorgan also benefited from the 2018 rollback of Dodd-Frank provisions. The bank's lobbying expenditures and Dimon's personal opposition to proposed regulations contradicted his public pro-regulation stance.",
+      "evidence": "2019: Dimon testifies before Congress supporting strong capital rules and stress testing. 2018: JPMorgan benefits from Economic Growth, Regulatory Relief, and Consumer Protection Act that rolled back parts of Dodd-Frank. 2023: JPMorgan spent $12.7 million on lobbying, much of it targeting financial regulation. 2023-2024: Dimon personally and publicly campaigns against Basel III endgame proposals, calling them deeply flawed. September 2024: Federal Reserve significantly scales back Basel III proposals after lobbying pressure.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.91
+    }
+  ],
+  "evidenceMedia": [
+    {
+      "id": "em-57",
+      "accountabilityRecordId": "acc-086",
+      "type": "screenshot",
+      "url": "/images/evidence/dimon-bitcoin-fraud-then-crypto-products.svg",
+      "thumbnailUrl": "/images/evidence/dimon-bitcoin-fraud-then-crypto-products.svg",
+      "caption": "Timeline showing JPMorgan's pivot from Dimon calling Bitcoin a fraud in 2017 to launching JPM Coin and expanding crypto products through 2024.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jamie_Dimon",
+      "capturedAt": "2024-12-01"
+    },
+    {
+      "id": "em-58",
+      "accountabilityRecordId": "acc-087",
+      "type": "screenshot",
+      "url": "/images/evidence/dimon-lobbied-weaken-dodd-frank.svg",
+      "thumbnailUrl": "/images/evidence/dimon-lobbied-weaken-dodd-frank.svg",
+      "caption": "Evidence of JPMorgan lobbying to weaken Dodd-Frank and Basel III capital rules despite Dimon's public support for strong banking regulation.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dodd%E2%80%93Frank_Wall_Street_Reform_and_Consumer_Protection_Act",
+      "capturedAt": "2024-12-01"
+    }
+  ]
+}

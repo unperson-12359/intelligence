@@ -1,0 +1,80 @@
+{
+  "actions": [
+    {
+      "id": "act-098",
+      "figureId": "fig-047",
+      "type": "donation",
+      "title": "Gates Foundation Donated $59B+ to Global Health and Development",
+      "description": "The Bill & Melinda Gates Foundation, founded in 2000, has distributed over $59.1 billion in grants through 2023. The Foundation has been the largest private funder of global health initiatives, including GAVI vaccine alliance ($4.1B+), polio eradication ($5B+), malaria research, agricultural development in sub-Saharan Africa, and US education reform. Gates transferred $20 billion to the Foundation's endowment in a single 2022 transfer, bringing total endowment to over $67 billion.",
+      "outcome": "The Foundation helped reduce global polio cases by over 99% (from 350,000 in 1988 to under 200 annually). GAVI has immunized over 1 billion children. However, Gates's personal net worth grew from approximately $53 billion when the Giving Pledge launched in 2010 to roughly $130 billion by 2024, raising questions about whether wealth is being given away faster than it accumulates. The Foundation's investments in fossil fuel companies have also drawn criticism from climate advocates.",
+      "dateOccurred": "2023-06-15",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bill_%26_Melinda_Gates_Foundation",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.96
+    },
+    {
+      "id": "act-099",
+      "figureId": "fig-047",
+      "type": "business_decision",
+      "title": "Founded TerraPower and Broke Ground on Natrium Reactor in Wyoming",
+      "description": "Gates founded TerraPower in 2008 to develop advanced nuclear reactor technology. In 2021, TerraPower's Natrium sodium-cooled fast reactor design was selected by the US Department of Energy for a demonstration project in Kemmerer, Wyoming. The project received a $2 billion DOE cost-share award. In June 2024, TerraPower broke ground on the Natrium demonstration plant, a 345 MW sodium-cooled reactor with integrated molten salt energy storage, making it the first advanced nuclear reactor construction project in the US in decades.",
+      "outcome": "Construction is underway in Kemmerer with a target operational date around 2030, delayed from the original 2028 estimate due to regulatory and fuel supply challenges (HALEU fuel availability). Gates has personally invested over $1 billion in TerraPower. The project represents a tangible follow-through on Gates's advocacy for nuclear energy as a climate solution, though the technology remains unproven at commercial scale and the timeline has slipped.",
+      "dateOccurred": "2024-06-10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/TerraPower",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.93
+    }
+  ],
+  "accountability": [
+    {
+      "id": "acc-098",
+      "figureId": "fig-047",
+      "statementId": "stmt-141",
+      "actionId": "act-098",
+      "verdict": "partial",
+      "score": 40,
+      "summary": "Gates co-created the Giving Pledge in 2010, promising to give away more than half his wealth, and has since said he intends to donate virtually all of it. The Gates Foundation has indeed distributed over $59 billion in grants, making it the largest private philanthropy in history. However, Gates's net worth has grown from $53 billion in 2010 to approximately $130 billion by 2024, meaning his wealth has increased faster than he has donated. While the scale of giving is unprecedented, the pledge to give away 'virtually all' wealth remains unfulfilled, as investment returns continue to outpace charitable distributions.",
+      "evidence": "The Giving Pledge was announced on August 4, 2010 by Gates and Warren Buffett. The Gates Foundation's cumulative grant payments exceeded $59.1 billion through 2023, per its annual report. In July 2022, Gates transferred $20 billion to the Foundation endowment and pledged to increase annual spending to $9 billion by 2026. Forbes estimated Gates's net worth at approximately $128-134 billion in 2024, up from $53 billion when the Pledge launched. The Foundation's endowment stood at $67.3 billion as of Q4 2023. Gates has stated he plans to 'drop off the list of the world's richest people' but has not set a firm timeline.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.94
+    },
+    {
+      "id": "acc-099",
+      "figureId": "fig-047",
+      "statementId": "stmt-142",
+      "actionId": "act-099",
+      "verdict": "in_progress",
+      "score": 55,
+      "summary": "Gates has backed his nuclear energy advocacy with substantial personal investment and institutional action. He founded TerraPower in 2008, invested over $1 billion personally, and secured a $2 billion DOE cost-share for the Natrium demonstration reactor in Kemmerer, Wyoming. Ground was broken in June 2024, making it the first advanced nuclear construction project in the US in decades. However, the project has faced delays (originally targeted for 2028, now ~2030) due to HALEU fuel supply constraints and NRC regulatory processes. The technology remains commercially unproven.",
+      "evidence": "TerraPower was founded in 2008 with Gates as chairman and primary funder. The company's Natrium design was selected for the DOE Advanced Reactor Demonstration Program in October 2020, with a cost-shared award of up to $2 billion. The Kemmerer, Wyoming site (a retiring coal plant community) was announced in November 2021. TerraPower broke ground on the demonstration plant in June 2024. The Natrium reactor is a 345 MW sodium-cooled fast reactor paired with a molten salt thermal storage system capable of boosting output to 500 MW during peak demand. The completion timeline slipped from 2028 to approximately 2030 due to challenges securing HALEU (high-assay low-enriched uranium) fuel, which currently has limited domestic supply. Gates published 'How to Avoid a Climate Disaster' in February 2021, dedicating a chapter to nuclear energy.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.92
+    }
+  ],
+  "evidenceMedia": [
+    {
+      "id": "em-69",
+      "accountabilityRecordId": "acc-098",
+      "type": "document",
+      "url": "/images/evidence/gates-foundation-50b-donations.svg",
+      "thumbnailUrl": "/images/evidence/gates-foundation-50b-donations.svg",
+      "caption": "Gates Foundation has donated $59.1B+ through 2023, yet Gates's net worth grew from $53B to $130B since the Giving Pledge",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bill_%26_Melinda_Gates_Foundation",
+      "capturedAt": "2024-06-15"
+    },
+    {
+      "id": "em-70",
+      "accountabilityRecordId": "acc-099",
+      "type": "screenshot",
+      "url": "/images/evidence/gates-terrapower-nuclear-progress.svg",
+      "thumbnailUrl": "/images/evidence/gates-terrapower-nuclear-progress.svg",
+      "caption": "TerraPower broke ground on Natrium advanced nuclear reactor in Kemmerer, Wyoming in June 2024 with $4B+ investment",
+      "sourceUrl": "https://en.wikipedia.org/wiki/TerraPower",
+      "capturedAt": "2024-06-10"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#312e81;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)" rx="12" />
+  <rect x="24" y="16" width="752" height="52" rx="8" fill="#4338ca" opacity="0.6" />
+  <text x="400" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#e0e7ff" letter-spacing="3">EVIDENCE</text>
+  <text x="400" y="120" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#ffffff">Nov 2023 OpenAI Board Crisis and Reinstatement</text>
+  <line x1="200" y1="140" x2="600" y2="140" stroke="#6366f1" stroke-width="2" />
+  <text x="400" y="175" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#c7d2fe">Nov 17: Board fires Altman, cites loss of candor</text>
+  <text x="400" y="205" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#c7d2fe">Nov 18-19: 700+ of 770 employees threaten to quit</text>
+  <text x="400" y="235" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#c7d2fe">Nov 20: Microsoft offers to hire Altman and team</text>
+  <text x="400" y="265" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#fca5a5">Nov 22: Altman reinstated, safety directors removed</text>
+  <text x="400" y="295" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#fca5a5">New board: Bret Taylor (chair), Larry Summers, Adam D'Angelo</text>
+  <text x="400" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#a5b4fc">Source: Wikipedia — Removal of Sam Altman from OpenAI</text>
+  <text x="400" y="360" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#818cf8">Date: November 2023</text>
+  <rect x="24" y="400" width="752" height="36" rx="8" fill="#4338ca" opacity="0.4" />
+  <text x="400" y="424" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#c7d2fe" letter-spacing="2">INDELIBLE</text>
+</svg>

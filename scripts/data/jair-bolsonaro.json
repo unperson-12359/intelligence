@@ -1,0 +1,106 @@
+{
+  "actions": [
+    {
+      "id": "act-106",
+      "figureId": "fig-048",
+      "type": "policy_enacted",
+      "title": "Gutted Environmental Enforcement as Amazon Deforestation Surged 75%",
+      "description": "Under Bolsonaro's presidency (2019-2022), Amazon deforestation surged dramatically. He slashed IBAMA's enforcement budget by over 30%, removed experienced environmental inspectors, and transferred deforestation monitoring responsibilities away from INPE after firing its director Ricardo Galvao for publishing accurate satellite data. Bolsonaro opened indigenous lands to mining and agribusiness, weakened environmental licensing requirements, and publicly encouraged illegal land clearing.",
+      "outcome": "INPE PRODES data showed annual Amazon deforestation rose from 7,536 km\u00b2 in 2018 (the year before Bolsonaro took office) to 13,235 km\u00b2 in 2021, a 75% increase and the highest level since 2006. IBAMA fines for environmental violations dropped to their lowest levels in decades. Illegal gold mining in indigenous territories surged. The Yanomami indigenous territory experienced a humanitarian crisis from illegal mining and deforestation. Brazil's international credibility on environmental policy collapsed, and Norway and Germany suspended Amazon Fund contributions.",
+      "dateOccurred": "2021-11-18",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jair_Bolsonaro",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.96
+    },
+    {
+      "id": "act-107",
+      "figureId": "fig-048",
+      "type": "policy_enacted",
+      "title": "Dismissed COVID-19, Delayed Vaccines, and Promoted Unproven Treatments",
+      "description": "Bolsonaro's COVID-19 response was marked by deliberate obstruction. He vetoed provisions requiring masks in public spaces, churches, and businesses. He delayed signing vaccine procurement contracts by months, rejecting an initial October 2020 offer from Pfizer for 70 million doses. He promoted hydroxychloroquine and ivermectin as treatments despite no clinical evidence. He fired Health Minister Luiz Henrique Mandetta for supporting social distancing, then fired his successor Nelson Teich for refusing to expand hydroxychloroquine use.",
+      "outcome": "Brazil became one of the hardest-hit countries, with over 700,000 COVID-19 deaths by early 2023. A Brazilian Senate CPI (Parliamentary Inquiry Commission) investigation concluded in October 2021 that Bolsonaro was guilty of crimes against humanity for intentionally exposing the population to mass infection, deliberately delaying vaccines, and promoting unproven treatments. The CPI recommended criminal charges including charlatanism, incitement to crime, and crimes against humanity. Brazil's per capita death rate became one of the highest in the world.",
+      "dateOccurred": "2021-10-26",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brazilian_Senate_COVID-19_inquiry",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.97
+    },
+    {
+      "id": "act-108",
+      "figureId": "fig-048",
+      "type": "other",
+      "title": "Supporters Stormed Government Buildings on January 8, 2023 After Election Denial Campaign",
+      "description": "After losing the October 2022 presidential election to Lula da Silva by 1.8 percentage points, Bolsonaro refused to concede and left Brazil for Florida on December 30, 2022, two days before Lula's inauguration. On January 8, 2023, thousands of Bolsonaro supporters stormed and vandalized the Presidential Palace (Planalto), the National Congress, and the Supreme Federal Tribunal in Brasilia, demanding military intervention to overturn the election. The insurrection closely paralleled the January 6, 2021 U.S. Capitol attack.",
+      "outcome": "Over 1,400 rioters were arrested and charged. The Supreme Federal Tribunal (STF) convicted hundreds of participants for attempted coup d'etat, armed criminal association, and violent abolition of the democratic state. In June 2023, the Superior Electoral Tribunal (TSE) ruled Bolsonaro ineligible to run for office until 2030 for abuse of power and misuse of public media due to his baseless attacks on the electronic voting system. In November 2024, Brazilian federal police indicted Bolsonaro for planning a coup d'etat to prevent Lula from taking office, including alleged plots to assassinate Lula and his vice president.",
+      "dateOccurred": "2023-01-08",
+      "sourceUrl": "https://en.wikipedia.org/wiki/2023_Brazilian_Congress_attack",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.97
+    }
+  ],
+  "accountability": [
+    {
+      "id": "acc-090",
+      "figureId": "fig-048",
+      "statementId": "stmt-143",
+      "actionId": "act-106",
+      "verdict": "broken",
+      "score": -90,
+      "summary": "Bolsonaro claimed Amazon deforestation data was fabricated by environmental agencies to undermine his government. In reality, INPE satellite data was confirmed by independent sources, and deforestation surged 75% during his presidency as he systematically gutted enforcement, slashed IBAMA's budget, and fired the INPE director who published the data.",
+      "evidence": "INPE PRODES satellite data showed Amazon deforestation rose from 7,536 km\u00b2 in 2018 to 13,235 km\u00b2 in 2021, a 75% increase. Bolsonaro fired INPE director Ricardo Galvao in August 2019 for publishing the data, calling the figures lies. Independent satellite monitoring from MapBiomas, Global Forest Watch, and NASA corroborated INPE's findings. IBAMA's enforcement budget was cut by over 30% and environmental fines dropped to record lows. Norway and Germany suspended Amazon Fund contributions citing Brazil's failure to protect the rainforest. After Bolsonaro left office, deforestation dropped roughly 50% in Lula's first year, demonstrating the policy-driven nature of the surge.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.96
+    },
+    {
+      "id": "acc-091",
+      "figureId": "fig-048",
+      "statementId": "stmt-144",
+      "actionId": "act-107",
+      "verdict": "broken",
+      "score": -95,
+      "summary": "Bolsonaro called COVID-19 a 'little flu' and opposed lockdowns, masks, and vaccines. Brazil went on to suffer over 700,000 deaths, one of the highest per capita death tolls in the world. A Senate investigation found him guilty of crimes against humanity for deliberately delaying vaccine procurement and promoting unproven treatments.",
+      "evidence": "Brazil recorded over 700,000 COVID-19 deaths by early 2023, with a per capita death rate among the highest globally. The Brazilian Senate CPI investigation (April-October 2021) concluded that Bolsonaro intentionally delayed Pfizer vaccine contracts by months (rejecting an October 2020 offer for 70 million doses), promoted hydroxychloroquine and ivermectin without evidence, fired two health ministers who supported scientific measures, and vetoed mask mandates. The CPI recommended nine criminal charges including crimes against humanity, charlatanism, and incitement to crime. Bolsonaro's claim that COVID was a 'gripezinha' (little flu) was made as early as March 2020 when the virus had already killed thousands globally.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.97
+    },
+    {
+      "id": "acc-092",
+      "figureId": "fig-048",
+      "statementId": "stmt-145",
+      "actionId": "act-088",
+      "verdict": "broken",
+      "score": -95,
+      "summary": "Bolsonaro's baseless claims that Brazil's electronic voting system was rigged directly incited the January 8, 2023 insurrection, where supporters stormed government buildings demanding military intervention. No evidence of voting fraud was ever found. Bolsonaro was banned from running for office until 2030 and indicted for planning a coup.",
+      "evidence": "Multiple audits by Brazil's Superior Electoral Tribunal (TSE), the Armed Forces, and independent observers found no evidence of fraud in the electronic voting system. After Bolsonaro lost the October 2022 election by 1.8 percentage points, he refused to concede and left Brazil for Florida. On January 8, 2023, thousands of his supporters stormed the Planalto, National Congress, and Supreme Federal Tribunal in Brasilia. Over 1,400 rioters were arrested and convicted. In June 2023, the TSE ruled Bolsonaro ineligible until 2030 for abuse of power and misuse of public media related to his voting fraud claims. In November 2024, federal police indicted Bolsonaro for masterminding a coup attempt, including alleged assassination plots against president-elect Lula and vice president-elect Alckmin.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.97
+    }
+  ],
+  "evidenceMedia": [
+    {
+      "id": "em-61",
+      "accountabilityRecordId": "acc-090",
+      "type": "screenshot",
+      "url": "/images/evidence/bolsonaro-amazon-deforestation-surge.svg",
+      "thumbnailUrl": "/images/evidence/bolsonaro-amazon-deforestation-surge.svg",
+      "caption": "Amazon deforestation surged 75% under Bolsonaro, hitting 13,235 km\u00b2 in 2021 (INPE PRODES data)",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jair_Bolsonaro",
+      "capturedAt": "2024-08-01"
+    },
+    {
+      "id": "em-62",
+      "accountabilityRecordId": "acc-091",
+      "type": "document",
+      "url": "/images/evidence/bolsonaro-covid-700k-deaths.svg",
+      "thumbnailUrl": "/images/evidence/bolsonaro-covid-700k-deaths.svg",
+      "caption": "Brazil reached 700,000+ COVID deaths as Senate CPI found Bolsonaro guilty of crimes against humanity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brazilian_Senate_COVID-19_inquiry",
+      "capturedAt": "2024-08-01"
+    }
+  ]
+}

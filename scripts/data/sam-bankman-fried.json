@@ -1,0 +1,80 @@
+{
+  "actions": [
+    {
+      "id": "act-088",
+      "figureId": "fig-042",
+      "type": "business_decision",
+      "title": "FTX Collapsed After $8 Billion in Customer Funds Diverted to Alameda Research",
+      "description": "In November 2022, FTX — the cryptocurrency exchange SBF co-founded and led as CEO — collapsed after it was revealed that approximately $8 billion in customer funds had been secretly transferred to Alameda Research, SBF's trading firm. The crisis was triggered when CoinDesk published a report on November 2 exposing that Alameda's balance sheet was heavily dependent on FTT, FTX's native token. Binance CEO Changpeng Zhao announced plans to liquidate Binance's FTT holdings, sparking a bank run. FTX halted withdrawals on November 8 and filed for Chapter 11 bankruptcy on November 11, 2022.",
+      "outcome": "FTX's collapse wiped out an estimated $32 billion in value. Over one million creditors lost access to their funds. SBF was arrested in the Bahamas in December 2022 and extradited to the United States. The bankruptcy proceedings revealed systematic commingling of customer deposits with Alameda Research trading activities, absence of basic corporate controls, and billions in undisclosed loans to FTX executives.",
+      "dateOccurred": "2022-11-11",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FTX_(company)",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.98
+    },
+    {
+      "id": "act-089",
+      "figureId": "fig-042",
+      "type": "other",
+      "title": "Convicted on All 7 Fraud Counts and Sentenced to 25 Years in Federal Prison",
+      "description": "On November 2, 2023, a federal jury in the Southern District of New York found Sam Bankman-Fried guilty on all seven counts he faced at trial, including two counts of wire fraud, two counts of conspiracy to commit wire fraud, one count of conspiracy to commit securities fraud, one count of conspiracy to commit commodities fraud, and one count of conspiracy to commit money laundering. The trial lasted approximately one month. Key prosecution witnesses included former Alameda Research CEO Caroline Ellison and FTX co-founder Gary Wang, both of whom had pleaded guilty and cooperated. On March 28, 2024, Judge Lewis Kaplan sentenced SBF to 25 years in federal prison.",
+      "outcome": "SBF was sentenced to 25 years in prison and ordered to forfeit $11 billion. He was remanded to FCI Terminal Island in California. The conviction represented one of the largest financial fraud cases in U.S. history. Former associates Caroline Ellison, Gary Wang, and Nishad Singh all received significantly reduced sentences for their cooperation.",
+      "dateOccurred": "2023-11-02",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Trial_of_Sam_Bankman-Fried",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.98
+    }
+  ],
+  "accountability": [
+    {
+      "id": "acc-088",
+      "figureId": "fig-042",
+      "statementId": "stmt-125",
+      "actionId": "act-088",
+      "verdict": "broken",
+      "score": -95,
+      "summary": "SBF repeatedly told investors, regulators, and the public that FTX was the safest exchange with robust risk management. In reality, FTX had no independent board, no proper accounting, and secretly funneled approximately $8 billion in customer deposits to Alameda Research. The exchange collapsed in days when the misuse of funds came to light, making his safety claims among the most consequential falsehoods in financial history.",
+      "evidence": "SBF claimed FTX had sophisticated risk engines and that customer funds were fully backed. CoinDesk's November 2, 2022 report revealed Alameda's dependence on FTT tokens. By November 8, FTX halted withdrawals. Bankruptcy filings showed no independent risk management, no board oversight, and billions in undisclosed related-party transactions. New CEO John J. Ray III (who oversaw Enron's liquidation) called FTX's controls a 'complete failure of corporate controls and such a complete absence of trustworthy financial information.'",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.97
+    },
+    {
+      "id": "acc-089",
+      "figureId": "fig-042",
+      "statementId": "stmt-126",
+      "actionId": "act-089",
+      "verdict": "broken",
+      "score": -90,
+      "summary": "SBF positioned himself as the face of effective altruism, claiming his wealth-building was motivated by maximizing charitable impact. His conviction on seven counts of fraud revealed that the billions he accumulated came through systematic theft from customers. His lavish spending on Bahamas real estate, political donations funded with stolen money, and personal loans to executives contradicted the selfless image he cultivated.",
+      "evidence": "SBF promoted effective altruism publicly and donated over $40 million to political campaigns in the 2022 cycle, making him one of the largest individual donors. However, prosecutors demonstrated these donations were funded with stolen customer money. Trial evidence showed FTX executives received billions in personal loans, purchased luxury Bahamas properties, and lived extravagantly. The effective altruism framing was found to be largely a reputational strategy rather than a genuine philanthropic commitment.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.95
+    }
+  ],
+  "evidenceMedia": [
+    {
+      "id": "em-59",
+      "accountabilityRecordId": "acc-088",
+      "type": "screenshot",
+      "url": "/images/evidence/sbf-ftx-collapse-customer-funds.svg",
+      "thumbnailUrl": "/images/evidence/sbf-ftx-collapse-customer-funds.svg",
+      "caption": "Timeline of FTX collapse: $8 billion in customer funds diverted to Alameda Research, leading to bankruptcy in November 2022",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FTX_(company)",
+      "capturedAt": "2022-11-11"
+    },
+    {
+      "id": "em-60",
+      "accountabilityRecordId": "acc-089",
+      "type": "screenshot",
+      "url": "/images/evidence/sbf-fraud-conviction-sentencing.svg",
+      "thumbnailUrl": "/images/evidence/sbf-fraud-conviction-sentencing.svg",
+      "caption": "SBF convicted on all 7 fraud counts in November 2023, sentenced to 25 years in federal prison in March 2024",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Trial_of_Sam_Bankman-Fried",
+      "capturedAt": "2023-11-02"
+    }
+  ]
+}

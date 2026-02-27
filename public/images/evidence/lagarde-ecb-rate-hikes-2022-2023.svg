@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#312e81;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)" rx="12" />
+  <rect x="24" y="16" width="752" height="52" rx="8" fill="#4338ca" opacity="0.6" />
+  <text x="400" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#e0e7ff" letter-spacing="3">EVIDENCE</text>
+  <text x="400" y="110" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#ffffff">ECB Raised Rates 10 Times After Lagarde Said It Wouldn't</text>
+  <line x1="200" y1="130" x2="600" y2="130" stroke="#6366f1" stroke-width="2" />
+  <text x="400" y="165" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#c7d2fe">Dec 2021: Lagarde says rate hike in 2022 is "very unlikely"</text>
+  <text x="400" y="195" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#fca5a5">Jul 2022: ECB raises rates +50 bps (first hike in 11 years)</text>
+  <text x="400" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#fca5a5">Sep 2022: +75 bps, Oct 2022: +75 bps, Dec 2022: +50 bps</text>
+  <text x="400" y="255" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#fca5a5">Feb-Sep 2023: Six more hikes totaling +200 bps</text>
+  <text x="400" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#fca5a5">Deposit rate: 0% to 4.0% (highest in ECB history)</text>
+  <text x="400" y="315" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#c7d2fe">Eurozone inflation peaked at 10.6% in October 2022</text>
+  <text x="400" y="355" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#a5b4fc">Source: ECB Monetary Policy Decisions / Wikipedia</text>
+  <text x="400" y="375" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#818cf8">Date: July 2022 - September 2023</text>
+  <rect x="24" y="400" width="752" height="36" rx="8" fill="#4338ca" opacity="0.4" />
+  <text x="400" y="424" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#c7d2fe" letter-spacing="2">INDELIBLE</text>
+</svg>

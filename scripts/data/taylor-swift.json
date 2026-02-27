@@ -1,0 +1,80 @@
+{
+  "actions": [
+    {
+      "id": "act-096",
+      "figureId": "fig-046",
+      "type": "business_decision",
+      "title": "Re-Recorded First Six Albums to Reclaim Ownership of Masters",
+      "description": "After Scooter Braun's Ithaca Holdings acquired Big Machine Records — and with it Swift's original master recordings — in June 2019, Swift began systematically re-recording her first six albums under her own label, Republic Records. Fearless (Taylor's Version) was released in April 2021, Red (Taylor's Version) in November 2021, Speak Now (Taylor's Version) in July 2023, and 1989 (Taylor's Version) in October 2023. The re-recordings replaced the originals on streaming platforms and charts, effectively devaluing the original masters.",
+      "outcome": "Four of six albums re-recorded and released by October 2023. Each debuted at No. 1 on the Billboard 200. The re-recordings have commercially superseded the originals on major streaming platforms. Swift now owns the masters for all Taylor's Version releases.",
+      "dateOccurred": "2021-04-09",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Taylor_Swift_masters_controversy",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.97
+    },
+    {
+      "id": "act-097",
+      "figureId": "fig-046",
+      "type": "other",
+      "title": "Endorsed Kamala Harris and Drove Massive Voter Registration Surge",
+      "description": "On September 10, 2024, immediately after the first presidential debate between Kamala Harris and Donald Trump, Swift posted an Instagram endorsement of Harris, signing it as a 'Childless Cat Lady' in response to JD Vance's comments. The post included a link to Vote.org, which reported over 337,000 new voter registrations within 24 hours — a 1,226% increase over the previous day. The endorsement post received over 11 million likes.",
+      "outcome": "The endorsement generated 337,000+ voter registrations in 24 hours through Vote.org. Harris ultimately lost the November 2024 presidential election to Donald Trump, but Swift's endorsement represented one of the largest single-event voter registration surges in modern U.S. history.",
+      "dateOccurred": "2024-09-10",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Taylor_Swift",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.95
+    }
+  ],
+  "accountability": [
+    {
+      "id": "acc-096",
+      "figureId": "fig-046",
+      "statementId": "stmt-138",
+      "actionId": "act-096",
+      "verdict": "kept",
+      "score": 85,
+      "summary": "Swift declared that artists should own their work after Scooter Braun acquired her original masters in 2019. She then undertook a historically unprecedented project of re-recording her first six studio albums. By October 2023, four of six had been released under her ownership, each debuting at No. 1. The re-recordings effectively devalued the originals and gave Swift control over the new versions of her catalog.",
+      "evidence": "Fearless (Taylor's Version) released April 9, 2021, debuted at No. 1 on the Billboard 200. Red (Taylor's Version) followed in November 2021, also debuting at No. 1. Speak Now (Taylor's Version) and 1989 (Taylor's Version) were released in July and October 2023 respectively, both chart-toppers. Streaming platforms increasingly defaulted to the Taylor's Version recordings. The original masters were sold by Braun to Shamrock Holdings in November 2020 for a reported $300 million+. Two albums (her debut and Reputation) remain to be re-recorded.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.96
+    },
+    {
+      "id": "acc-097",
+      "figureId": "fig-046",
+      "statementId": "stmt-139",
+      "actionId": "act-097",
+      "verdict": "kept",
+      "score": 60,
+      "summary": "Swift endorsed Kamala Harris for president in September 2024 and backed it with tangible civic action by including a Vote.org registration link in her post. The endorsement generated over 337,000 voter registrations in 24 hours. While Harris lost the election, Swift followed through on her stated political position with concrete action and measurable civic impact.",
+      "evidence": "Swift's Instagram endorsement on September 10, 2024 was posted minutes after the first Harris-Trump debate. Vote.org confirmed 337,826 new voter registrations within 24 hours, a 1,226% increase over the prior day. The post garnered over 11 million likes on Instagram. Swift had previously endorsed Democrats in 2018 Tennessee midterms (stmt-137), showing a pattern of following through on political positions. Harris lost the November 2024 election, limiting the endorsement's ultimate political impact.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.94
+    }
+  ],
+  "evidenceMedia": [
+    {
+      "id": "em-67",
+      "accountabilityRecordId": "acc-096",
+      "type": "document",
+      "url": "/images/evidence/swift-rerecorded-albums-masters.svg",
+      "thumbnailUrl": "/images/evidence/swift-rerecorded-albums-masters.svg",
+      "caption": "Timeline of Taylor Swift re-recording her albums to reclaim ownership of her masters after Scooter Braun acquisition",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Taylor_Swift_masters_controversy",
+      "capturedAt": "2024-11-01"
+    },
+    {
+      "id": "em-68",
+      "accountabilityRecordId": "acc-097",
+      "type": "screenshot",
+      "url": "/images/evidence/swift-harris-endorsement-voter-reg.svg",
+      "thumbnailUrl": "/images/evidence/swift-harris-endorsement-voter-reg.svg",
+      "caption": "Swift endorses Kamala Harris on Instagram, driving 337,000+ voter registrations via Vote.org in 24 hours",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Taylor_Swift",
+      "capturedAt": "2024-09-11"
+    }
+  ]
+}

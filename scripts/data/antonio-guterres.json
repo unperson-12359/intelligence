@@ -1,0 +1,80 @@
+{
+  "actions": [
+    {
+      "id": "act-104",
+      "figureId": "fig-050",
+      "type": "other",
+      "title": "Invoked Article 99 on Gaza Crisis, but Security Council Ceasefire Vote Was Vetoed",
+      "description": "On December 6, 2023, Guterres formally invoked Article 99 of the UN Charter to bring the Gaza humanitarian crisis to the attention of the Security Council. This was the first time a Secretary-General had used Article 99 since 1971. The invocation called for an immediate humanitarian ceasefire. On December 8, the Security Council voted on a ceasefire resolution, but the United States vetoed it (13 members voted in favor, the UK abstained).",
+      "outcome": "The Article 99 invocation demonstrated Guterres was willing to use the most powerful procedural tool available to a Secretary-General. However, the US veto blocked the ceasefire resolution. A ceasefire demand was not passed by the Security Council until March 2024 (Resolution 2728), and fighting continued well beyond that. The invocation drew both praise for moral leadership and criticism from Israel, which called for Guterres to resign.",
+      "dateOccurred": "2023-12-06",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Guterres",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.95
+    },
+    {
+      "id": "act-105",
+      "figureId": "fig-050",
+      "type": "other",
+      "title": "Convened Summit of the Future and Adopted Pact for the Future",
+      "description": "On September 22-23, 2024, Guterres convened the Summit of the Future at UN headquarters in New York. The summit adopted the Pact for the Future, a document that included commitments on sustainable development, international peace and security, science and technology governance, youth and future generations, and transforming global governance. The Pact included a Global Digital Compact and a Declaration on Future Generations.",
+      "outcome": "The Pact for the Future was adopted by consensus after a last-minute attempt by Russia (backed by Belarus, Iran, North Korea, Nicaragua, and Syria) to introduce an amendment was rejected. However, the Pact is non-binding and contains no concrete mechanism for Security Council reform beyond vague commitments to continue discussions. Critics noted the Pact lacked enforceable timelines and that its language on Security Council reform was significantly watered down from earlier drafts.",
+      "dateOccurred": "2024-09-22",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Summit_of_the_Future",
+      "sourceName": "Wikipedia",
+      "isVerified": true,
+      "aiConfidence": 0.93
+    }
+  ],
+  "accountability": [
+    {
+      "id": "acc-104",
+      "figureId": "fig-050",
+      "statementId": "stmt-151",
+      "actionId": "act-104",
+      "verdict": "partial",
+      "score": 30,
+      "summary": "Guterres took the most forceful action available to him by invoking Article 99 for the first time since 1971, directly following through on his call for a ceasefire. However, the US vetoed the resulting Security Council resolution on December 8, 2023, and the war continued. A ceasefire demand was not passed until March 2024 (Resolution 2728), which was also not enforced. Guterres demonstrated personal commitment but could not overcome structural limits of the Secretary-General role.",
+      "evidence": "On December 6, 2023, Guterres sent a letter to the Security Council President invoking Article 99, warning of a humanitarian catastrophe in Gaza. This was the first invocation since U Thant used it during the Bangladesh crisis in 1971. The Security Council voted on December 8: 13 in favor of a ceasefire, UK abstained, US vetoed. Israel's ambassador called for Guterres to resign. Resolution 2728 demanding a ceasefire passed in March 2024, but hostilities continued. The International Court of Justice separately ordered provisional measures in January 2024.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.94
+    },
+    {
+      "id": "acc-105",
+      "figureId": "fig-050",
+      "statementId": "stmt-150",
+      "actionId": "act-105",
+      "verdict": "partial",
+      "score": 20,
+      "summary": "Guterres's repeated calls for Security Council reform culminated in the September 2024 Summit of the Future and the adoption of the Pact for the Future. While the Pact acknowledges the need for reform and includes language about expanding Council representation, it contains no binding commitments, no specific timelines, and no concrete mechanism to alter veto power or permanent membership. The reform language was significantly weakened during negotiations, reflecting continued resistance from P5 members.",
+      "evidence": "Guterres published 'Our Common Agenda' in 2021 calling for multilateral reform. The Summit of the Future was held September 22-23, 2024 at UN headquarters. The Pact for the Future was adopted by consensus after defeating a Russian procedural amendment. Chapter V of the Pact addresses Security Council reform but uses non-binding language ('we commit to instill new life into the discussions on the reform'). No changes to veto rules, permanent membership, or regional representation were enacted. The African Union's Ezulwini Consensus demand for two permanent African seats with veto power was acknowledged but not acted upon. The Pact's Digital Compact and Declaration on Future Generations were adopted as annexes.",
+      "aiGenerated": true,
+      "isVerified": true,
+      "aiConfidence": 0.92
+    }
+  ],
+  "evidenceMedia": [
+    {
+      "id": "em-75",
+      "accountabilityRecordId": "acc-104",
+      "type": "screenshot",
+      "url": "/images/evidence/guterres-article99-gaza-ceasefire.svg",
+      "thumbnailUrl": "/images/evidence/guterres-article99-gaza-ceasefire.svg",
+      "caption": "Guterres invoked Article 99 for Gaza on Dec 6, 2023 — first use since 1971 — but US vetoed the resulting ceasefire resolution",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Guterres",
+      "capturedAt": "2023-12-08"
+    },
+    {
+      "id": "em-76",
+      "accountabilityRecordId": "acc-105",
+      "type": "screenshot",
+      "url": "/images/evidence/guterres-summit-future-pact-adopted.svg",
+      "thumbnailUrl": "/images/evidence/guterres-summit-future-pact-adopted.svg",
+      "caption": "Summit of the Future adopted the Pact for the Future in Sept 2024, but Security Council reform language remained non-binding",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Summit_of_the_Future",
+      "capturedAt": "2024-09-23"
+    }
+  ]
+}
