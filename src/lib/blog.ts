@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "How the timeframe between public commitments and outcomes makes systematic accountability challenging, and what structured records can change.",
     author: "Indelible Team",
-    publishedAt: "2025-01-15",
+    publishedAt: "2025-02-26",
     readingTime: "6 min read",
     category: "Accountability",
     tags: [
@@ -108,7 +108,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "A practical, step-by-step guide to tracking what your elected officials promise versus what they actually deliver.",
     author: "Indelible Team",
-    publishedAt: "2025-01-22",
+    publishedAt: "2025-02-26",
     readingTime: "5 min read",
     category: "Guide",
     tags: [
@@ -197,7 +197,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "The cognitive biases that make us forget political promises, and why politicians have always exploited them.",
     author: "Indelible Team",
-    publishedAt: "2025-01-29",
+    publishedAt: "2025-02-26",
     readingTime: "7 min read",
     category: "Psychology",
     tags: [
@@ -291,7 +291,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "How Indelible scores public figures by comparing what they say to what they do, and what the grades actually mean.",
     author: "Indelible Team",
-    publishedAt: "2025-02-05",
+    publishedAt: "2025-02-26",
     readingTime: "5 min read",
     category: "Methodology",
     tags: ["methodology", "scoring", "accountability gap", "say vs do", "grading"],
@@ -372,7 +372,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "Patterns in how campaign promises translate into legislation, the common excuses, and why tracking the gap is essential.",
     author: "Indelible Team",
-    publishedAt: "2025-02-12",
+    publishedAt: "2025-02-26",
     readingTime: "6 min read",
     category: "Analysis",
     tags: [
@@ -456,7 +456,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "How artificial intelligence makes it possible to match political promises to actions at scale, and why this changes everything for public accountability.",
     author: "Indelible Team",
-    publishedAt: "2025-02-20",
+    publishedAt: "2025-02-26",
     readingTime: "5 min read",
     category: "Technology",
     tags: [
@@ -644,7 +644,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "Understanding the lifecycle of a public commitment, from bold announcement to quiet abandonment, and how to recognize each stage.",
     author: "Indelible Team",
-    publishedAt: "2025-03-06",
+    publishedAt: "2025-02-27",
     readingTime: "7 min read",
     category: "Education",
     tags: [
@@ -746,7 +746,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "How corporations and politicians are held accountable through fundamentally different mechanisms, and how public record platforms bridge the gap.",
     author: "Indelible Team",
-    publishedAt: "2025-03-13",
+    publishedAt: "2025-02-27",
     readingTime: "6 min read",
     category: "Comparison",
     tags: [
@@ -849,7 +849,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "A practical framework for evaluating political promises before accepting them at face value, with five evidence-based questions every citizen should ask.",
     author: "Indelible Team",
-    publishedAt: "2025-03-20",
+    publishedAt: "2025-02-27",
     readingTime: "5 min read",
     category: "Citizen Guide",
     tags: [
@@ -934,7 +934,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "A survey of how democracies worldwide approach promise tracking and political accountability, from Canada's TrudeauMetre to EU transparency registers.",
     author: "Indelible Team",
-    publishedAt: "2025-03-27",
+    publishedAt: "2025-02-27",
     readingTime: "6 min read",
     category: "International",
     tags: [
@@ -1021,7 +1021,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "From the Magna Carta to FOIA to digital archives, how public records have shaped democratic governance and why digital platforms extend this centuries-old tradition.",
     author: "Indelible Team",
-    publishedAt: "2025-04-03",
+    publishedAt: "2025-02-27",
     readingTime: "7 min read",
     category: "Democracy",
     tags: [
