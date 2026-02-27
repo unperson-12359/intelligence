@@ -80,7 +80,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* Intelligence Premium Palette */
+  /* Indelible Premium Palette */
   --intelligence-blue: oklch(0.60 0.18 250);
   --intelligence-red: oklch(0.60 0.22 25);
   --intelligence-gold: oklch(0.78 0.15 85);
@@ -152,7 +152,7 @@
   }
 }
 
-/* Intelligence Custom Animations */
+/* Indelible Custom Animations */
 @keyframes gradient-shift {
   0%, 100% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }

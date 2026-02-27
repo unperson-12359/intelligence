@@ -78,7 +78,7 @@ export const ACTION_TYPE_LABELS: Record<string, string> = {
 };
 
 export const SITE_CONFIG = {
-  name: 'Intelligence',
+  name: 'Indelible',
   description: "Check any leader's track record. See what they promised vs what they did.",
   url: 'https://intelligence-red.vercel.app',
 } as const;

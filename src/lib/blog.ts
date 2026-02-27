@@ -1,5 +1,5 @@
 // =============================================================================
-// Blog Data Layer for Intelligence Accountability Platform
+// Blog Data Layer for Indelible Accountability Platform
 // =============================================================================
 // Static blog posts for SEO and content marketing. Each article drives traffic
 // to the platform and educates visitors on accountability tracking.
@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
     title: "Why Politicians Get Away With Broken Promises",
     description:
       "How the long timeframe between promises and outcomes lets politicians break their word without consequence, and what you can do about it.",
-    author: "Intelligence Team",
+    author: "Indelible Team",
     publishedAt: "2025-01-15",
     readingTime: "6 min read",
     category: "Accountability",
@@ -83,7 +83,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The solution is not expecting voters to have perfect memory. That is unrealistic. The solution is building systems that remember on behalf of the public.</p>
 
-<p>This is exactly why the <a href="/">Intelligence platform</a> exists. By creating a permanent, searchable record that matches what leaders <em>say</em> against what they <em>do</em>, the platform removes the advantage that time gives to promise-breakers.</p>
+<p>This is exactly why the <a href="/">Indelible platform</a> exists. By creating a permanent, searchable record that matches what leaders <em>say</em> against what they <em>do</em>, the platform removes the advantage that time gives to promise-breakers.</p>
 
 <p>When a politician makes a promise, it gets recorded. When they take an action that contradicts that promise, the contradiction is surfaced. When election season arrives, voters can look up any leader and see their full track record in seconds, not rely on vague recollections from years ago.</p>
 
@@ -95,7 +95,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The four-year amnesia machine only works if we let it. Persistent, accessible accountability records are the antidote. The question is not whether politicians will keep breaking promises. They will. The question is whether we will finally have the tools to make sure everyone knows about it.</p>
 
-<p>Start by looking up <a href="/directory">any leader in the Intelligence directory</a>. See what they promised. See what they did. Decide for yourself whether they earned your trust.</p>
+<p>Start by looking up <a href="/directory">any leader in the Indelible directory</a>. See what they promised. See what they did. Decide for yourself whether they earned your trust.</p>
 `,
   },
 
@@ -107,7 +107,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Hold Your Representatives Accountable",
     description:
       "A practical, step-by-step guide to tracking what your elected officials promise versus what they actually deliver.",
-    author: "Intelligence Team",
+    author: "Indelible Team",
     publishedAt: "2025-01-22",
     readingTime: "5 min read",
     category: "Guide",
@@ -134,7 +134,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Most people cannot answer these questions off the top of their head, and that is normal. Campaign seasons are intense but brief, and specific promises get lost in the noise of rallies, debates, and attack ads.</p>
 
-<p>This is where tools matter. The <a href="/search">Intelligence search</a> lets you look up any tracked public figure and see a chronological list of their recorded statements &#8212; promises, claims, positions, and predictions. Each entry includes the date, source, and exact wording.</p>
+<p>This is where tools matter. The <a href="/search">Indelible search</a> lets you look up any tracked public figure and see a chronological list of their recorded statements &#8212; promises, claims, positions, and predictions. Each entry includes the date, source, and exact wording.</p>
 
 <p>For figures like <a href="/figure/bernie-sanders">Bernie Sanders</a>, who has decades of public statements, the platform provides a structured way to see how positions have evolved or remained consistent over time.</p>
 
@@ -152,13 +152,13 @@ export const blogPosts: BlogPost[] = [
 
 <p>Official records &#8212; congressional voting records, executive orders, agency directives &#8212; are public information. But they are often difficult to navigate and even harder to connect to specific campaign promises.</p>
 
-<p>The Intelligence platform bridges this gap by linking recorded statements directly to documented actions. When a leader makes a promise and then takes a contradictory action, the platform surfaces the contradiction automatically.</p>
+<p>The Indelible platform bridges this gap by linking recorded statements directly to documented actions. When a leader makes a promise and then takes a contradictory action, the platform surfaces the contradiction automatically.</p>
 
 <h2>Step 3: Compare and Evaluate</h2>
 
 <p>With both the promise and the action recorded, you can make an informed judgment. Did they follow through? Did they partially deliver? Did they do the exact opposite of what they said?</p>
 
-<p>This is where the <a href="/scorecard">Intelligence Scorecard</a> becomes useful. Every tracked figure receives a grade based on the alignment between their words and their actions. An "A" means strong follow-through. An "F" means consistent contradiction.</p>
+<p>This is where the <a href="/scorecard">Indelible Scorecard</a> becomes useful. Every tracked figure receives a grade based on the alignment between their words and their actions. An "A" means strong follow-through. An "F" means consistent contradiction.</p>
 
 <p>But the grade is just a starting point. The real value is in the detail. Click into any figure's profile to see exactly which promises were kept, which were broken, and the evidence supporting each assessment.</p>
 
@@ -171,14 +171,14 @@ export const blogPosts: BlogPost[] = [
 <p>Accountability scales when information flows. A single person knowing about a broken promise changes nothing. A thousand people sharing that information with their networks can shift a news cycle, influence an election, or force a public response.</p>
 
 <ul>
-<li>Share specific Intelligence profile links with friends and family before elections.</li>
+<li>Share specific Indelible profile links with friends and family before elections.</li>
 <li>Reference tracked contradictions in letters to editors or social media posts.</li>
 <li>When someone makes a claim about a politician, check it against the record and share the evidence either way.</li>
 </ul>
 
 <h2>Go Further: Contribute to the Record</h2>
 
-<p>The Intelligence platform is community-powered. If you find a promise or action that is not yet tracked, you can <a href="/contribute">submit it for review</a>. Every contribution makes the record more complete and the accountability more comprehensive.</p>
+<p>The Indelible platform is community-powered. If you find a promise or action that is not yet tracked, you can <a href="/contribute">submit it for review</a>. Every contribution makes the record more complete and the accountability more comprehensive.</p>
 
 <p>It takes about two minutes to submit a statement or action with its source. Submissions go through a verification process to ensure accuracy. Once verified, your contribution becomes part of the permanent public record.</p>
 
@@ -196,7 +196,7 @@ export const blogPosts: BlogPost[] = [
     title: "The Psychology of Political Memory: Why We Forget",
     description:
       "The cognitive biases that make us forget political promises, and why politicians have always exploited them.",
-    author: "Intelligence Team",
+    author: "Indelible Team",
     publishedAt: "2025-01-29",
     readingTime: "7 min read",
     category: "Psychology",
@@ -265,7 +265,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The solution is to build systems that do not suffer from these limitations. A database does not forget. An automated matching system does not succumb to confirmation bias. A searchable record does not fall prey to recency bias.</p>
 
-<p>This is the fundamental insight behind the <a href="/">Intelligence platform</a>. It is not a replacement for human judgment. It is a supplement to human memory &#8212; a tool that preserves the facts so that citizens can make evaluations based on complete information rather than fragmentary recollections distorted by predictable biases.</p>
+<p>This is the fundamental insight behind the <a href="/">Indelible platform</a>. It is not a replacement for human judgment. It is a supplement to human memory &#8212; a tool that preserves the facts so that citizens can make evaluations based on complete information rather than fragmentary recollections distorted by predictable biases.</p>
 
 <h2>Building Your Own Bias Defense</h2>
 
@@ -274,7 +274,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
 <li><strong>Externalize your memory.</strong> Do not rely on your own recall of political promises. Use structured records and accountability tools to preserve the facts.</li>
 <li><strong>Seek disconfirming evidence.</strong> Actively look for information that challenges your current view of a leader. If you support someone, look at their broken promises. If you oppose them, look at what they have delivered.</li>
-<li><strong>Evaluate across timeframes.</strong> Resist the pull of recency bias by looking at a leader's full term, not just the last few months. A complete record &#8212; like those available in the <a href="/directory">Intelligence directory</a> &#8212; makes this possible.</li>
+<li><strong>Evaluate across timeframes.</strong> Resist the pull of recency bias by looking at a leader's full term, not just the last few months. A complete record &#8212; like those available in the <a href="/directory">Indelible directory</a> &#8212; makes this possible.</li>
 <li><strong>Focus on specifics.</strong> Vague impressions are where biases thrive. Specific, sourced, dated statements and actions are harder to distort.</li>
 </ul>
 
@@ -289,8 +289,8 @@ export const blogPosts: BlogPost[] = [
     slug: "say-vs-do-accountability-gap",
     title: "Say vs Do: Understanding the Accountability Gap",
     description:
-      "How Intelligence scores public figures by comparing what they say to what they do, and what the grades actually mean.",
-    author: "Intelligence Team",
+      "How Indelible scores public figures by comparing what they say to what they do, and what the grades actually mean.",
+    author: "Indelible Team",
     publishedAt: "2025-02-05",
     readingTime: "5 min read",
     category: "Methodology",
@@ -301,11 +301,11 @@ export const blogPosts: BlogPost[] = [
 
 <p>Every public figure operates in two domains: what they <em>say</em> and what they <em>do</em>. The gap between these two domains &#8212; the accountability gap &#8212; is the single most important measure of whether a leader deserves public trust.</p>
 
-<p>A leader who says one thing and does another is not just inconsistent. They are actively undermining the ability of citizens, shareholders, and constituents to make informed decisions. The Intelligence platform exists to measure this gap systematically.</p>
+<p>A leader who says one thing and does another is not just inconsistent. They are actively undermining the ability of citizens, shareholders, and constituents to make informed decisions. The Indelible platform exists to measure this gap systematically.</p>
 
 <h2>How the Scoring Works</h2>
 
-<p>Every tracked public figure on Intelligence receives a score based on the alignment between their recorded statements (promises, claims, positions, predictions) and their documented actions (votes, executive orders, business decisions, policy implementations).</p>
+<p>Every tracked public figure on Indelible receives a score based on the alignment between their recorded statements (promises, claims, positions, predictions) and their documented actions (votes, executive orders, business decisions, policy implementations).</p>
 
 <p>The scoring system works on a scale from +100 to -100:</p>
 
@@ -339,7 +339,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Why This Approach Matters</h2>
 
-<p>Traditional accountability coverage tends to be episodic. A journalist writes a story about a broken promise. It gets attention for a day. Then it disappears into the archive. The Intelligence approach is different because it is cumulative.</p>
+<p>Traditional accountability coverage tends to be episodic. A journalist writes a story about a broken promise. It gets attention for a day. Then it disappears into the archive. The Indelible approach is different because it is cumulative.</p>
 
 <p>Every recorded statement and every documented action contributes to a running score that updates over time. A single broken promise might not move the needle. But a pattern of broken promises, accumulated over months and years, creates an unmistakable picture.</p>
 
@@ -349,13 +349,13 @@ export const blogPosts: BlogPost[] = [
 
 <p>Politics is complex, and not every broken promise represents bad faith. Circumstances change. Compromises are necessary. Priorities shift based on new information.</p>
 
-<p>The Intelligence scoring system accounts for this through the "Partially Fulfilled" and "In Progress" categories, and through detailed context provided with each accountability record. A leader who promised a specific bill but passed a compromise version with most of the key provisions receives a different evaluation than one who abandoned the effort entirely.</p>
+<p>The Indelible scoring system accounts for this through the "Partially Fulfilled" and "In Progress" categories, and through detailed context provided with each accountability record. A leader who promised a specific bill but passed a compromise version with most of the key provisions receives a different evaluation than one who abandoned the effort entirely.</p>
 
 <p>The goal is not to punish leaders for the realities of governance. It is to create transparency about the gap between rhetoric and results, so that citizens can make informed decisions rather than relying on campaign messaging alone.</p>
 
 <h2>See It in Action</h2>
 
-<p>The best way to understand the scoring system is to explore it. Visit the <a href="/scorecard">Intelligence Scorecard</a> to see how tracked leaders rank, then click into any profile to see the specific statements and actions behind their score.</p>
+<p>The best way to understand the scoring system is to explore it. Visit the <a href="/scorecard">Indelible Scorecard</a> to see how tracked leaders rank, then click into any profile to see the specific statements and actions behind their score.</p>
 
 <p>For a deeper understanding of the methodology, including how AI and human reviewers work together to ensure accuracy, visit our <a href="/about/methodology">methodology page</a>.</p>
 
@@ -371,7 +371,7 @@ export const blogPosts: BlogPost[] = [
     title: "From Campaign Trail to Capitol Hill: What Actually Changes",
     description:
       "Patterns in how campaign promises translate into legislation, the common excuses, and why tracking the gap is essential.",
-    author: "Intelligence Team",
+    author: "Indelible Team",
     publishedAt: "2025-02-12",
     readingTime: "6 min read",
     category: "Analysis",
@@ -433,7 +433,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The campaign-to-governance pipeline works in politicians' favor precisely because it is opaque. Voters cannot easily connect a campaign speech from 2022 to a committee vote in 2024. The information exists in public records, but it is fragmented across congressional databases, news archives, and campaign websites.</p>
 
-<p>Systematic tracking platforms like <a href="/">Intelligence</a> change this dynamic by creating a direct, visible link between statements and actions. When a leader makes a promise, it is recorded with a date, source, and exact wording. When they take a relevant action, it is matched to the original promise and evaluated.</p>
+<p>Systematic tracking platforms like <a href="/">Indelible</a> change this dynamic by creating a direct, visible link between statements and actions. When a leader makes a promise, it is recorded with a date, source, and exact wording. When they take a relevant action, it is matched to the original promise and evaluated.</p>
 
 <p>This does not prevent politicians from breaking promises. But it removes the ability to do so quietly. The accountability gap &#8212; the space between what was said and what was done &#8212; becomes visible, measurable, and shareable.</p>
 
@@ -441,7 +441,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The most effective thing any voter can do is simple: check the record before you vote. Not the campaign ads. Not the debate performance. Not the endorsements. The record of what your representative actually promised and what they actually delivered.</p>
 
-<p>Visit the <a href="/directory">Intelligence directory</a> and look up your representatives. See their recorded statements alongside their documented actions. Share what you find with your network. The more people who check the record, the harder it becomes for the campaign-to-Capitol pipeline to quietly swallow promises whole.</p>
+<p>Visit the <a href="/directory">Indelible directory</a> and look up your representatives. See their recorded statements alongside their documented actions. Share what you find with your network. The more people who check the record, the harder it becomes for the campaign-to-Capitol pipeline to quietly swallow promises whole.</p>
 
 <p>If you find promises or actions that are not yet tracked, <a href="/contribute">contribute them to the platform</a>. Every entry makes the record more complete and the accountability more effective.</p>
 `,
@@ -455,7 +455,7 @@ export const blogPosts: BlogPost[] = [
     title: "How AI Is Helping Track Political Accountability",
     description:
       "How artificial intelligence makes it possible to match political promises to actions at scale, and why this changes everything for public accountability.",
-    author: "Intelligence Team",
+    author: "Indelible Team",
     publishedAt: "2025-02-20",
     readingTime: "5 min read",
     category: "Technology",
@@ -491,7 +491,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>AI capability alone is not enough. The critical challenge in accountability tracking is not just identifying contradictions but ensuring that the identifications are accurate. False positives &#8212; flagging a kept promise as broken, or vice versa &#8212; undermine the credibility of the entire system.</p>
 
-<p>The <a href="/">Intelligence platform</a> addresses this through a three-layer trust system designed to combine the scale of AI with the judgment of humans:</p>
+<p>The <a href="/">Indelible platform</a> addresses this through a three-layer trust system designed to combine the scale of AI with the judgment of humans:</p>
 
 <h3>Layer 1: AI Research and Matching</h3>
 
@@ -524,7 +524,7 @@ export const blogPosts: BlogPost[] = [
 <p>AI-powered accountability tracking carries real risks that must be addressed transparently:</p>
 
 <ul>
-<li><strong>Bias in training data.</strong> If the AI is trained on partisan sources, its assessments will reflect those biases. Intelligence addresses this by using diverse source sets and requiring cross-partisan community review.</li>
+<li><strong>Bias in training data.</strong> If the AI is trained on partisan sources, its assessments will reflect those biases. Indelible addresses this by using diverse source sets and requiring cross-partisan community review.</li>
 <li><strong>Context sensitivity.</strong> AI can miss nuance that changes the meaning of a statement or action. The community review layer is specifically designed to catch these cases.</li>
 <li><strong>Manipulation.</strong> Bad actors may try to game the system by submitting false information or coordinating reviews. The reputation system and consensus requirements create barriers to manipulation.</li>
 </ul>
@@ -537,7 +537,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The goal is not a perfect system. It is a better one &#8212; one where breaking a promise comes with a permanent, searchable record rather than a reasonable expectation that nobody will notice.</p>
 
-<p>If you want to be part of this shift, you can start today. <a href="/contribute">Contribute to the Intelligence platform</a> by submitting statements, actions, or reviews. Or simply <a href="/directory">explore the directory</a> and see the technology in action.</p>
+<p>If you want to be part of this shift, you can start today. <a href="/contribute">Contribute to the Indelible platform</a> by submitting statements, actions, or reviews. Or simply <a href="/directory">explore the directory</a> and see the technology in action.</p>
 
 <p>The era of consequence-free promise-breaking is ending. AI is making sure of that.</p>
 `,

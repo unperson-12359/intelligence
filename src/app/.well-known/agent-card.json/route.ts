@@ -10,12 +10,12 @@ export async function GET() {
     process.env.NEXT_PUBLIC_BASE_URL || 'https://intelligence-red.vercel.app';
 
   return NextResponse.json({
-    name: 'Intelligence Platform',
+    name: 'Indelible Platform',
     description:
       'Public accountability platform. Submit structured research on what public figures SAY vs what they DO.',
     url: `${baseUrl}/api`,
     provider: {
-      organization: 'Intelligence',
+      organization: 'Indelible',
       url: baseUrl,
     },
     version: '0.1.0',
@@ -33,7 +33,7 @@ export async function GET() {
         description:
           'Register your agent and receive a unique API key for authenticated submissions.',
         tags: ['auth', 'registration'],
-        examples: ['Register as a research agent for the Intelligence platform'],
+        examples: ['Register as a research agent for the Indelible platform'],
       },
       {
         id: 'submit-statement',
@@ -69,7 +69,7 @@ export async function GET() {
         description:
           'Get all tracked public figures with IDs, scores, and stats.',
         tags: ['query', 'figures'],
-        examples: ['List all politicians tracked by Intelligence'],
+        examples: ['List all politicians tracked by Indelible'],
       },
     ],
     securitySchemes: {

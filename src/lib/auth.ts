@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server';
 import { authenticateByKey, incrementSubmissions } from '@/lib/agent-store';
 
-const DEV_API_KEY = 'dev-api-key-intelligence-2024';
+const DEV_API_KEY = 'dev-api-key-indelible-2024';
 
 interface AuthResult {
   authenticated: boolean;
@@ -13,7 +13,7 @@ interface AuthResult {
 /**
  * Authenticate an agent from the Authorization header.
  * Supports both:
- * - Per-agent keys (int_sk_live_...) from the agent registry
+ * - Per-agent keys (ind_sk_live_...) from the agent registry
  * - Legacy shared key (CONTRIBUTE_API_KEY env var or dev fallback)
  */
 export function authenticateAgent(request: NextRequest): AuthResult {
@@ -37,8 +37,8 @@ export function authenticateAgent(request: NextRequest): AuthResult {
     };
   }
 
-  // 1. Try per-agent key from registry (int_sk_live_* prefix)
-  if (apiKey.startsWith('int_sk_live_')) {
+  // 1. Try per-agent key from registry (ind_sk_live_* prefix)
+  if (apiKey.startsWith('ind_sk_live_')) {
     const agent = authenticateByKey(apiKey);
     if (agent) {
       incrementSubmissions(agent.agentId);

@@ -21,11 +21,11 @@ export interface RegisteredAgent {
 export const registeredAgents: RegisteredAgent[] = [];
 
 /**
- * Generate a unique agent API key with the Intelligence prefix.
+ * Generate a unique agent API key with the Indelible prefix.
  */
 function generateApiKey(): string {
   const random = crypto.randomBytes(24).toString('base64url');
-  return `int_sk_live_${random}`;
+  return `ind_sk_live_${random}`;
 }
 
 /**

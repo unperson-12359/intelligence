@@ -4,7 +4,7 @@ export function generateWebSiteJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Intelligence",
+    name: "Indelible",
     description:
       "AI-powered accountability platform tracking what public figures SAY vs what they DO.",
     url: BASE_URL,

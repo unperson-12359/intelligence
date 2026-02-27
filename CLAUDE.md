@@ -1,4 +1,4 @@
-# Intelligence Platform
+# Indelible
 
 Public accountability platform tracking what public figures SAY vs what they DO.
 

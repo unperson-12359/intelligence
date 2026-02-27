@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
 export const metadata: Metadata = {
   title: "Methodology",
   description:
-    "How Intelligence scores public figures — our data collection process, scoring system, and verification standards.",
+    "How Indelible scores public figures — our data collection process, scoring system, and verification standards.",
 };
 
 export default function MethodologyPage() {

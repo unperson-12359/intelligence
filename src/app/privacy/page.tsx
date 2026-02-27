@@ -4,7 +4,7 @@ import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Intelligence collects, uses, and protects your data.",
+    "How Indelible collects, uses, and protects your data.",
 };
 
 export default function PrivacyPage() {
@@ -20,7 +20,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-xl font-bold mb-3">Data We Collect</h2>
           <p className="text-muted-foreground">
-            Intelligence collects publicly available information about public
+            Indelible collects publicly available information about public
             figures, including statements, actions, voting records, and other
             publicly documented activities. We do not collect personal data from
             visitors beyond standard analytics (page views, referrers) and any

@@ -9,7 +9,7 @@ import { getAllBlogPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "They promise. They break it. They count on you forgetting. See how Intelligence makes broken promises impossible to hide.",
+    "They promise. They break it. They count on you forgetting. See how Indelible makes broken promises impossible to hide.",
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
       <Breadcrumbs items={[{ label: "About" }]} />
       <ScrollReveal>
-        <h1 className="text-3xl font-bold mb-6">About Intelligence</h1>
+        <h1 className="text-3xl font-bold mb-6">About Indelible</h1>
       </ScrollReveal>
 
       <div className="space-y-8">
@@ -27,7 +27,7 @@ export default function AboutPage() {
             <p className="text-muted-foreground">
               You&apos;ve been lied to. Not once — systematically. Every election,
               every earnings call, every press conference. They make promises
-              designed to be forgotten. Intelligence makes forgetting impossible.
+              designed to be forgotten. Indelible makes forgetting impossible.
             </p>
             <p className="text-muted-foreground mt-2">
               Every public statement is matched against actual actions, scored,

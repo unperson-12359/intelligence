@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with the Intelligence team.",
+  description: "Get in touch with the Indelible team.",
 };
 
 export default function ContactPage() {

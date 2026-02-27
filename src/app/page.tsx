@@ -179,7 +179,7 @@ export default function HomePage() {
 
           <ScrollReveal delay={0.3} className="text-center mt-8">
             <p className="text-muted-foreground font-medium">
-              They count on your short memory. Intelligence gives you a permanent
+              They count on your short memory. Indelible gives you a permanent
               one.
             </p>
           </ScrollReveal>

@@ -19,23 +19,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Intelligence — Public Accountability Platform",
-    template: "%s | Intelligence",
+    default: "Indelible — Public Accountability Platform",
+    template: "%s | Indelible",
   },
   description:
     "They promise. They break it. They count on you forgetting. Check any leader's track record in seconds.",
   metadataBase: new URL("https://intelligence-red.vercel.app"),
   openGraph: {
-    title: "Intelligence — Public Accountability Platform",
+    title: "Indelible — Public Accountability Platform",
     description:
       "They promise. They break it. They count on you forgetting. Check any leader's track record.",
     type: "website",
-    siteName: "Intelligence",
+    siteName: "Indelible",
     url: "https://intelligence-red.vercel.app",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Intelligence — Public Accountability Platform",
+    title: "Indelible — Public Accountability Platform",
     description:
       "They promise. They break it. They count on you forgetting. Check any leader's track record.",
   },

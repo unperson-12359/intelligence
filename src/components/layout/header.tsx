@@ -40,7 +40,7 @@ export function Header() {
             I
           </div>
           <span className="hidden font-bold text-lg sm:inline-block">
-            Intelligence
+            Indelible
           </span>
         </Link>
 

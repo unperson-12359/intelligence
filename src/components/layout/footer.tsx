@@ -12,7 +12,7 @@ export function Footer() {
               <div className="flex h-7 w-7 items-center justify-center rounded-md bg-primary text-primary-foreground font-bold text-xs">
                 I
               </div>
-              <span className="font-bold">Intelligence</span>
+              <span className="font-bold">Indelible</span>
             </div>
             <p className="text-sm text-muted-foreground">
               They count on you forgetting. We make sure you don&apos;t.
@@ -104,7 +104,7 @@ export function Footer() {
             </a>
           </div>
           <p className="text-xs text-muted-foreground text-center">
-            Intelligence Platform — Built by the people, for the people.
+            Indelible — Built by the people, for the people.
             Data sourced from public records.
           </p>
         </div>

@@ -1,7 +1,7 @@
 import 'server-only';
 
 // =============================================================================
-// Mock Data for Intelligence Accountability Platform
+// Mock Data for Indelible Accountability Platform
 // =============================================================================
 // This file provides static seed data for UI development before the database
 // is connected. All figures are real public persons and all statements/actions

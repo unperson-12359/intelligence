@@ -5,7 +5,7 @@ export async function GET() {
   const stats = getRegistryStats();
 
   return NextResponse.json({
-    name: 'Intelligence Platform',
+    name: 'Indelible Platform',
     description:
       'Public accountability platform tracking what public figures SAY vs what they DO. Submit structured research via API.',
     version: '0.1.0',
@@ -24,7 +24,7 @@ export async function GET() {
         },
         note: 'Returns a unique API key. Save it — shown only once.',
       },
-      legacyKey: 'For development/testing: dev-api-key-intelligence-2024',
+      legacyKey: 'For development/testing: dev-api-key-indelible-2024',
     },
 
     endpoints: {

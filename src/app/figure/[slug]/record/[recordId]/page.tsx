@@ -56,7 +56,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${statement.title} — ${figure.name} | Intelligence`,
+    title: `${statement.title} — ${figure.name} | Indelible`,
     description: record.summary,
   };
 }
