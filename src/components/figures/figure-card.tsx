@@ -105,8 +105,8 @@ export function FigureCard({
                   <span>{totalStatements} statements</span>
                   <span>{totalActions} actions</span>
                   {brokenCount > 0 && (
-                    <span className="text-red-600 dark:text-red-400 font-medium">
-                      {brokenCount} broken
+                    <span className="text-orange-600 dark:text-orange-400 font-medium">
+                      {brokenCount} unmet
                     </span>
                   )}
                 </div>

@@ -90,9 +90,9 @@ export default async function BlogPage({
             description: "Search and filter every tracked public figure",
           },
           {
-            label: "Expose a Broken Promise",
+            label: "Add to the Record",
             href: "/contribute",
-            description: "Help build the record. It takes 2 minutes.",
+            description: "Contribute to the public record.",
           },
         ]}
       />

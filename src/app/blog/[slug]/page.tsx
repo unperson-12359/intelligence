@@ -163,9 +163,9 @@ export default async function BlogPostPage({
             description: "Check any leader's track record",
           },
           {
-            label: "Expose a Broken Promise",
+            label: "Add to the Record",
             href: "/contribute",
-            description: "Help build the record",
+            description: "Contribute to the public record.",
           },
         ]}
       />

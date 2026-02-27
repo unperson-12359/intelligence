@@ -1,9 +1,9 @@
 export const VERDICT_CONFIG = {
   kept: { label: 'Kept', color: 'bg-green-500', textColor: 'text-green-700', icon: '✓' },
-  broken: { label: 'Broken', color: 'bg-red-500', textColor: 'text-red-700', icon: '✗' },
+  broken: { label: 'Unmet', color: 'bg-red-500', textColor: 'text-red-700', icon: '✗' },
   partial: { label: 'Partial', color: 'bg-yellow-500', textColor: 'text-yellow-700', icon: '~' },
   in_progress: { label: 'In Progress', color: 'bg-blue-500', textColor: 'text-blue-700', icon: '⟳' },
-  flip_flop: { label: 'Flip-Flop', color: 'bg-purple-500', textColor: 'text-purple-700', icon: '⇄' },
+  flip_flop: { label: 'Reversed', color: 'bg-purple-500', textColor: 'text-purple-700', icon: '⇄' },
   context_needed: { label: 'Needs Context', color: 'bg-gray-500', textColor: 'text-gray-700', icon: '?' },
 } as const;
 
@@ -79,6 +79,6 @@ export const ACTION_TYPE_LABELS: Record<string, string> = {
 
 export const SITE_CONFIG = {
   name: 'Indelible',
-  description: "Check any leader's track record. See what they promised vs what they did.",
+  description: "The public record of what leaders say and what they do.",
   url: 'https://intelligence-red.vercel.app',
 } as const;

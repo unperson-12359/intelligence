@@ -76,13 +76,13 @@ export default function MethodologyPage() {
               </div>
               <div className="flex items-center gap-3 p-3 rounded-lg border">
                 <span className="font-bold text-red-600 dark:text-red-400 w-20">-50 to -100</span>
-                <span className="font-medium w-20">Broken</span>
+                <span className="font-medium w-20">Unmet</span>
                 <span className="text-muted-foreground">Action directly contradicts or abandons the statement</span>
               </div>
               <div className="flex items-center gap-3 p-3 rounded-lg border">
                 <span className="font-bold text-purple-600 dark:text-purple-400 w-20">-30 to -80</span>
-                <span className="font-medium w-20">Flip-Flop</span>
-                <span className="text-muted-foreground">Figure reversed position without acknowledging the change</span>
+                <span className="font-medium w-20">Reversed</span>
+                <span className="text-muted-foreground">Position reversed from previously stated stance</span>
               </div>
             </div>
           </section>

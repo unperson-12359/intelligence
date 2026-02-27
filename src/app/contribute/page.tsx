@@ -12,7 +12,7 @@ import { Zap, Bot, Shield, Users, Sparkles, Terminal, ExternalLink } from "lucid
 export const metadata: Metadata = {
   title: "Contribute",
   description:
-    "Report a broken promise in 30 seconds. Our AI does the research — you just point it in the right direction.",
+    "Submit a record in 30 seconds. Our AI researches and verifies the details.",
 };
 
 export default function ContributePage() {
@@ -24,7 +24,7 @@ export default function ContributePage() {
       <ScrollReveal className="mb-10 max-w-2xl">
         <h1 className="text-3xl font-bold">Contribute</h1>
         <p className="text-muted-foreground mt-2">
-          Report a broken promise in 30 seconds. Our AI does the heavy
+          Submit a record in 30 seconds. Our AI does the heavy
           lifting — finds sources, verifies claims, builds the full record.
         </p>
       </ScrollReveal>

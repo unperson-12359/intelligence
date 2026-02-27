@@ -68,7 +68,7 @@ export default async function ScorecardPage({
                 <th className="px-4 py-3 font-medium hidden sm:table-cell">Type</th>
                 <th className="px-4 py-3 font-medium text-center">Grade</th>
                 <th className="px-4 py-3 font-medium text-center hidden md:table-cell">Kept</th>
-                <th className="px-4 py-3 font-medium text-center hidden md:table-cell">Broken</th>
+                <th className="px-4 py-3 font-medium text-center hidden md:table-cell">Unmet</th>
               </tr>
             </thead>
             <tbody>
@@ -120,7 +120,7 @@ export default async function ScorecardPage({
                       </span>
                     </td>
                     <td className="px-4 py-3 text-center hidden md:table-cell">
-                      <span className="text-sm text-red-600 dark:text-red-400 font-medium">
+                      <span className="text-sm text-orange-600 dark:text-orange-400 font-medium">
                         {figure.stats.brokenCount}
                       </span>
                     </td>
@@ -152,7 +152,7 @@ export default async function ScorecardPage({
         suggestions={[
           { label: "Browse All Leaders", href: "/directory", description: "Search and filter every tracked public figure" },
           { label: "Browse Topics", href: "/topics", description: "Explore accountability by policy area" },
-          { label: "Expose a Broken Promise", href: "/contribute", description: "Help build the record. It takes 2 minutes." },
+          { label: "Add to the Record", href: "/contribute", description: "Contribute to the public record." },
         ]}
       />
     </div>

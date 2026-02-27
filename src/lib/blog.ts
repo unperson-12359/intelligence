@@ -20,82 +20,82 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   // -------------------------------------------------------------------------
-  // Article 1: Why Politicians Get Away With Broken Promises
+  // Article 1: The Public Memory Gap
   // -------------------------------------------------------------------------
   {
-    slug: "why-politicians-get-away-with-broken-promises",
-    title: "Why Politicians Get Away With Broken Promises",
+    slug: "the-public-memory-gap",
+    title: "The Public Memory Gap: Why Political Accountability Is Difficult",
     description:
-      "How the long timeframe between promises and outcomes lets politicians break their word without consequence, and what you can do about it.",
+      "How the timeframe between public commitments and outcomes makes systematic accountability challenging, and what structured records can change.",
     author: "Indelible Team",
     publishedAt: "2025-01-15",
     readingTime: "6 min read",
     category: "Accountability",
     tags: [
-      "broken promises",
+      "public commitments",
       "accountability",
       "election cycles",
       "political memory",
     ],
     relatedFigureSlugs: ["ted-cruz", "elon-musk"],
     content: `
-<h2>The Four-Year Amnesia Machine</h2>
+<h2>The Public Memory Gap</h2>
 
-<p>Every election cycle follows the same pattern. A candidate stands on stage, looks into the camera, and makes a bold promise. Lower taxes. Better healthcare. More jobs. The crowd cheers. The media covers it for 48 hours. Then everyone moves on.</p>
+<p>Every election cycle follows the same pattern. A candidate stands on stage, looks into the camera, and makes a bold commitment. Lower taxes. Better healthcare. More jobs. The crowd cheers. The media covers it for 48 hours. Then everyone moves on.</p>
 
-<p>Four years later, that same candidate is back on stage, making the same promises. Nobody asks what happened to the last set of commitments. The audience has largely forgotten. The journalist asking questions has moved to a different beat. The original clip is buried under millions of hours of new content.</p>
+<p>Four years later, that same candidate is back on stage, making the same commitments. Nobody asks what happened to the last set. The audience has largely forgotten. The journalist asking questions has moved to a different beat. The original clip is buried under millions of hours of new content.</p>
 
-<p>This is not an accident. It is a feature of how modern politics works, and it is the single biggest reason politicians get away with breaking their word.</p>
+<p>The gap between when a commitment is made and when it should be evaluated is one of the biggest structural challenges in political accountability.</p>
 
 <h2>Why the Timeframe Is the Problem</h2>
 
-<p>Human memory is not designed for four-year accountability cycles. Research in cognitive psychology shows that our recall of specific claims degrades sharply after just a few weeks. By the time an election rolls around again, voters are operating on vague impressions rather than concrete memories of what was promised.</p>
+<p>Human memory is not designed for four-year accountability cycles. Research in cognitive psychology shows that our recall of specific claims degrades sharply after just a few weeks. By the time an election rolls around again, voters are operating on vague impressions rather than concrete memories of what was committed to.</p>
 
-<p>Consider a senator who promises during their campaign to introduce legislation capping insulin prices at $35. The promise gets moderate coverage. Two years in, a watered-down version passes committee but stalls on the floor. By year four, the senator claims credit for "fighting for lower drug costs" without ever having delivered the specific cap they promised. Most voters will accept this framing because they cannot recall the original, specific commitment.</p>
+<p>Consider a senator who commits during their campaign to introduce legislation capping insulin prices at $35. The commitment gets moderate coverage. Two years in, a watered-down version passes committee but stalls on the floor. By year four, the senator claims credit for "fighting for lower drug costs" without ever having delivered the specific cap they committed to. Most voters will accept this framing because they cannot recall the original, specific commitment.</p>
 
-<p>This is what we call "promise amnesia" &#8212; the systematic exploitation of the gap between when a promise is made and when it should be evaluated.</p>
+<p>This is what we call the "public memory gap" &#8212; the structural disconnect between when a commitment is made and when it should be evaluated.</p>
 
-<h3>The News Cycle Completes the Cover</h3>
+<h3>The News Cycle Widens the Gap</h3>
 
-<p>Modern news moves at a relentless pace. A broken promise from 2021 cannot compete for attention with a fresh controversy in 2024. Media organizations, driven by engagement metrics, have little incentive to revisit old commitments when new stories generate more clicks.</p>
+<p>Modern news moves at a relentless pace. An unmet commitment from 2021 cannot compete for attention with a fresh controversy in 2024. Media organizations, driven by engagement metrics, have little incentive to revisit old commitments when new stories generate more clicks.</p>
 
-<p>Politicians understand this intuitively. They know that making a bold promise today carries almost zero risk of future accountability. The cost of breaking a promise is negligible because the infrastructure to track and surface broken promises simply has not existed at scale.</p>
+<p>The result is that making a bold commitment today carries limited risk of future scrutiny. The infrastructure to track and surface unmet commitments simply has not existed at scale.</p>
 
-<h2>Real-World Examples of Promise Amnesia</h2>
+<h2>Real-World Examples of the Public Memory Gap</h2>
 
-<p>This pattern repeats across the political spectrum. A leader pledges to eliminate the national debt, then oversees its largest increase. A governor promises to fully fund public schools, then signs a budget with education cuts. A mayor commits to police reform, then quietly increases the department budget by 15%.</p>
+<p>This pattern repeats across the political spectrum. A leader pledges to eliminate the national debt, then oversees its largest increase. A governor commits to fully fund public schools, then signs a budget with education cuts. A mayor commits to police reform, then quietly increases the department budget by 15%.</p>
 
-<p>In the corporate world, the same dynamic plays out. Leaders like <a href="/figure/elon-musk">Elon Musk</a> have made repeated public predictions and promises &#8212; full self-driving capability, Mars missions, product timelines &#8212; that consistently fail to materialize on schedule. Yet each new promise receives the same enthusiastic coverage, with little reference to the track record of previous commitments.</p>
+<p>In the corporate world, the same dynamic plays out. Leaders like <a href="/figure/elon-musk">Elon Musk</a> have made repeated public predictions and commitments &#8212; full self-driving capability, Mars missions, product timelines &#8212; that consistently fail to materialize on schedule. Yet each new commitment receives the same enthusiastic coverage, with little reference to the track record of previous ones.</p>
 
 <p>Politicians like <a href="/figure/ted-cruz">Ted Cruz</a> shift positions over years, and without a permanent record linking past statements to current actions, the shifts go largely unchallenged in day-to-day coverage.</p>
 
-<h2>The Three Mechanisms of Escape</h2>
+<h2>Three Factors That Widen the Gap</h2>
 
-<p>Politicians rely on three core mechanisms to avoid accountability for broken promises:</p>
+<p>Three core factors make it difficult to hold leaders accountable for unmet commitments:</p>
 
 <ul>
-<li><strong>Time decay:</strong> The longer between promise and evaluation, the weaker the voter's memory of the specific commitment.</li>
-<li><strong>Reframing:</strong> Instead of admitting a promise was broken, they redefine what was promised. "I said I'd fight for healthcare reform" replaces "I said I'd pass universal coverage."</li>
-<li><strong>Distraction:</strong> New crises, controversies, and commitments push old promises out of the public conversation. There is always something more urgent to talk about.</li>
+<li><strong>Time decay:</strong> The longer between commitment and evaluation, the weaker the voter's memory of the specific pledge.</li>
+<li><strong>Reframing:</strong> Instead of addressing an unmet commitment directly, leaders redefine what was originally said. "I said I'd fight for healthcare reform" replaces "I said I'd pass universal coverage."</li>
+<li><strong>Distraction:</strong> New crises, controversies, and commitments push old ones out of the public conversation. There is always something more urgent to talk about.</li>
 </ul>
 
 <h2>What It Would Take to Change This</h2>
 
 <p>The solution is not expecting voters to have perfect memory. That is unrealistic. The solution is building systems that remember on behalf of the public.</p>
 
-<p>This is exactly why the <a href="/">Indelible platform</a> exists. By creating a permanent, searchable record that matches what leaders <em>say</em> against what they <em>do</em>, the platform removes the advantage that time gives to promise-breakers.</p>
+<p>This is exactly why the <a href="/">Indelible platform</a> exists. By creating a permanent, searchable record that matches what leaders <em>say</em> against what they <em>do</em>, the platform closes the public memory gap with structured, persistent data.</p>
 
-<p>When a politician makes a promise, it gets recorded. When they take an action that contradicts that promise, the contradiction is surfaced. When election season arrives, voters can look up any leader and see their full track record in seconds, not rely on vague recollections from years ago.</p>
+<p>When a leader makes a commitment, it gets recorded. When they take an action that contradicts that commitment, the contradiction is surfaced. When election season arrives, voters can look up any leader and see their full track record in seconds, not rely on vague recollections from years ago.</p>
 
 <h3>Why This Matters More Than Ever</h3>
 
-<p>In an era of information overload, the ability to break promises without consequence has never been greater. The sheer volume of daily news means that even major contradictions can disappear from public awareness within days.</p>
+<p>In an era of information overload, the difficulty of tracking commitments over time has never been greater. The sheer volume of daily news means that even major contradictions can disappear from public awareness within days.</p>
 
-<p>But the tools to fight back are also better than ever. AI can process and match statements to actions at a scale that was impossible even five years ago. Community-driven platforms can verify and surface contradictions faster than any single newsroom.</p>
+<p>But the tools to address this are also better than ever. AI can process and match statements to actions at a scale that was impossible even five years ago. Community-driven platforms can verify and surface contradictions faster than any single newsroom.</p>
 
-<p>The four-year amnesia machine only works if we let it. Persistent, accessible accountability records are the antidote. The question is not whether politicians will keep breaking promises. They will. The question is whether we will finally have the tools to make sure everyone knows about it.</p>
+<p>Structured, persistent records can close the public memory gap. The question is not whether leaders will leave commitments unmet. Some will. The question is whether we will have the tools to make that information accessible to everyone.</p>
 
-<p>Start by looking up <a href="/directory">any leader in the Indelible directory</a>. See what they promised. See what they did. Decide for yourself whether they earned your trust.</p>
+<p>Start by looking up <a href="/directory">any leader in the Indelible directory</a>. See what they committed to. See what they did. Decide for yourself whether they earned your trust.</p>
 `,
   },
 
@@ -160,7 +160,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>This is where the <a href="/scorecard">Indelible Scorecard</a> becomes useful. Every tracked figure receives a grade based on the alignment between their words and their actions. An "A" means strong follow-through. An "F" means consistent contradiction.</p>
 
-<p>But the grade is just a starting point. The real value is in the detail. Click into any figure's profile to see exactly which promises were kept, which were broken, and the evidence supporting each assessment.</p>
+<p>But the grade is just a starting point. The real value is in the detail. Click into any figure's profile to see exactly which commitments were kept, which were unmet, and the evidence supporting each assessment.</p>
 
 <p>For example, comparing the records of leaders like <a href="/figure/bernie-sanders">Bernie Sanders</a> and <a href="/figure/ted-cruz">Ted Cruz</a> on the same issue reveals not just different positions, but different levels of follow-through on their stated commitments.</p>
 
@@ -168,7 +168,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Individual awareness is valuable, but collective awareness creates pressure. When you find a significant contradiction between what a leader promised and what they did, share it.</p>
 
-<p>Accountability scales when information flows. A single person knowing about a broken promise changes nothing. A thousand people sharing that information with their networks can shift a news cycle, influence an election, or force a public response.</p>
+<p>Accountability scales when information flows. A single person knowing about an unmet commitment changes nothing. A thousand people sharing that information with their networks can shift a news cycle, influence an election, or force a public response.</p>
 
 <ul>
 <li>Share specific Indelible profile links with friends and family before elections.</li>
@@ -219,7 +219,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>The availability heuristic is a mental shortcut where people estimate the likelihood or importance of something based on how easily examples come to mind. In politics, this means that whatever is dominating today's news cycle feels like the most important issue, regardless of its actual significance.</p>
 
-<p>A senator who broke a major healthcare promise two years ago but gave a well-received speech last week benefits enormously from this bias. The speech is available in voters' memories. The broken promise is not. The senator appears effective and engaged because the most recent, most vivid information dominates perception.</p>
+<p>A senator who left a major healthcare commitment unmet two years ago but gave a well-received speech last week benefits enormously from this bias. The speech is available in voters' memories. The unmet commitment is not. The senator appears effective and engaged because the most recent, most vivid information dominates perception.</p>
 
 <p>This is why politicians invest so heavily in media appearances and headline-generating events. Each new positive impression pushes older, potentially damaging information further from voters' immediate recall.</p>
 
@@ -227,11 +227,11 @@ export const blogPosts: BlogPost[] = [
 
 <p>Confirmation bias is the tendency to search for, interpret, and remember information that confirms our existing beliefs while ignoring information that contradicts them.</p>
 
-<p>In the context of political accountability, this means that supporters of a leader will naturally downplay or dismiss evidence of broken promises, while opponents will amplify it. Neither group is evaluating the evidence objectively.</p>
+<p>In the context of political accountability, this means that supporters of a leader will naturally downplay or dismiss evidence of unmet commitments, while opponents will amplify it. Neither group is evaluating the evidence objectively.</p>
 
 <p>A voter who supports a particular governor will interpret a partially fulfilled promise as evidence of good-faith effort. An opponent will see the same partial fulfillment as proof of failure. The raw facts &#8212; what was promised, what was delivered &#8212; get filtered through pre-existing loyalty before they are even evaluated.</p>
 
-<p>This is one reason why partisan media ecosystems are so effective. They provide a constant stream of confirming information while filtering out contradictions. A voter who only consumes sympathetic coverage of their preferred leaders will rarely encounter evidence of broken promises.</p>
+<p>This is one reason why partisan media ecosystems are so effective. They provide a constant stream of confirming information while filtering out contradictions. A voter who only consumes sympathetic coverage of their preferred leaders will rarely encounter evidence of unmet commitments.</p>
 
 <h2>Recency Bias: The Last Thing Wins</h2>
 
@@ -243,7 +243,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>How Recency Bias and News Cycles Interact</h3>
 
-<p>The modern 24-hour news cycle amplifies recency bias dramatically. In previous decades, a broken promise might have stayed in public discussion for weeks. Today, it is replaced by new stories within hours. The combination of short attention spans, algorithmic content feeds, and constant information flow means that even significant contradictions fade from public awareness faster than ever.</p>
+<p>The modern 24-hour news cycle amplifies recency bias dramatically. In previous decades, an unmet commitment might have stayed in public discussion for weeks. Today, it is replaced by new stories within hours. The combination of short attention spans, algorithmic content feeds, and constant information flow means that even significant contradictions fade from public awareness faster than ever.</p>
 
 <h2>Anchoring: The First Number Sticks</h2>
 
@@ -273,7 +273,7 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
 <li><strong>Externalize your memory.</strong> Do not rely on your own recall of political promises. Use structured records and accountability tools to preserve the facts.</li>
-<li><strong>Seek disconfirming evidence.</strong> Actively look for information that challenges your current view of a leader. If you support someone, look at their broken promises. If you oppose them, look at what they have delivered.</li>
+<li><strong>Seek disconfirming evidence.</strong> Actively look for information that challenges your current view of a leader. If you support someone, look at their unmet commitments. If you oppose them, look at what they have delivered.</li>
 <li><strong>Evaluate across timeframes.</strong> Resist the pull of recency bias by looking at a leader's full term, not just the last few months. A complete record &#8212; like those available in the <a href="/directory">Indelible directory</a> &#8212; makes this possible.</li>
 <li><strong>Focus on specifics.</strong> Vague impressions are where biases thrive. Specific, sourced, dated statements and actions are harder to distort.</li>
 </ul>
@@ -333,21 +333,21 @@ export const blogPosts: BlogPost[] = [
 
 <p>Consider two hypothetical leaders. Leader A has a score of +60, indicating a strong track record of follow-through. Looking at their profile, you would see a majority of "Fulfilled" and "Partially Fulfilled" records with occasional gaps. This is a leader who generally does what they say they will do, even if they do not hit every mark.</p>
 
-<p>Now consider Leader B with a score of -80. Their profile shows a pattern of "Broken" and "Contradicted" records. They promised to lower costs but voted against price controls. They pledged transparency but blocked oversight measures. They claimed to support workers but opposed minimum wage increases. Each individual contradiction might be explainable in isolation, but the pattern tells a clear story.</p>
+<p>Now consider Leader B with a score of -80. Their profile shows a pattern of "Unmet" and "Reversed" records. They committed to lower costs but voted against price controls. They pledged transparency but blocked oversight measures. They stated support for workers but opposed minimum wage increases. Each individual contradiction might be explainable in isolation, but the pattern tells a clear story.</p>
 
 <p>Leaders like <a href="/figure/bernie-sanders">Bernie Sanders</a> can be evaluated on decades of recorded statements and voting actions, providing a robust dataset for scoring. Corporate leaders like <a href="/figure/bob-iger">Bob Iger</a> are evaluated on public commitments about company direction, employee treatment, and product promises versus documented corporate actions.</p>
 
 <h2>Why This Approach Matters</h2>
 
-<p>Traditional accountability coverage tends to be episodic. A journalist writes a story about a broken promise. It gets attention for a day. Then it disappears into the archive. The Indelible approach is different because it is cumulative.</p>
+<p>Traditional accountability coverage tends to be episodic. A journalist writes a story about an unmet commitment. It gets attention for a day. Then it disappears into the archive. The Indelible approach is different because it is cumulative.</p>
 
-<p>Every recorded statement and every documented action contributes to a running score that updates over time. A single broken promise might not move the needle. But a pattern of broken promises, accumulated over months and years, creates an unmistakable picture.</p>
+<p>Every recorded statement and every documented action contributes to a running score that updates over time. A single unmet commitment might not move the needle. But a pattern of unmet commitments, accumulated over months and years, creates an unmistakable picture.</p>
 
 <p>This cumulative approach also protects against cherry-picking. Anyone can find one example to make a leader look good or bad. But a comprehensive record covering dozens of statements and actions is far harder to dismiss.</p>
 
 <h3>Handling Nuance and Context</h3>
 
-<p>Politics is complex, and not every broken promise represents bad faith. Circumstances change. Compromises are necessary. Priorities shift based on new information.</p>
+<p>Politics is complex, and not every unmet commitment represents bad faith. Circumstances change. Compromises are necessary. Priorities shift based on new information.</p>
 
 <p>The Indelible scoring system accounts for this through the "Partially Fulfilled" and "In Progress" categories, and through detailed context provided with each accountability record. A leader who promised a specific bill but passed a compromise version with most of the key provisions receives a different evaluation than one who abandoned the effort entirely.</p>
 
@@ -412,7 +412,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The Common Excuses</h2>
 
-<p>When leaders are directly confronted about broken promises, they draw from a standard set of explanations:</p>
+<p>When leaders are directly confronted about unmet commitments, they draw from a standard set of explanations:</p>
 
 <ul>
 <li><strong>"Political compromise required it."</strong> The most common excuse. The leader claims they had to modify or abandon a promise due to opposition. Sometimes this is genuine. Sometimes it is a convenient cover for never having seriously pursued the commitment.</li>
@@ -539,7 +539,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>If you want to be part of this shift, you can start today. <a href="/contribute">Contribute to the Indelible platform</a> by submitting statements, actions, or reviews. Or simply <a href="/directory">explore the directory</a> and see the technology in action.</p>
 
-<p>The era of consequence-free promise-breaking is ending. AI is making sure of that.</p>
+<p>The era of untracked commitments is ending. AI-powered accountability tools are making sure of that.</p>
 `,
   },
 ];

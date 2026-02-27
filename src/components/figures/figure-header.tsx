@@ -155,7 +155,7 @@ export function FigureHeader({
                 <span className="font-semibold text-green-600 dark:text-green-400 mr-1">{stats.keptCount}</span> kept ({keptPct}%)
               </Badge>
               <Badge variant="outline" className="text-xs font-normal">
-                <span className="font-semibold text-red-600 dark:text-red-400 mr-1">{stats.brokenCount}</span> broken ({brokenPct}%)
+                <span className="font-semibold text-orange-600 dark:text-orange-400 mr-1">{stats.brokenCount}</span> unmet ({brokenPct}%)
               </Badge>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Search, ArrowLeftRight, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SayVsDoCard } from "@/components/accountability/say-vs-do-card";
 import { FigureCard } from "@/components/figures/figure-card";
@@ -43,8 +44,7 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              They promise. They break it. They count on you forgetting.{" "}
-              <span className="font-semibold text-foreground">Not anymore.</span>
+              Every public statement recorded. Every action documented. The complete picture, searchable in seconds.
             </p>
           </ScrollReveal>
 
@@ -59,7 +59,7 @@ export default function HomePage() {
                   value={mockFigures.length}
                   className="block text-3xl font-bold text-foreground"
                 />
-                <span>Leaders You Can Check</span>
+                <span>Public Figures Tracked</span>
               </div>
               <div className="text-center">
                 <AnimatedCounter
@@ -67,29 +67,29 @@ export default function HomePage() {
                   suffix="+"
                   className="block text-3xl font-bold text-foreground"
                 />
-                <span>Promises Under Scrutiny</span>
+                <span>Statements on Record</span>
               </div>
               <div className="text-center">
                 <AnimatedCounter
                   value={trending.length}
                   className="block text-3xl font-bold text-foreground"
                 />
-                <span>Lies Exposed</span>
+                <span>Records Verified</span>
               </div>
             </div>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* Trending Contradictions */}
+      {/* Latest Records */}
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="flex items-center justify-between mb-8">
               <div>
-                <h2 className="text-2xl font-bold">Caught Red-Handed</h2>
+                <h2 className="text-2xl font-bold">Latest Records</h2>
                 <p className="text-sm text-muted-foreground mt-1">
-                  They said it on camera. Then did the exact opposite. See for yourself.
+                  Recent accountability records comparing public statements to documented actions.
                 </p>
               </div>
               <Button variant="outline" asChild>
@@ -135,12 +135,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why This Matters */}
+      {/* How It Works */}
       <section className="py-16 bg-muted/20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <h2 className="text-2xl font-bold text-center mb-10">
-              Why This Matters
+              How It Works
             </h2>
           </ScrollReveal>
 
@@ -148,30 +148,77 @@ export default function HomePage() {
             className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto"
             staggerDelay={0.15}
           >
-            <div className="rounded-lg border bg-card p-6">
+            <div className="rounded-lg border bg-card p-6 text-center">
+              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10">
+                <Search className="h-6 w-6 text-blue-500" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2">Search</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Your senator promises to lower prescription drug costs. Four
-                years pass. Prices go up 30%. By re-election, they&apos;re making
-                the same promise again — and nobody calls them out.{" "}
-                <span className="font-semibold text-foreground">Until now.</span>
+                Find any public figure and see their recorded statements — promises, claims, predictions — with dates and sources.
               </p>
             </div>
-            <div className="rounded-lg border bg-card p-6">
+            <div className="rounded-lg border bg-card p-6 text-center">
+              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-amber-500/10">
+                <ArrowLeftRight className="h-6 w-6 text-amber-500" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2">Compare</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                A tech CEO pledges &quot;full self-driving by next year.&quot;
-                That was 5 years ago. You bought the car. The feature still
-                doesn&apos;t work.{" "}
+                See documented actions alongside original statements. Votes, executive orders, business decisions — all sourced and dated.
+              </p>
+            </div>
+            <div className="rounded-lg border bg-card p-6 text-center">
+              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/10">
+                <Scale className="h-6 w-6 text-emerald-500" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2">Decide</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Review the evidence and form your own assessment. Every record links to original sources.
+              </p>
+            </div>
+          </StaggerChildren>
+
+          <ScrollReveal delay={0.3} className="text-center mt-8">
+            <p className="text-muted-foreground font-medium">
+              Decisions are better when the full record is available.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* The Record Speaks */}
+      <section className="py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <h2 className="text-2xl font-bold text-center mb-10">
+              The Record Speaks
+            </h2>
+          </ScrollReveal>
+
+          <StaggerChildren
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto"
+            staggerDelay={0.15}
+          >
+            <div className="rounded-lg border bg-gradient-to-b from-muted/40 to-muted/10 p-6">
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                A Fortune 500 CEO pledged carbon neutrality by 2030. Three years later, emissions data showed a 12% increase.{" "}
                 <span className="font-semibold text-foreground">
-                  Where&apos;s the record of that promise?
+                  The pledge and the data are both on the record.
                 </span>
               </p>
             </div>
-            <div className="rounded-lg border bg-card p-6">
+            <div className="rounded-lg border bg-gradient-to-b from-muted/40 to-muted/10 p-6">
               <p className="text-sm text-muted-foreground leading-relaxed">
-                A governor declares a climate emergency. Then quietly approves 12
-                new drilling permits. The news cycle moves on in 48 hours.{" "}
+                A governor promised to fully fund public schools during their campaign. Two years later, education budgets showed a 15% reduction.{" "}
                 <span className="font-semibold text-foreground">
-                  The permits don&apos;t.
+                  Both the promise and the budget are documented.
+                </span>
+              </p>
+            </div>
+            <div className="rounded-lg border bg-gradient-to-b from-muted/40 to-muted/10 p-6">
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                A tech executive predicted product delivery &quot;by next year.&quot; That was four years ago.{" "}
+                <span className="font-semibold text-foreground">
+                  The prediction and the timeline are both tracked.
                 </span>
               </p>
             </div>
@@ -179,23 +226,21 @@ export default function HomePage() {
 
           <ScrollReveal delay={0.3} className="text-center mt-8">
             <p className="text-muted-foreground font-medium">
-              They count on your short memory. Indelible gives you a permanent
-              one.
+              Decisions are better when the full record is available.
             </p>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* Check Any Leader */}
+      {/* Explore Any Public Figure */}
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="flex items-center justify-between mb-8">
               <div>
-                <h2 className="text-2xl font-bold">Check Any Leader in Seconds</h2>
+                <h2 className="text-2xl font-bold">Explore Any Public Figure</h2>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Pick any politician, CEO, or public figure. See their promises.
-                  See what they actually did. Decide for yourself.
+                  Search any politician, executive, or public figure. See their recorded statements alongside their documented actions.
                 </p>
               </div>
               <Button variant="outline" asChild>
@@ -269,15 +314,13 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[image:var(--gradient-cta)] opacity-[0.03]" />
         <div className="absolute inset-0 bg-[image:var(--gradient-mesh)]" />
         <ScrollReveal className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold">Stop Letting Them Get Away With It</h2>
+          <h2 className="text-3xl font-bold">See the Full Picture</h2>
           <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
-            Every broken promise you expose protects someone else from believing
-            the same lie. It takes 2 minutes to contribute evidence — and it
-            stays on the record forever.
+            Every contribution strengthens the public record. Adding a statement or action takes two minutes and becomes part of a permanent, searchable archive.
           </p>
           <div className="flex gap-3 justify-center mt-8">
             <Button size="lg" asChild>
-              <Link href="/contribute">Expose a Broken Promise</Link>
+              <Link href="/contribute">Add to the Record</Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
               <Link href="/about">See How It Works</Link>
@@ -292,14 +335,14 @@ export default function HomePage() {
           <NextSteps
             suggestions={[
               {
-                label: "Browse All Leaders",
+                label: "Browse All Figures",
                 href: "/directory",
                 description: "Search and filter every tracked public figure",
               },
               {
                 label: "See the Scorecard",
                 href: "/scorecard",
-                description: "Who keeps their word? Who doesn't? Ranked.",
+                description: "Public figures ranked by follow-through on stated commitments.",
               },
               {
                 label: "How It Works",

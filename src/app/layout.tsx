@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     template: "%s | Indelible",
   },
   description:
-    "They promise. They break it. They count on you forgetting. Check any leader's track record in seconds.",
+    "The public record of what leaders say and what they do. Search any figure's statements and actions in seconds.",
   metadataBase: new URL("https://intelligence-red.vercel.app"),
   openGraph: {
     title: "Indelible — Public Accountability Platform",
     description:
-      "They promise. They break it. They count on you forgetting. Check any leader's track record.",
+      "The public record of what leaders say and what they do. Search any figure's statements and actions in seconds.",
     type: "website",
     siteName: "Indelible",
     url: "https://intelligence-red.vercel.app",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Indelible — Public Accountability Platform",
     description:
-      "They promise. They break it. They count on you forgetting. Check any leader's track record.",
+      "The public record of what leaders say and what they do. Search any figure's statements and actions in seconds.",
   },
 };
 

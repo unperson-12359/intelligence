@@ -6,7 +6,7 @@ export function generateWebSiteJsonLd() {
     "@type": "WebSite",
     name: "Indelible",
     description:
-      "AI-powered accountability platform tracking what public figures SAY vs what they DO.",
+      "Evidence-based public record platform tracking statements and actions of public figures.",
     url: BASE_URL,
     potentialAction: {
       "@type": "SearchAction",

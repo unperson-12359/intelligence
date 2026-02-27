@@ -15,7 +15,7 @@ export function Footer() {
               <span className="font-bold">Indelible</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              They count on you forgetting. We make sure you don&apos;t.
+              The public record, built to last.
             </p>
           </div>
 

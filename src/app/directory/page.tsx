@@ -171,7 +171,7 @@ export default async function DirectoryPage({
         suggestions={[
           { label: "See the Scorecard", href: "/scorecard", description: "Who keeps their word? Ranked by accountability score." },
           { label: "Browse Topics", href: "/topics", description: "Explore accountability by policy area" },
-          { label: "Expose a Broken Promise", href: "/contribute", description: "Help build the record. It takes 2 minutes." },
+          { label: "Add to the Record", href: "/contribute", description: "Contribute to the public record." },
         ]}
       />
     </div>

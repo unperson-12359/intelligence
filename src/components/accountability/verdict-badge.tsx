@@ -18,8 +18,7 @@ const verdictConfig = {
   broken: {
     style: "bg-red-100 text-red-800 border-red-200 dark:bg-red-900/30 dark:text-red-400 dark:border-red-800",
     icon: XCircle,
-    label: "Broken",
-    pulse: true,
+    label: "Unmet",
   },
   partial: {
     style: "bg-yellow-100 text-yellow-800 border-yellow-200 dark:bg-yellow-900/30 dark:text-yellow-400 dark:border-yellow-800",
@@ -34,7 +33,7 @@ const verdictConfig = {
   flip_flop: {
     style: "bg-purple-100 text-purple-800 border-purple-200 dark:bg-purple-900/30 dark:text-purple-400 dark:border-purple-800",
     icon: ArrowLeftRight,
-    label: "Flip-Flop",
+    label: "Reversed",
   },
   context_needed: {
     style: "bg-gray-100 text-gray-800 border-gray-200 dark:bg-gray-900/30 dark:text-gray-400 dark:border-gray-800",
@@ -61,7 +60,6 @@ export function VerdictBadge({
       className={cn(
         "font-semibold gap-1",
         config.style,
-        "pulse" in config && config.pulse && "animate-[pulse-ring_2s_ease-in-out_infinite]",
         className
       )}
     >

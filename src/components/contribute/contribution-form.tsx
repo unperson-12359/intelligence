@@ -112,7 +112,7 @@ export function ContributionForm() {
         </Label>
         <Textarea
           id="whatHappened"
-          placeholder='e.g. "Promised to cancel student debt but only forgave a fraction" or "Said they&#39;d never raise taxes, then voted for a tax increase"'
+          placeholder='e.g. "Stated they would cancel student debt; partial action documented" or "Committed to not raising taxes; voted for a tax increase in 2024"'
           rows={4}
           value={whatHappened}
           onChange={(e) => setWhatHappened(e.target.value)}

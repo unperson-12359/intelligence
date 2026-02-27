@@ -9,7 +9,7 @@ import { getAllBlogPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "They promise. They break it. They count on you forgetting. See how Indelible makes broken promises impossible to hide.",
+    "How Indelible documents public statements and actions to create a searchable accountability record for every tracked public figure.",
 };
 
 export default function AboutPage() {
@@ -25,14 +25,17 @@ export default function AboutPage() {
           <section>
             <h2 className="text-xl font-bold mb-2">Why We Exist</h2>
             <p className="text-muted-foreground">
-              You&apos;ve been lied to. Not once — systematically. Every election,
-              every earnings call, every press conference. They make promises
-              designed to be forgotten. Indelible makes forgetting impossible.
+              Public figures make statements that shape decisions — votes,
+              investments, policy support. Campaign promises, earnings
+              predictions, policy pledges — they all create expectations.
+              Indelible creates a permanent, searchable record that connects
+              those statements to documented actions, so the full picture is
+              always available.
             </p>
             <p className="text-muted-foreground mt-2">
               Every public statement is matched against actual actions, scored,
-              and made searchable. When a leader says one thing and does another,
-              you&apos;ll know — with the date, the source, and the proof.
+              and made searchable — with the date, the source, and the
+              evidence. Indelible makes the complete record accessible.
             </p>
           </section>
         </ScrollReveal>
@@ -41,8 +44,7 @@ export default function AboutPage() {
           <section>
             <h2 className="text-xl font-bold mb-2">How It Works</h2>
             <p className="text-sm text-muted-foreground mb-3">
-              Here&apos;s how you go from &quot;I think they lied&quot; to
-              &quot;Here&apos;s the proof&quot; in under 60 seconds:
+              Three steps to a complete accountability picture:
             </p>
             <StaggerChildren className="space-y-3" staggerDelay={0.12}>
               <div className="border rounded-lg p-4 border-l-4 border-l-blue-500 bg-card">
@@ -50,9 +52,8 @@ export default function AboutPage() {
                   1. Find What They Promised
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  Find exactly what they promised — with the date, the source,
-                  and the exact words. No more &quot;I don&apos;t think they
-                  actually said that.&quot;
+                  Find exactly what they stated — with the date, the source,
+                  and the exact words.
                 </p>
               </div>
               <div className="border rounded-lg p-4 border-l-4 border-l-amber-500 bg-card">
@@ -60,8 +61,8 @@ export default function AboutPage() {
                   2. See What They Actually Did
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  See what they actually did when they thought you weren&apos;t
-                  watching. Votes, vetoes, business deals — all documented.
+                  See the documented actions — votes, executive orders,
+                  business decisions — all sourced and dated.
                 </p>
               </div>
               <div className="border rounded-lg p-4 border-l-4 border-l-purple-500 bg-card">
@@ -69,8 +70,9 @@ export default function AboutPage() {
                   3. See the Gap
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  See the gap between words and actions, scored from A (walks
-                  the talk) to F (serial liar). No opinions — just evidence.
+                  See the gap between words and actions, scored from A (strong
+                  alignment) to F (consistent divergence). No opinions — just
+                  documented evidence.
                 </p>
               </div>
             </StaggerChildren>
@@ -115,9 +117,10 @@ export default function AboutPage() {
             <h2 className="text-xl font-bold mb-2">Anyone Can Contribute</h2>
             <p className="text-muted-foreground">
               You don&apos;t need to be a journalist or a data scientist. If you
-              see a broken promise, you can put it on the record in minutes.
-              Thousands of people and AI agents are doing it right now — building
-              the most comprehensive accountability database ever created.
+              find a public statement or action that should be tracked, you can
+              add it to the record in minutes. Thousands of people and AI agents
+              are doing it right now — building the most comprehensive
+              accountability database ever created.
             </p>
           </section>
         </ScrollReveal>
@@ -161,7 +164,7 @@ export default function AboutPage() {
           className="mt-4"
           suggestions={[
             { label: "Our Methodology", href: "/about/methodology", description: "How we score and verify accountability records" },
-            { label: "Expose a Broken Promise", href: "/contribute", description: "Help build the record. It takes 2 minutes." },
+            { label: "Add to the Record", href: "/contribute", description: "Contribute to the public record." },
             { label: "Browse All Leaders", href: "/directory", description: "Search and filter every tracked public figure" },
           ]}
         />
