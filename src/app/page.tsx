@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { Search, ArrowLeftRight, Scale } from "lucide-react";
+import Image from "next/image";
+import { Search, ArrowLeftRight, Scale, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { SayVsDoCard } from "@/components/accountability/say-vs-do-card";
+import { Card, CardContent } from "@/components/ui/card";
+import { VerdictBadge } from "@/components/accountability/verdict-badge";
 import { FigureCard } from "@/components/figures/figure-card";
 import { HeroSearchBar } from "@/components/layout/hero-search-bar";
 import { ScrollReveal } from "@/components/motion/scroll-reveal";
@@ -15,7 +17,6 @@ import {
   mockActions,
   mockStatements,
   getTrendingContradictions,
-  getEvidenceForRecord,
   getAllFigureStats,
 } from "@/lib/mock-data";
 
@@ -81,7 +82,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Latest Records */}
+      {/* Latest Records — Sneak Peek */}
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
@@ -89,7 +90,7 @@ export default function HomePage() {
               <div>
                 <h2 className="text-2xl font-bold">Latest Records</h2>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Recent accountability records comparing public statements to documented actions.
+                  Recent accountability records — statements compared to actions.
                 </p>
               </div>
               <Button variant="outline" asChild>
@@ -98,40 +99,81 @@ export default function HomePage() {
             </div>
           </ScrollReveal>
 
-          <StaggerChildren className="space-y-4" staggerDelay={0.15}>
-            {trending.map((item) => {
+          <StaggerChildren
+            className="grid grid-cols-1 md:grid-cols-3 gap-4"
+            staggerDelay={0.12}
+          >
+            {trending.slice(0, 3).map((item) => {
               const action = item.actionId
                 ? mockActions.find((a) => a.id === item.actionId)
                 : null;
-              const statement = mockStatements.find(
-                (s) => s.id === item.statementId
-              );
-              const evidenceMedia = getEvidenceForRecord(item.id);
               return (
-                <SayVsDoCard
+                <Link
                   key={item.id}
-                  figureSlug={item.figure?.slug}
-                  figureName={item.figure?.name}
-                  statementTitle={item.statement?.title || ""}
-                  statementContent={item.statement?.content || ""}
-                  statementDate={item.statement?.dateOccurred || ""}
-                  statementSource={item.statement?.sourceName || ""}
-                  statementSourceUrl={statement?.sourceUrl}
-                  statementSourceType={statement?.sourceType}
-                  actionTitle={action?.title}
-                  actionDescription={action?.description}
-                  actionDate={action?.dateOccurred}
-                  actionSourceUrl={action?.sourceUrl}
-                  actionSourceName={action?.sourceName}
-                  verdict={item.verdict}
-                  score={item.score}
-                  summary={item.summary}
-                  evidence={item.evidence}
-                  evidenceMedia={evidenceMedia}
-                />
+                  href={`/figure/${item.figure?.slug}`}
+                  className="group"
+                >
+                  <Card className="h-full transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:border-foreground/20 bg-[var(--glass-bg)] backdrop-blur-sm border-[var(--glass-border)]">
+                    <CardContent className="p-4">
+                      {/* Header: avatar + name + verdict */}
+                      <div className="flex items-center gap-3 mb-3">
+                        {item.figure?.imageUrl ? (
+                          <Image
+                            src={item.figure.imageUrl}
+                            alt={item.figure.name || ""}
+                            width={32}
+                            height={32}
+                            className="rounded-full object-cover shrink-0 border border-border/50"
+                            style={{ width: 32, height: 32 }}
+                          />
+                        ) : (
+                          <div className="h-8 w-8 rounded-full bg-gradient-to-br from-muted to-muted/60 flex items-center justify-center text-xs font-bold text-muted-foreground shrink-0 border border-border/50">
+                            {item.figure?.name?.charAt(0) || "?"}
+                          </div>
+                        )}
+                        <span className="font-medium text-sm truncate flex-1">
+                          {item.figure?.name}
+                        </span>
+                        <VerdictBadge
+                          verdict={item.verdict as "kept" | "broken" | "partial" | "in_progress" | "flip_flop" | "context_needed"}
+                        />
+                      </div>
+
+                      {/* Said */}
+                      <div className="mb-2">
+                        <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-0.5">
+                          Said
+                        </span>
+                        <p className="text-sm text-foreground line-clamp-1">
+                          {item.statement?.title || "—"}
+                        </p>
+                      </div>
+
+                      {/* Did */}
+                      <div>
+                        <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-amber-600 dark:text-amber-400 mb-0.5">
+                          Did
+                        </span>
+                        <p className="text-sm text-foreground line-clamp-1">
+                          {action?.title || "No documented action yet"}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
               );
             })}
           </StaggerChildren>
+
+          <ScrollReveal delay={0.2} className="text-center mt-6">
+            <Link
+              href="/directory"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              See all records
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </ScrollReveal>
         </div>
       </section>
 
